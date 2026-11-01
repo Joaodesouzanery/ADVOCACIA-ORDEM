@@ -1,0 +1,94 @@
+{
+  "_nota": "Mapa CURADO pedido -> fundamentos. Números de artigos/súmulas vêm da memória do autor e estão com verificar=true: o texto oficial deve ser ingerido (Senado/Planalto/STJ) e conferido por advogado antes de qualquer uso em petição. Nenhum texto legal é reproduzido aqui de propósito.",
+  "pedidos": {
+    "guarda": {
+      "descricao": "Guarda de filho (unilateral ou compartilhada), regulamentação de convivência",
+      "palavras_chave": ["guarda", "guarda compartilhada", "guarda unilateral", "visitas", "convivência", "filho", "poder familiar"],
+      "dispositivos": [
+        {"norma": "Código Civil (Lei 10.406/2002)", "ref": "arts. 1.583 a 1.590", "tema": "Guarda unilateral/compartilhada, como é decretada, interesse do filho, visitas"},
+        {"norma": "Código Civil (Lei 10.406/2002)", "ref": "arts. 1.630 a 1.638", "tema": "Poder familiar (exercício, suspensão e destituição)"},
+        {"norma": "Lei 13.058/2014", "ref": "integral", "tema": "Alterou o CC para estabelecer a guarda compartilhada como regra"},
+        {"norma": "Lei 14.713/2023", "ref": "integral", "tema": "Risco de violência doméstica/familiar e guarda compartilhada"},
+        {"norma": "ECA (Lei 8.069/1990)", "ref": "arts. 19, 33 e 148", "tema": "Convivência familiar; guarda como regularização de posse de fato; competência da Vara da Infância"},
+        {"norma": "Constituição Federal", "ref": "arts. 226 a 229", "tema": "Família; prioridade absoluta da criança; deveres dos pais"},
+        {"norma": "CPC (Lei 13.105/2015)", "ref": "arts. 693 a 699", "tema": "Ações de família: mediação, citação, audiência, ministério público"},
+        {"norma": "CPC (Lei 13.105/2015)", "ref": "art. 53", "tema": "Competência territorial (foro do guardião do filho incapaz, quando aplicável)"},
+        {"norma": "Lei 12.318/2010", "ref": "integral", "tema": "Alienação parental"}
+      ],
+      "sumulas": [],
+      "prazos_relacionados": ["contestacao", "replica", "apelacao", "agravo_instrumento", "embargos_declaracao"],
+      "documentos": [
+        "Certidão de nascimento do(a) filho(a)",
+        "RG e CPF do requerente e do requerido (se disponível)",
+        "Comprovante de residência atual do requerente e da criança",
+        "Comprovante de renda e de despesas da criança (escola, saúde)",
+        "Certidão de casamento, escritura/declaração de união estável ou de divórcio (se houver)",
+        "Provas da situação de fato: relatórios escolares, laudos médicos, mensagens, fotos",
+        "Boletins de ocorrência ou medidas protetivas, se existirem"
+      ],
+      "perguntas_ao_cliente": [
+        "Com quem a criança mora hoje e desde quando?",
+        "Há acordo possível com a outra parte? (mediação, CPC 694/695)",
+        "Existe alegação de violência doméstica ou risco à criança?",
+        "Há processo anterior sobre guarda, alimentos ou divórcio? (prevenção/competência)",
+        "Qual o endereço da outra parte (para citação)?"
+      ]
+    },
+    "alimentos": {
+      "descricao": "Ação de alimentos, revisão, exoneração e cumprimento",
+      "palavras_chave": ["alimentos", "pensão", "pensão alimentícia", "exoneração", "revisional", "execução de alimentos"],
+      "dispositivos": [
+        {"norma": "Código Civil (Lei 10.406/2002)", "ref": "arts. 1.694 a 1.710", "tema": "Obrigação alimentar, binômio necessidade/possibilidade, revisão, extinção"},
+        {"norma": "Lei 5.478/1968 (Lei de Alimentos)", "ref": "integral", "tema": "Rito especial da ação de alimentos; alimentos provisórios"},
+        {"norma": "CPC (Lei 13.105/2015)", "ref": "arts. 528 e 911 a 913", "tema": "Cumprimento e execução de alimentos; prisão civil"},
+        {"norma": "CPC (Lei 13.105/2015)", "ref": "art. 53, II", "tema": "Foro do domicílio do alimentando"},
+        {"norma": "Constituição Federal", "ref": "arts. 227 e 229", "tema": "Dever de assistência aos filhos"}
+      ],
+      "sumulas": [
+        {"tribunal": "STJ", "numero": 277, "tema": "Termo inicial dos alimentos"},
+        {"tribunal": "STJ", "numero": 309, "tema": "Prisão civil por débito alimentar"},
+        {"tribunal": "STJ", "numero": 358, "tema": "Cancelamento de pensão após maioridade e contraditório"},
+        {"tribunal": "STJ", "numero": 594, "tema": "Legitimidade do Ministério Público"},
+        {"tribunal": "STJ", "numero": 596, "tema": "Obrigação alimentar dos avós"},
+        {"tribunal": "STJ", "numero": 621, "tema": "Efeitos da redução/exoneração de alimentos"}
+      ],
+      "prazos_relacionados": ["contestacao", "alimentos_cumprimento_3d", "apelacao", "embargos_declaracao"],
+      "documentos": [
+        "Certidão de nascimento do alimentando",
+        "RG e CPF das partes",
+        "Comprovantes de renda do requerente e (se houver) do alimentante",
+        "Comprovantes das despesas do alimentando",
+        "Provas de vínculo e de capacidade financeira do alimentante"
+      ],
+      "perguntas_ao_cliente": [
+        "Qual a renda e a ocupação do alimentante?",
+        "Existe pensão fixada anteriormente? Há atrasos?",
+        "Quais as despesas mensais da criança?"
+      ]
+    },
+    "divorcio": {
+      "descricao": "Divórcio consensual ou litigioso, partilha",
+      "palavras_chave": ["divórcio", "separação", "partilha", "união estável", "dissolução"],
+      "dispositivos": [
+        {"norma": "Constituição Federal", "ref": "art. 226, §6º", "tema": "Dissolução do casamento pelo divórcio"},
+        {"norma": "Código Civil (Lei 10.406/2002)", "ref": "arts. 1.571 e 1.580", "tema": "Término da sociedade conjugal e divórcio"},
+        {"norma": "CPC (Lei 13.105/2015)", "ref": "arts. 693 a 699 e 731 a 734", "tema": "Ações de família; divórcio consensual; via extrajudicial"},
+        {"norma": "Lei 11.441/2007", "ref": "integral", "tema": "Divórcio por escritura pública (sem filhos incapazes)"}
+      ],
+      "sumulas": [],
+      "prazos_relacionados": ["contestacao", "apelacao", "embargos_declaracao"],
+      "documentos": [
+        "Certidão de casamento atualizada",
+        "Certidões de nascimento dos filhos",
+        "RG e CPF dos cônjuges",
+        "Pacto antenupcial (se houver)",
+        "Relação e documentos dos bens e dívidas"
+      ],
+      "perguntas_ao_cliente": [
+        "Há filhos menores/incapazes? (afasta a via extrajudicial, salvo exceções a conferir)",
+        "Há consenso quanto a bens, guarda e alimentos?",
+        "Qual o regime de bens?"
+      ]
+    }
+  }
+}
