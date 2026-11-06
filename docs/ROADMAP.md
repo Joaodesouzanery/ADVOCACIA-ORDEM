@@ -8,3 +8,6 @@
 
 ## Pendências de conformidade
 - Revisar com advogado: regras de prazo, textos, política de uso de IA e publicidade (OAB), LGPD.
+
+## Próxima tarefa (atualizar a cada sessão)
+M1, passo 1: conector `src/ordem/connectors/senado.py` (API de legislação do Senado) + migration `0002_dispositivos_busca.sql` (tsvector pt + pgvector) + `ordem ingerir` + workflow `.github/workflows/ingestao.yml` (agendado/manual, usa secrets). Testes com fixtures offline. Normas: CC Família (1.511–1.783), ECA, CPC (prazos, 693–699), Lei 5.478/68, CF 226–229.

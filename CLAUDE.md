@@ -39,5 +39,8 @@ Conectar ao Claude Code: `claude mcp add ordem -- python -m ordem.mcp_server.ser
 ## Ambiente de desenvolvimento
 O sandbox do Claude Code na nuvem **não alcança** os sites de dados abertos (proxy). Ingestão real roda em GitHub Actions/local. Testes usam fixtures offline (sintéticas).
 
+## Continuidade entre chats
+Ver `docs/HANDOFF.md`. Ao fim de cada sessão: atualizar "Próxima tarefa" no ROADMAP, commit e push.
+
 ## Convenções
 Português nos domínios jurídicos; commits curtos e descritivos; atualizar `docs/ROADMAP.md` a cada marco.
