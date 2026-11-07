@@ -1,0 +1,14 @@
+{
+  "_nota": "Normas-alvo do M1. URLs do Planalto (texto compilado) escritas de memória: status 'não verificado' até a primeira ingestão real (GitHub Actions). 'aliases' ligam o mapa curado (pedidos_familia.json) a cada norma.",
+  "normas": [
+    {"id": "cc", "nome": "Código Civil (Lei 10.406/2002)", "aliases": ["10.406", "codigo civil"], "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"},
+    {"id": "cpc", "nome": "CPC (Lei 13.105/2015)", "aliases": ["13.105", "cpc", "codigo de processo civil"], "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm"},
+    {"id": "cf", "nome": "Constituição Federal de 1988", "aliases": ["constituicao federal"], "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"},
+    {"id": "eca", "nome": "ECA (Lei 8.069/1990)", "aliases": ["8.069", "eca"], "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm"},
+    {"id": "lei5478", "nome": "Lei 5.478/1968 (Lei de Alimentos)", "aliases": ["5.478"], "url": "https://www.planalto.gov.br/ccivil_03/leis/l5478.htm"},
+    {"id": "lei13058", "nome": "Lei 13.058/2014 (guarda compartilhada)", "aliases": ["13.058"], "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13058.htm"},
+    {"id": "lei14713", "nome": "Lei 14.713/2023", "aliases": ["14.713"], "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14713.htm"},
+    {"id": "lei12318", "nome": "Lei 12.318/2010 (alienação parental)", "aliases": ["12.318"], "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12318.htm"},
+    {"id": "lei11441", "nome": "Lei 11.441/2007 (divórcio extrajudicial)", "aliases": ["11.441"], "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11441.htm"}
+  ]
+}

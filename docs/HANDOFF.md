@@ -9,12 +9,16 @@
 ## O que fica na nuvem (fora do repo)
 | Onde | O quê | Status |
 |------|-------|--------|
-| GitHub | código, docs, Actions (testes; ingestão no M1) | ativo |
+| GitHub | código, docs, Actions (`tests`, `ingestao`) | ativo |
+| Repo `data/` | corpus público: `corpus.csv`, `corpus.xlsx`, relatório (gerados pelo workflow) | ativo após 1ª execução |
 | GitHub Secrets | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `DATAJUD_API_KEY` | a configurar |
-| Supabase | Postgres + pgvector; aplicar `supabase/migrations/*.sql` | a configurar |
+| Supabase | Postgres + pgvector (substitui o SQLite local; opcional por ora) | futuro |
 | Vercel/Supabase Edge | MCP remoto (M4) | futuro |
 
 Nunca coloque segredos nem dados de clientes no repositório (ver `CLAUDE.md`).
 
 ## Regra de fim de sessão
 Antes de encerrar qualquer chat: atualizar "Próxima tarefa" no ROADMAP, commit e push. Trabalho não enviado ao GitHub se perde (o container da nuvem é efêmero).
+
+## Rodar a ingestão (letra da lei)
+GitHub → aba **Actions** → **ingestao** → **Run workflow** (campo vazio = todas as normas). Ao terminar, o robô commita `data/corpus.xlsx` (abre no Excel) e `data/corpus.csv`. Localmente: `pip install -e ".[ingest,excel]"` e `ordem ingerir --xlsx`.

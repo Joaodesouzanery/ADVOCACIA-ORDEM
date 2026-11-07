@@ -5,6 +5,7 @@ Status: `não verificado` = URL fornecida pelo usuário, ainda não testada (o s
 | # | Fonte | URL | Uso planejado | Marco | Status |
 |---|-------|-----|---------------|-------|--------|
 | a | Câmara – Dados Abertos (Swagger) | https://dadosabertos.camara.leg.br/swagger/api.html | Tramitação de proposições (complemento) | M3 | não verificado |
+| b0 | Planalto – texto compilado | ver `src/ordem/data/normas.json` | Letra da lei (ingestão M1 ativa) | M1 | não verificado (aguarda 1ª execução do workflow) |
 | b | Senado – Legislação | https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao | Letra da lei por artigo (+ Planalto como texto compilado) | M1 | não verificado |
 | c | STJ – Jurisprudência | https://dadosabertos.web.stj.jus.br/group/jurisprudencia | Acórdãos/ementas | M2 | não verificado |
 | d | STJ – Grupos | https://dadosabertos.web.stj.jus.br/group/ | Descoberta de conjuntos | M2 | não verificado |
