@@ -15,7 +15,8 @@
 - MCP: `artigos_para_pedido` anexa texto oficial (ou `[PENDENTE]`); nova ferramenta `buscar_dispositivo`.
 
 ## Próxima tarefa (atualizar a cada sessão)
-1. **Planalto recusa os servidores do GitHub Actions** (1ª execução em 09/11/2026: "Server disconnected" em todas as normas). Não contornar o bloqueio. Opções: (a) rodar `ordem ingerir --xlsx` num computador local e commitar `data/corpus.csv`; (b) fonte oficial com API aberta (LexML / Senado dados abertos); (c) pedir acesso ao Planalto.
-2. Supabase: projeto **TAF** (`kefkgydvjjakqaonyjau`) reaproveitado e reativado. Aplicar `supabase/migrations/0002_corpus_dispositivo.sql` (pelo MCP ficou aguardando confirmação do usuário). As 16 tabelas antigas do TAF (vazias) **não** foram apagadas: perguntar ao usuário. Renomear o projeto no painel.
+1. **Caminho escolhido: dados abertos oficiais com API** (Senado/LexML) em vez de raspar o Planalto. Próximo passo: conector Senado, validado por uma execução no Actions.
+   **Planalto recusa os servidores do GitHub Actions** (1ª execução em 09/11/2026: "Server disconnected" em todas as normas). Não contornar o bloqueio. Opções: (a) rodar `ordem ingerir --xlsx` num computador local e commitar `data/corpus.csv`; (b) fonte oficial com API aberta (LexML / Senado dados abertos); (c) pedir acesso ao Planalto.
+2. Supabase: projeto **TAF** (`kefkgydvjjakqaonyjau`) reaproveitado e reativado. Migration `0002_corpus_dispositivo.sql` **aplicada** (09/11/2026). As 16 tabelas antigas do TAF ficam (decisão do usuário: não apagar). Teste de busca via SQL ficou aguardando aprovação; se existir linha com `norma_id='teste'`, apagar. Renomear o projeto no painel.
 3. Usuário: cadastrar secrets `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` no GitHub (Settings → Secrets and variables → Actions).
 4. Pendências: ADCT da CF; conector Senado; embeddings; M2 (STJ).
