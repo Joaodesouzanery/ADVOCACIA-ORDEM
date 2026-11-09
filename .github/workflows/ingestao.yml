@@ -23,6 +23,10 @@ jobs:
           python-version: "3.12"
       - run: pip install -e ".[ingest,excel]"
       - name: Ingerir letra da lei (Planalto) e exportar CSV/XLSX
+        env:
+          # Opcionais: se configurados, o corpus também é sincronizado no Supabase.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: ordem ingerir ${{ github.event.inputs.normas }} --xlsx
       - name: Relatório
         if: always()

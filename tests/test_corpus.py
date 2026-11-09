@@ -106,3 +106,36 @@ def test_cli_buscar(capsys):
     knowledge._repo_cache.clear()
     assert main(["buscar", "alimentos"]) == 0
     assert "Art. 1.694" in capsys.readouterr().out
+
+
+def test_repositorio_supabase_com_cliente_falso():
+    from ordem.storage.supabase import RepositorioSupabase
+
+    class Resp:
+        def __init__(self, dados=None):
+            self.dados = dados or []
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return self.dados
+
+    class Falso:
+        def __init__(self):
+            self.posts = []
+
+        def post(self, url, params=None, headers=None, json=None):
+            self.posts.append((url, json))
+            return Resp()
+
+        def get(self, url, params=None):
+            return Resp([{"norma_id": "cc", "norma": "CC", "caminho": "Art. 1.583", "numero": 1583,
+                          "texto": "t", "url_oficial": "u", "fonte": "planalto", "coletado_em": "x"}])
+
+    repo_local, _ = _repo_ingerido()
+    cli = Falso()
+    remoto = RepositorioSupabase("https://x.supabase.co", "k", cliente=cli, lote=2)
+    assert remoto.upsert(repo_local.todos()) == 5
+    assert len(cli.posts) == 3 and cli.posts[0][0].endswith("/corpus_dispositivo")
+    assert remoto.obter_intervalo("cc", 1583, 1590)[0].numero == 1583

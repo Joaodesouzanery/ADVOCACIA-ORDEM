@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import json
 from datetime import date
 
@@ -70,6 +71,11 @@ def _ingerir_exportar(a) -> int:
         for nid, r in rel["normas"].items():
             print(f"{nid}: {r['status']} {r.get('artigos', r.get('erro', ''))}")
         codigo = 0 if any(r["status"] == "ok" for r in rel["normas"].values()) else 2
+    from .storage.supabase import RepositorioSupabase
+
+    remoto = RepositorioSupabase.do_ambiente()
+    if remoto is not None and os.environ.get("SUPABASE_SERVICE_ROLE_KEY"):
+        print(f"Supabase: {remoto.upsert(repo.todos())} dispositivos sincronizados")
     print(f"CSV: {exportar_csv(repo, caminho_csv())} dispositivos -> {caminho_csv()}")
     if a.xlsx:
         print(f"XLSX: {exportar_xlsx(repo, dados / 'corpus.xlsx')} dispositivos -> {dados / 'corpus.xlsx'}")
