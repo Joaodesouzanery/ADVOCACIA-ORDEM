@@ -15,7 +15,7 @@
 - MCP: `artigos_para_pedido` anexa texto oficial (ou `[PENDENTE]`); nova ferramenta `buscar_dispositivo`.
 
 ## Próxima tarefa (atualizar a cada sessão)
-1. **Usuário:** GitHub → Actions → "ingestao" → Run workflow. Conferir `data/ingestao_relatorio.json` (normas com erro = URL/layout a corrigir em `normas.json`/parser) e abrir `data/corpus.xlsx`.
-2. Corrigir o que falhar; marcar fontes como verificadas em `docs/FONTES.md`.
-3. Pendências: ADCT da CF (numeração repetida, hoje descartada); conector Senado (fonte b) para metadados; busca semântica (embeddings) quando houver Supabase/pgvector.
-4. Depois: M2 (STJ súmulas/precedentes) reaproveitando `storage` + workflow.
+1. **Planalto recusa os servidores do GitHub Actions** (1ª execução em 09/11/2026: "Server disconnected" em todas as normas). Não contornar o bloqueio. Opções: (a) rodar `ordem ingerir --xlsx` num computador local e commitar `data/corpus.csv`; (b) fonte oficial com API aberta (LexML / Senado dados abertos); (c) pedir acesso ao Planalto.
+2. Supabase: projeto **TAF** (`kefkgydvjjakqaonyjau`) reaproveitado e reativado. Aplicar `supabase/migrations/0002_corpus_dispositivo.sql` (pelo MCP ficou aguardando confirmação do usuário). As 16 tabelas antigas do TAF (vazias) **não** foram apagadas: perguntar ao usuário. Renomear o projeto no painel.
+3. Usuário: cadastrar secrets `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` no GitHub (Settings → Secrets and variables → Actions).
+4. Pendências: ADCT da CF; conector Senado; embeddings; M2 (STJ).
