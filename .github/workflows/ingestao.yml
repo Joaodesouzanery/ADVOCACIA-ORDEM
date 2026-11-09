@@ -1,5 +1,10 @@
 name: ingestao
 on:
+  push:
+    paths:
+      - "src/ordem/data/normas.json"
+      - "src/ordem/connectors/planalto.py"
+      - ".github/workflows/ingestao.yml"
   workflow_dispatch:
     inputs:
       normas:
@@ -38,4 +43,5 @@ jobs:
           git add data/corpus.csv data/corpus.xlsx data/ingestao_relatorio.json
           git diff --cached --quiet && echo "sem mudanças" && exit 0
           git commit -m "Ingestão automática do corpus ($(date -u +%F))"
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
