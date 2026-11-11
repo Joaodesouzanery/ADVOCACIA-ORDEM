@@ -1,13 +1,14 @@
 {
   "fonte": "cnj",
   "nome": "CNJ – Justiça em Números (base de dados)",
-  "executado_em": "2026-11-11T22:56:40+00:00",
+  "executado_em": "2026-11-11T23:00:53+00:00",
   "resultados": [
     {
       "url": "https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/",
       "url_final": "https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/",
       "status": 200,
       "ok": true,
+      "desafio_antirrobo": false,
       "content_type": "text/html; charset=UTF-8",
       "bytes": 260996,
       "amostra": "<!DOCTYPE html>\n<html class=\"html\" lang=\"pt-BR\">\n<head>\n<meta charset=\"UTF-8\">\n<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<!-- This site is optimized with the Yoast SEO plugin v24.3 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Base de Dados - Portal CNJ</title>\n<link rel=\"canonical\" href=\"https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Base de Dados - Portal CNJ\" />\n<meta property=\"og:description\" content=\"PORTARIA No 216, DE 19 DE DEZEMBRO DE 2012 Regulamenta o acesso público ao banco de dados do “Sistema de Estatísticas do Poder Judiciário”. O PRESIDENTE DO CONSELHO NACIONAL DE JUSTIÇA, no uso de suas atribuições legais e regimentais, Considerando o que dispõe o art. 3º da Lei nº 12.527, de 18 de novembro de [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/\" />\n<meta property=\"og:site_name\" content=\"Portal CNJ\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/cnj.oficial\" />\n<meta property=\"article:modified_time\" content=\"2026-06-30T19:37:44+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@cnj_oficial\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n<meta name=\"twitter:data1\" content=\"3 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/\",\"url\":\"https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/\",\"name\":\"Base de Dados - Portal CNJ\",\"isPartOf\":{\"@id\":\"https://www.cnj.jus.br/#website\"},\"datePubli",

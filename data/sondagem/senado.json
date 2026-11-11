@@ -1,13 +1,14 @@
 {
   "fonte": "senado",
   "nome": "Senado – Dados Abertos (legislação)",
-  "executado_em": "2026-11-11T22:56:40+00:00",
+  "executado_em": "2026-11-11T23:00:53+00:00",
   "resultados": [
     {
       "url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
       "url_final": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
       "status": 200,
       "ok": true,
+      "desafio_antirrobo": false,
       "content_type": "text/html;charset=utf-8",
       "bytes": 148835,
       "amostra": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-br\" xml:lang=\"pt-br\">\n<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n    <meta name=\"author\" content=\"Senado Federal\" />\n    <title>Dados Abertos</title><title>Dados Abertos de Legislação  (Legislativo) - Dados Abertos – Senado Federal</title>\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/dados-abertos/++theme++senado/senado-favicon.ico\" />\n    \n<meta content=\"summary\" name=\"twitter:card\" /><meta content=\"Dados Abertos\" property=\"og:site_name\" /><meta content=\"Dados Abertos\" property=\"og:title\" /><meta content=\"website\" property=\"og:type\" /><meta content=\"\" property=\"og:description\" /><meta content=\"https://www12.senado.leg.br/dados-abertos\" property=\"og:url\" /><meta content=\"https://www12.senado.leg.br/dados-abertos/logo.png\" property=\"og:image\" /><meta content=\"image/png\" property=\"og:image:type\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"citation_title\" content=\"Dados Abertos de  Legislação  (Legislativo) - Dados Abertos – Senado Federal\" /><meta name=\"generator\" content=\"Plone - http://plone.com\" /><link rel=\"canonical\" href=\"https://www12.senado.leg.br/dados-abertos\" /><link rel=\"alternate\" href=\"https://www12.senado.leg.br/dados-abertos/RSS\" title=\"Dados Abertos - RSS 1.0\" type=\"application/rss+xml\" /><link rel=\"alternate\" href=\"https://www12.senado.leg.br/dados-abertos/rss.xml\" title=\"Dados Abertos - RSS 2.0\" type=\"application/rss+xml\" /><link rel=\"alternate\" href=\"https://www12.senado.leg.br/dados-abertos/atom.xml\" title=\"Dados Abertos - Atom\" type=\"application/rss+xml\" /><link rel=\"search\" href=\"https://www12.senado.leg.br/dados-abertos/@@search\" title=\"Buscar neste site\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"https://www12.senado.leg.br/dados-abertos/++plone++productio",
@@ -18,9 +19,21 @@
       "url_final": "https://legis.senado.leg.br/dadosabertos/api-docs/swagger-ui/index.html",
       "status": 200,
       "ok": true,
+      "desafio_antirrobo": false,
       "content_type": "text/html",
       "bytes": 734,
       "amostra": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"index.css\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n  </head>\n\n  <body>\n    <div id=\"swagger-ui\"></div>\n    <script src=\"./swagger-ui-bundle.js\" charset=\"UTF-8\"> </script>\n    <script src=\"./swagger-ui-standalone-preset.js\" charset=\"UTF-8\"> </script>\n    <script src=\"./swagger-initializer.js\" charset=\"UTF-8\"> </script>\n  </body>\n</html>\n",
+      "origem": "candidato"
+    },
+    {
+      "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-initializer.js",
+      "url_final": "https://legis.senado.leg.br/dadosabertos/docs/swagger-initializer.js",
+      "status": 404,
+      "ok": false,
+      "desafio_antirrobo": false,
+      "content_type": "application/problem+xml",
+      "bytes": 240,
+      "amostra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><problem><detail>No static resource dadosabertos/docs/swagger-initializer.js.</detail><instance>/dadosabertos/docs/swagger-initializer.js</instance><status>404</status><title>Not Found</title></problem>",
       "origem": "candidato"
     }
   ]
