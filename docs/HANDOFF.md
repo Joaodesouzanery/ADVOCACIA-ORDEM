@@ -11,7 +11,7 @@
 |------|-------|--------|
 | GitHub | código, docs, Actions (`tests`, `ingestao`) | ativo |
 | Repo `data/` | corpus público: `corpus.csv`, `corpus.xlsx`, relatório (gerados pelo workflow) | ativo após 1ª execução |
-| GitHub Secrets | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `DATAJUD_API_KEY` | a configurar |
+| GitHub Secrets (Settings → Secrets and variables → Actions) | `SUPABASE_URL` = https://kefkgydvjjakqaonyjau.supabase.co; `SUPABASE_SERVICE_ROLE_KEY` (Supabase → TAF → Settings → API); `DATAJUD_API_KEY` (só M3) | a configurar pelo usuário |
 | Supabase | Postgres + pgvector (substitui o SQLite local; opcional por ora) | futuro |
 | Vercel/Supabase Edge | MCP remoto (M4) | futuro |
 

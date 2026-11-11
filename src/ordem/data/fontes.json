@@ -1,0 +1,44 @@
+{
+  "_nota": "Registro das fontes de dados abertos. 'sondar' = URLs consultadas pela sondagem (1 requisição leve cada). Entradas 'candidato' são palpites de endpoint a validar: NÃO são fatos até a sondagem real retornar 200 no GitHub Actions. 'chave_env' = variável de ambiente exigida (nunca o valor).",
+  "fontes": [
+    {"id": "senado", "nome": "Senado – Dados Abertos (legislação)", "marco": "M1", "tipo": "legislacao",
+     "sondar": [
+       {"url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao", "origem": "usuario"},
+       {"url": "https://legis.senado.leg.br/dadosabertos/docs/", "origem": "candidato"}
+     ]},
+    {"id": "lexml", "nome": "LexML Brasil (URN e texto de normas)", "marco": "M1", "tipo": "legislacao",
+     "sondar": [
+       {"url": "https://www.lexml.gov.br/busca/SRU?operation=searchRetrieve&version=1.1&query=urn%20exact%20%22urn:lex:br:federal:lei:2002-01-10;10406%22&maximumRecords=1", "origem": "candidato"}
+     ]},
+    {"id": "camara", "nome": "Câmara – Dados Abertos", "marco": "M3", "tipo": "legislacao",
+     "sondar": [
+       {"url": "https://dadosabertos.camara.leg.br/api/v2/referencias/proposicoes/siglaTipo", "origem": "candidato"}
+     ]},
+    {"id": "stj", "nome": "STJ – Dados Abertos (CKAN)", "marco": "M2", "tipo": "jurisprudencia",
+     "sondar": [
+       {"url": "https://dadosabertos.web.stj.jus.br/", "origem": "usuario"},
+       {"url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_list", "origem": "candidato"},
+       {"url": "https://dadosabertos.web.stj.jus.br/group/jurisprudencia", "origem": "usuario"},
+       {"url": "https://dadosabertos.web.stj.jus.br/group/dje", "origem": "usuario"},
+       {"url": "https://dadosabertos.web.stj.jus.br/group/precedentes", "origem": "usuario"},
+       {"url": "https://scon.stj.jus.br/SCON/sumstj/", "origem": "usuario"}
+     ]},
+    {"id": "datajud", "nome": "DataJud – API pública do CNJ", "marco": "M3", "tipo": "processos",
+     "chave_env": "DATAJUD_API_KEY",
+     "sondar": [
+       {"url": "https://dadosabertos.web.stj.jus.br/dataset/api-publica-datajud", "origem": "usuario"}
+     ]},
+    {"id": "cnj", "nome": "CNJ – Justiça em Números (base de dados)", "marco": "M3", "tipo": "estatistica",
+     "sondar": [
+       {"url": "https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/", "origem": "usuario"}
+     ]},
+    {"id": "tjrs", "nome": "TJRS – API de dados abertos", "marco": "M4", "tipo": "jurisprudencia",
+     "sondar": [
+       {"url": "https://www.tjrs.jus.br/novo/api-de-dados-abertos/", "origem": "usuario"}
+     ]},
+    {"id": "tjdft", "nome": "TJDFT – Dados abertos", "marco": "M4", "tipo": "jurisprudencia",
+     "sondar": [
+       {"url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos", "origem": "usuario"}
+     ]}
+  ]
+}

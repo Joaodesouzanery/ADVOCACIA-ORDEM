@@ -30,7 +30,20 @@ def main(argv: list[str] | None = None) -> int:
     bu.add_argument("-n", type=int, default=10)
     ex = sub.add_parser("exportar", help="gera data/corpus.csv (e .xlsx)")
     ex.add_argument("--xlsx", action="store_true")
+    so = sub.add_parser("sondar", help="1 requisição leve por fonte; grava data/sondagem/*.json (requer rede)")
+    so.add_argument("fontes", nargs="*")
     a = p.parse_args(argv)
+
+    if a.cmd == "sondar":
+        from .connectors.http import obter
+        from .sondagem import sondar
+        from .storage import diretorio_dados
+
+        resumo = sondar(obter, diretorio_dados() / "sondagem", ids=a.fontes or None)
+        for fid, rs in resumo["fontes"].items():
+            for r in rs:
+                print(f"{fid}: {'OK ' if r['ok'] else 'FALHA'} {r['status'] or r['erro']}  {r['url']}")
+        return 0
 
     if a.cmd in ("ingerir", "exportar"):
         return _ingerir_exportar(a)

@@ -14,9 +14,11 @@
 - `ordem ingerir|buscar|exportar`; workflow `.github/workflows/ingestao.yml` (manual + semanal) commita `data/corpus.csv`, `data/corpus.xlsx`, `data/ingestao_relatorio.json`.
 - MCP: `artigos_para_pedido` anexa texto oficial (ou `[PENDENTE]`); nova ferramenta `buscar_dispositivo`.
 
+## Fontes de dados abertos — estado (11/11/2026)
+Sandbox não alcança nenhuma fonte (403 do proxy). Por isso: conectores com parsing puro + **sondagem** (`ordem sondar`, workflow `sondagem.yml`) que roda no GitHub e commita `data/sondagem/*.json` (status, formato, amostra). Feito: `connectors/http.py`, `connectors/ckan.py` (STJ), `connectors/lexml.py` (URN), `data/fontes.json`. Ainda NÃO baixa texto do Senado/LexML/STJ: o formato real só é conhecido após a 1ª sondagem.
+
 ## Próxima tarefa (atualizar a cada sessão)
-1. **Caminho escolhido: dados abertos oficiais com API** (Senado/LexML) em vez de raspar o Planalto. Próximo passo: conector Senado, validado por uma execução no Actions.
-   **Planalto recusa os servidores do GitHub Actions** (1ª execução em 09/11/2026: "Server disconnected" em todas as normas). Não contornar o bloqueio. Opções: (a) rodar `ordem ingerir --xlsx` num computador local e commitar `data/corpus.csv`; (b) fonte oficial com API aberta (LexML / Senado dados abertos); (c) pedir acesso ao Planalto.
-2. Supabase: projeto **TAF** (`kefkgydvjjakqaonyjau`) reaproveitado e reativado. Migration `0002_corpus_dispositivo.sql` **aplicada** (09/11/2026). As 16 tabelas antigas do TAF ficam (decisão do usuário: não apagar). Teste de busca via SQL ficou aguardando aprovação; se existir linha com `norma_id='teste'`, apagar. Renomear o projeto no painel.
-3. Usuário: cadastrar secrets `SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY` no GitHub (Settings → Secrets and variables → Actions).
-4. Pendências: ADCT da CF; conector Senado; embeddings; M2 (STJ).
+1. Ler `data/sondagem/resumo.json` (gerado pelo workflow `sondagem` após o push). Para cada fonte com `ok=true`, olhar a amostra e escrever o parser real (Senado/LexML texto por artigo → `ingest`; STJ CKAN `package_list`/`package_show` → súmulas/precedentes). Fonte com falha: registrar em `FONTES.md`, tentar rota oficial alternativa; não contornar bloqueio.
+2. Planalto recusa o GitHub Actions: manter só como link de conferência (ou rodar `ordem ingerir --xlsx` localmente).
+3. Supabase TAF: migration 0002 aplicada; 16 tabelas antigas ficam. Falta: secrets `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` no GitHub; renomear projeto; merge do PR #1.
+4. Pendências: ADCT da CF; embeddings; DataJud (secret `DATAJUD_API_KEY`); M2 STJ; M3; M4.

@@ -22,3 +22,6 @@ Status: `não verificado` = URL fornecida pelo usuário, ainda não testada (o s
 ## Lacunas a cobrir
 - STF, TST e atos normativos do CNJ (resoluções/instruções): fontes ainda não listadas — mapear no M4.
 - Calendário de feriados/suspensões por tribunal (para o motor de prazos).
+
+## Sondagem
+Resultados reais em `data/sondagem/` (workflow `sondagem`). Uma fonte só passa de `não verificado` para verificada após resposta 200 com formato conferido por pessoa. Candidatos de endpoint em `src/ordem/data/fontes.json` (origem `candidato`) são palpites, não fatos.
