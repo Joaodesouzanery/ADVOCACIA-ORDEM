@@ -1,0 +1,123 @@
+{
+  "executado_em": "2026-11-11T23:00:53+00:00",
+  "fontes": {
+    "senado": [
+      {
+        "url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://legis.senado.leg.br/dadosabertos/docs/",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-initializer.js",
+        "ok": false,
+        "status": 404,
+        "erro": null
+      }
+    ],
+    "lexml": [
+      {
+        "url": "https://www.lexml.gov.br/busca/SRU?operation=searchRetrieve&version=1.1&query=urn%20exact%20%22urn:lex:br:federal:lei:2002-01-10;10406%22&maximumRecords=1",
+        "ok": false,
+        "status": 200,
+        "erro": null
+      }
+    ],
+    "camara": [
+      {
+        "url": "https://dadosabertos.camara.leg.br/api/v2/referencias/proposicoes/siglaTipo",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      }
+    ],
+    "stj": [
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_list",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/group/jurisprudencia",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/group/dje",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/group/precedentes",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://scon.stj.jus.br/SCON/sumstj/",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=precedentes-qualificados",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      },
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=espelhos-de-acordaos-terceira-turma",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      }
+    ],
+    "datajud": [
+      {
+        "url": "https://dadosabertos.web.stj.jus.br/dataset/api-publica-datajud",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      }
+    ],
+    "cnj": [
+      {
+        "url": "https://www.cnj.jus.br/pesquisas-judiciarias/justica-em-numeros/base-de-dados/",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      }
+    ],
+    "tjrs": [
+      {
+        "url": "https://www.tjrs.jus.br/novo/api-de-dados-abertos/",
+        "ok": false,
+        "status": null,
+        "erro": "ConnectTimeout: timed out"
+      }
+    ],
+    "tjdft": [
+      {
+        "url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos",
+        "ok": true,
+        "status": 200,
+        "erro": null
+      }
+    ]
+  }
+}

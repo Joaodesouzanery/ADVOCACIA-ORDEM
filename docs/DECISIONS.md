@@ -7,3 +7,4 @@
 5. **Curadoria marcada como não verificada.** O mapa pedido→artigos foi escrito de memória; só vira "verificado" após ingestão do texto oficial + revisão de advogado.
 6. **Ingestão fora do sandbox.** O ambiente de desenvolvimento em nuvem não acessa as fontes; usar GitHub Actions/local.
 7. **Dados de clientes separados do corpus público** (RLS, nada no repo).
+8. **SQLite + CSV/XLSX antes do Supabase.** Corpus é público: `data/corpus.csv` (versionado, gerado pelo GitHub Actions) é a fonte; `data/corpus.sqlite` é reconstruído localmente com busca FTS5. Excel para o escritório conferir. Interface `storage.Repositorio` permite trocar por Supabase sem mexer em conectores/MCP.

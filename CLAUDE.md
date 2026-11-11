@@ -13,7 +13,7 @@ Fluxo do escritório: cliente envia fatos+documentos → checklist → rascunho 
 5. Ferramenta de apoio; não substitui advogado inscrito na OAB (`docs/AVISO_JURIDICO.md`).
 
 ## Estado atual
-Ver `docs/ROADMAP.md` (fonte de verdade do progresso) e `docs/DECISIONS.md`. Marco atual: **M0 concluído** (scaffolding + motor de prazos + MCP com curadoria de Família). Próximo: **M1** (ingestão real Planalto/Senado → Supabase + busca híbrida).
+Ver `docs/ROADMAP.md` (fonte de verdade do progresso) e `docs/DECISIONS.md`. Marco atual: **M1 em andamento** — corpus em SQLite/CSV/XLSX (`data/`), ingestão Planalto via GitHub Actions (`ingestao.yml`). Supabase fica para depois.
 
 ## Stack e decisões
 Python 3.11+, Supabase (Postgres + pgvector), MCP (`mcp>=2`, classe `MCPServer`). MVP: Direito de Família (guarda, alimentos, divórcio).
@@ -24,6 +24,7 @@ pip install -e ".[dev,mcp]"
 pytest
 ordem prazo contestacao 2026-03-02
 ordem pedido guarda
+ordem buscar "guarda compartilhada"   # requer data/corpus.csv
 python -m ordem.mcp_server.server        # servidor MCP (stdio)
 ```
 Conectar ao Claude Code: `claude mcp add ordem -- python -m ordem.mcp_server.server`.
@@ -33,11 +34,15 @@ Conectar ao Claude Code: `claude mcp add ordem -- python -m ordem.mcp_server.ser
 - `src/ordem/data/*.json` regras de prazo e mapa curado pedido→fundamentos (**verificar=true**)
 - `src/ordem/connectors/` conectores (base + parser Planalto); rede só no `fetch()`
 - `src/ordem/mcp_server/server.py` ferramentas MCP
-- `supabase/migrations/` schema
+- `src/ordem/storage/` repositório SQLite+FTS5 e export CSV/XLSX; `src/ordem/ingest.py` ingestão
+- `supabase/migrations/` schema (futuro)
 - `docs/FONTES.md` catálogo das fontes de dados abertos e status de verificação
 
 ## Ambiente de desenvolvimento
 O sandbox do Claude Code na nuvem **não alcança** os sites de dados abertos (proxy). Ingestão real roda em GitHub Actions/local. Testes usam fixtures offline (sintéticas).
+
+## Continuidade entre chats
+Ver `docs/HANDOFF.md`. Ao fim de cada sessão: atualizar "Próxima tarefa" no ROADMAP, commit e push.
 
 ## Convenções
 Português nos domínios jurídicos; commits curtos e descritivos; atualizar `docs/ROADMAP.md` a cada marco.
