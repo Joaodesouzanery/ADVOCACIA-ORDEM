@@ -1,0 +1,17 @@
+{
+  "fonte": "datajud",
+  "nome": "DataJud – API pública do CNJ",
+  "executado_em": "2026-11-11T22:56:40+00:00",
+  "resultados": [
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/dataset/api-publica-datajud",
+      "url_final": "https://dadosabertos.web.stj.jus.br/dataset/api-publica-datajud",
+      "status": 200,
+      "ok": true,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 39028,
+      "amostra": "<!DOCTYPE html>\n<!--[if IE 9]> <html lang=\"pt_BR\" class=\"ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html lang=\"pt_BR\"  > <!--<![endif]-->\n  <head>\n    <meta charset=\"utf-8\" />\n      <meta name=\"generator\" content=\"ckan 2.10.3\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <!-- Google Tag Manager -->\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-NJW3NDC');</script>\n    <!-- End Google Tag Manager -->\n    \n    <title>API Pública - DATAJUD - Conjunto de dados - Portal de Dados Abertos do STJ</title>\n\n    \n    <link rel=\"shortcut icon\" href=\"/base/images/ckan.ico\" />\n    \n  \n      \n      \n      \n    \n  \n\n    \n    \n      \n      \n    \n  \n  <meta property=\"og:title\" content=\"API Pública - DATAJUD - Portal de Dados Abertos do STJ\">\n  <meta property=\"og:description\" content=\"A API Pública do Datajud é uma ferramenta que permite o acesso público aos metadados de processos judiciais de todo o Brasil. Os dados disponibilizados pela API são originários da Base Nacional de...\">\n\n\n    \n    <script type=\"text/javascript\" src=\"/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\" data-dtconfig=\"rid=RID_896398432|rpid=1214754020|domain=stj.jus.br|reportUrl=/rb_bf38074tch|app=ea7c4b59f27d43eb|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=14pbrr80|mel=100000|expw=1|dpvc=1|lastModification=1794223898141|postfix=14pbrr80|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\"></script><link href=\"/webassets/base/b7ac027b_main.css\" rel=\"stylesheet\"/>\n<link href=\"/webassets/ckanext-activity/6ac15be0_activity.css\" rel=\"stylesheet\"/><style>\n        /* =====================================================\r\nThe \"account masthead\" bar across the top of the site\r\n=====",
+      "origem": "usuario"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fonte": "camara",
+  "nome": "Câmara – Dados Abertos",
+  "executado_em": "2026-11-11T22:56:40+00:00",
+  "resultados": [
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/referencias/proposicoes/siglaTipo",
+      "url_final": "https://dadosabertos.camara.leg.br/api/v2/referencias/proposicoes/siglaTipo",
+      "status": 200,
+      "ok": true,
+      "content_type": "application/json",
+      "bytes": 62073,
+      "amostra": "{\"dados\":[{\"cod\":\"27\",\"sigla\":\"OF\",\"nome\":\"Ofício do Congresso Nacional\",\"descricao\":\"\"},{\"cod\":\"129\",\"sigla\":\"CON\",\"nome\":\"Consulta\",\"descricao\":\"Consulta\"},{\"cod\":\"130\",\"sigla\":\"EMC\",\"nome\":\"Emenda na Comissão\",\"descricao\":\"Emenda Apresentada na Comissão\"},{\"cod\":\"131\",\"sigla\":\"EMP\",\"nome\":\"Emenda de Plenário\",\"descricao\":\"Emenda de Plenário\"},{\"cod\":\"132\",\"sigla\":\"EMS\",\"nome\":\"Emenda/Substitutivo do Senado\",\"descricao\":\"Emenda/Substitutivo do Senado\"},{\"cod\":\"133\",\"sigla\":\"INC\",\"nome\":\"Indicação \",\"descricao\":\"Indicação\"},{\"cod\":\"134\",\"sigla\":\"MSC\",\"nome\":\"Mensagem\",\"descricao\":\"Mensagem\"},{\"cod\":\"135\",\"sigla\":\"PDC\",\"nome\":\"Projeto de Decreto Legislativo\",\"descricao\":\"Projeto de Decreto Legislativo\"},{\"cod\":\"136\",\"sigla\":\"PEC\",\"nome\":\"Proposta de Emenda à Constituição\",\"descricao\":\"Proposta de Emenda à Constituição (Art. 60 CF c/c art. 201 a 203, RICD)\"},{\"cod\":\"137\",\"sigla\":\"PET\",\"nome\":\"Petição\",\"descricao\":\"Petição\"},{\"cod\":\"138\",\"sigla\":\"PFC\",\"nome\":\"Proposta de Fiscalização e Controle\",\"descricao\":\"Proposta de Fiscalização e Controle\"},{\"cod\":\"139\",\"sigla\":\"PL\",\"nome\":\"Projeto de Lei\",\"descricao\":\"Projeto de Lei\"},{\"cod\":\"140\",\"sigla\":\"PLP\",\"nome\":\"Projeto de Lei Complementar\",\"descricao\":\"Projeto de Lei Complementar (Art. 61 CF)\"},{\"cod\":\"141\",\"sigla\":\"PRC\",\"nome\":\"Projeto de Resolução\",\"descricao\":\"Projeto de Resolução\"},{\"cod\":\"142\",\"sigla\":\"PRN\",\"nome\":\"Projeto de Resolução do Congresso Nacional\",\"descricao\":\"Projeto de Resolução (CN)\"},{\"cod\":\"143\",\"sigla\":\"RCP\",\"nome\":\"Requerimento de Instituição de CPI\",\"descricao\":\"Requerimento de Instituição de Comissão Parlamentar de Inquérito\"},{\"cod\":\"144\",\"sigla\":\"REC\",\"nome\":\"Recurso\",\"descricao\":\"Recurso\"},{\"cod\":\"145\",\"sigla\":\"REM\",\"nome\":\"Reclamação\",\"descricao\":\"Reclamação\"},{\"cod\":\"146\",\"sigla\":\"REP\",\"nome\":\"Representação\",\"descricao\":\"Representação\"},{\"cod\":\"147\",\"sigla\":\"REQ\",\"nome\":\"Requerimento\",\"descricao\":\"\"},{\"cod\":\"148\",\"sigla\":\"RIC\",\"nome\":\"Requerimento de Informação\",\"descricao\":\"Requerimento de Informação (Art. 116, RICD)\"},{\"cod\":\"150\",\"sigl",
+      "origem": "candidato"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fonte": "tjdft",
+  "nome": "TJDFT – Dados abertos",
+  "executado_em": "2026-11-11T22:56:40+00:00",
+  "resultados": [
+    {
+      "url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos",
+      "url_final": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos",
+      "status": 200,
+      "ok": true,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 178177,
+      "amostra": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" class=\"h-100\" lang=\"pt-br\" xml:lang=\"pt-br\">\n\n  <head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <title>Dados Abertos — Tribunal de Justiça do Distrito Federal e dos Territórios</title>\n  <meta charset=\"utf-8\" /><meta name=\"twitter:card\" content=\"summary\" /><meta property=\"og:site_name\" content=\"Tribunal de Justiça do Distrito Federal e dos Territórios\" /><meta property=\"og:title\" content=\"Dados Abertos\" /><meta property=\"og:type\" content=\"website\" /><meta name=\"twitter:site\" content=\"@TJDFToficial\" /><meta property=\"og:article:publisher\" content=\"https://www.facebook.com/TJDFToficial\" /><meta property=\"og:description\" content=\"\" /><meta property=\"og:url\" content=\"https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos\" /><meta property=\"og:image\" content=\"https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos/icones/csv.png/@@images/image-300-45ab9122474fcbf515a186670d848ae1.png\" /><meta property=\"og:image:type\" content=\"image/png\" /><meta property=\"og:image:width\" content=\"30\" /><meta property=\"og:image:height\" content=\"30\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"generator\" content=\"Plone - https://plone.org/\" /><link rel=\"canonical\" href=\"https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos\" /><link rel=\"icon\" type=\"image/vnd.microsoft.icon\" href=\"https://www.tjdft.jus.br/favicon.ico\" /><link href=\"https://www.tjdft.jus.br/@@search\" rel=\"search\" title=\"Buscar neste site\" /><link data-bundle=\"plone-fullscreen\" href=\"https://www.tjdft.jus.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css\" media=\"all\" rel=\"stylesheet\" type=\"text/css\" /><link data-bundle=\"diazo\" href=\"https://www.tjdft.jus.br/++webresource++83e3a625-ee0f-543b-b940-618e5acbe65d/++theme++tema-tjdft/sass/tjdft.min.css\" media=\"all\" rel=\"stylesheet\" type=\"t",
+      "origem": "usuario"
+    }
+  ]
+}

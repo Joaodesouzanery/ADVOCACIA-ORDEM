@@ -1,0 +1,13 @@
+{
+  "fonte": "tjrs",
+  "nome": "TJRS – API de dados abertos",
+  "executado_em": "2026-11-11T22:56:40+00:00",
+  "resultados": [
+    {
+      "url": "https://www.tjrs.jus.br/novo/api-de-dados-abertos/",
+      "ok": false,
+      "erro": "ConnectTimeout: timed out",
+      "origem": "usuario"
+    }
+  ]
+}
