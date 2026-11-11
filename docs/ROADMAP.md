@@ -18,6 +18,7 @@
 Sandbox não alcança nenhuma fonte (403 do proxy). Por isso: conectores com parsing puro + **sondagem** (`ordem sondar`, workflow `sondagem.yml`) que roda no GitHub e commita `data/sondagem/*.json` (status, formato, amostra). Feito: `connectors/http.py`, `connectors/ckan.py` (STJ), `connectors/lexml.py` (URN), `data/fontes.json`. Ainda NÃO baixa texto do Senado/LexML/STJ: o formato real só é conhecido após a 1ª sondagem.
 
 ## Próxima tarefa (atualizar a cada sessão)
+0. 1ª sondagem feita (ver FONTES.md). Próximo: spec OpenAPI do Senado (swagger-initializer.js), `package_show` do STJ (precedentes-qualificados, espelhos de acórdãos) → escrever parsers. LexML descartado (anti-robô).
 1. Ler `data/sondagem/resumo.json` (gerado pelo workflow `sondagem` após o push). Para cada fonte com `ok=true`, olhar a amostra e escrever o parser real (Senado/LexML texto por artigo → `ingest`; STJ CKAN `package_list`/`package_show` → súmulas/precedentes). Fonte com falha: registrar em `FONTES.md`, tentar rota oficial alternativa; não contornar bloqueio.
 2. Planalto recusa o GitHub Actions: manter só como link de conferência (ou rodar `ordem ingerir --xlsx` localmente).
 3. Supabase TAF: migration 0002 aplicada; 16 tabelas antigas ficam. Falta: secrets `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` no GitHub; renomear projeto; merge do PR #1.

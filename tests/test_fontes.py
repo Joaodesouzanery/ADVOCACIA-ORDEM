@@ -51,3 +51,10 @@ def test_urns_do_catalogo_seguem_o_padrao():
     assert "searchRetrieve" in url_busca_sru("urn:lex:br:federal:lei:2002-01-10;10406")
     with pytest.raises(ValueError):
         url_busca_sru("qualquer coisa")
+
+
+def test_sondagem_detecta_pagina_de_desafio(tmp_path):
+    html = b"<title>Verifica\xc3\xa7\xc3\xa3o de seguran\xc3\xa7a \xe2\x80\x94 Senado Federal</title>"
+    resumo = sondar(lambda u: Resposta(u, 200, "text/html", html), tmp_path, ids=["lexml"])
+    assert resumo["fontes"]["lexml"][0]["ok"] is False
+    assert json.loads((tmp_path / "lexml.json").read_text())["resultados"][0]["desafio_antirrobo"] is True

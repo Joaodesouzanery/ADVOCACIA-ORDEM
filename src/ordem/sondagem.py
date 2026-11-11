@@ -28,14 +28,17 @@ def sondar_url(url: str, obter: Callable) -> dict:
         r = obter(url)
     except Exception as e:  # noqa: BLE001 - registrar e seguir
         return {"url": url, "ok": False, "erro": f"{type(e).__name__}: {e}"}
+    texto = r.texto()
+    desafio = "html" in r.content_type.lower() and "verificação de segurança" in texto[:4000].lower()
     return {
         "url": url,
         "url_final": r.url,
         "status": r.status,
-        "ok": 200 <= r.status < 300,
+        "ok": 200 <= r.status < 300 and not desafio,
+        "desafio_antirrobo": desafio,  # página de verificação: NÃO contornar
         "content_type": r.content_type,
         "bytes": len(r.conteudo),
-        "amostra": r.texto()[:AMOSTRA_BYTES],
+        "amostra": texto[:AMOSTRA_BYTES],
     }
 
 
