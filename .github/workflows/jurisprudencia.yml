@@ -1,0 +1,39 @@
+name: jurisprudencia
+on:
+  push:
+    paths:
+      - "src/ordem/connectors/stj.py"
+      - "src/ordem/storage/jurisprudencia.py"
+      - ".github/workflows/jurisprudencia.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "43 5 3 * *"  # dia 3 de cada mês (STJ publica arquivos mensais)
+permissions:
+  contents: write
+concurrency:
+  group: jurisprudencia
+  cancel-in-progress: false
+jobs:
+  ingerir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[ingest]"
+      - name: Ingerir STJ (espelhos de Família + precedentes)
+        run: ordem ingerir-stj
+      - name: Relatório
+        if: always()
+        run: cat data/jurisprudencia_relatorio.json || true
+      - name: Commit do CSV filtrado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jurisprudencia.csv data/jurisprudencia_relatorio.json
+          git diff --cached --quiet && echo "sem mudanças" && exit 0
+          git commit -m "Ingestão STJ ($(date -u +%F))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

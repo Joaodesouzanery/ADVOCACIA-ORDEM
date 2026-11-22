@@ -29,6 +29,11 @@ def tool_buscar_dispositivo(consulta: str, limite: int = 10, norma: str | None =
     return knowledge.buscar_dispositivo(consulta, limite=limite, norma=norma)
 
 
+def tool_buscar_jurisprudencia(consulta: str, limite: int = 5, tipo: str | None = None) -> dict:
+    """Busca acórdãos e precedentes do STJ (Família) ingeridos. tipo opcional: 'acordao' ou 'precedente'."""
+    return knowledge.buscar_jurisprudencia(consulta, limite=limite, tipo=tipo)
+
+
 def tool_checklist_documentos(tipo_pedido: str) -> dict:
     """Documentos e perguntas a pedir ao cliente para o pedido informado."""
     return knowledge.checklist_documentos(tipo_pedido)
@@ -67,6 +72,7 @@ def tool_rascunho_peticao_inicial(tipo_pedido: str, caso: dict) -> dict:
 TOOLS = [
     tool_artigos_para_pedido,
     tool_buscar_dispositivo,
+    tool_buscar_jurisprudencia,
     tool_checklist_documentos,
     tool_listar_regras_prazo,
     tool_calcular_prazo,

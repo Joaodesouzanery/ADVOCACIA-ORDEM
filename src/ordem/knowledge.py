@@ -122,6 +122,29 @@ def buscar_dispositivo(consulta: str, limite: int = 10, norma: str | None = None
     }
 
 
+PENDENTE_JURISPRUDENCIA = "[PENDENTE] julgados ainda não ingeridos (rodar o workflow 'jurisprudencia')"
+
+
+def buscar_jurisprudencia(consulta: str, limite: int = 5, tipo: str | None = None) -> dict:
+    """Busca em acórdãos/precedentes do STJ já ingeridos (só Família). Nunca inventa julgado."""
+    from .storage.jurisprudencia import abrir_jurisprudencia
+
+    repo = abrir_jurisprudencia()
+    if repo is None:
+        return {"erro": PENDENTE_JURISPRUDENCIA, "resultados": []}
+    return {
+        "consulta": consulta,
+        "status": "Ementas coletadas dos dados abertos do STJ; NÃO revisadas por advogado(a). "
+                  "Conferir o inteiro teor no SCON antes de citar.",
+        "resultados": [
+            {"tipo": j.tipo, "tribunal": j.tribunal, "orgao": j.orgao, "processo": j.processo,
+             "relator": j.relator, "data": j.data, "ementa": j.ementa, "temas": j.temas.split(";"),
+             "url_oficial": j.url_oficial, "coletado_em": j.coletado_em}
+            for j in repo.buscar(consulta, limite=limite, tipo=tipo)
+        ],
+    }
+
+
 def listar_pedidos() -> list[str]:
     return sorted(_pedidos())
 

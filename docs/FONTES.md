@@ -30,3 +30,7 @@ Resultados reais em `data/sondagem/` (workflow `sondagem`). Uma fonte só passa 
 - **Câmara** `api/v2/...`: 200 JSON. **STJ CKAN** `api/3/action/package_list`: 200 JSON (CKAN 2.10; há `precedentes-qualificados`, `espelhos-de-acordaos-*`, `integras-de-decisoes-*`; súmulas não aparecem como conjunto: conferir no SCON). **Senado**: portal 200; Swagger em `legis.senado.leg.br/dadosabertos/docs/` (spec a localizar). **CNJ, TJDFT, DataJud (página STJ)**: páginas 200 (HTML).
 - **LexML**: 200, mas é página de verificação anti-robô, sem dados → não usar.
 - **TJRS**: timeout de conexão (tentar de novo).
+
+### Sondagem 2 (22/11/2026)
+- **STJ CKAN verificado**: espelhos (`espelhos-de-acordaos-*`: ZIP histórico + JSON mensal; campos id, numeroProcesso, numeroRegistro, siglaClasse, nomeOrgaoJulgador, ministroRelator, dataPublicacao, ementa, dataDecisao…) e `precedentes-qualificados` (Temas.csv/Processos.csv, ligados por sequencialPrecedente; arquivos duplicados). Licença CC-BY. Súmulas: sem conjunto no CKAN.
+- **Senado**: spec OpenAPI em `legis.senado.leg.br/dadosabertos/v3/api-docs` (200, JSON). Caminhos listados na sondagem 3.

@@ -32,7 +32,36 @@ def main(argv: list[str] | None = None) -> int:
     ex.add_argument("--xlsx", action="store_true")
     so = sub.add_parser("sondar", help="1 requisição leve por fonte; grava data/sondagem/*.json (requer rede)")
     so.add_argument("fontes", nargs="*")
+    js = sub.add_parser("ingerir-stj", help="STJ: espelhos de Família + precedentes (requer rede)")
+    js.add_argument("--sem-precedentes", action="store_true")
+    bj = sub.add_parser("buscar-jurisprudencia", help="busca nos julgados ingeridos")
+    bj.add_argument("consulta")
+    bj.add_argument("-n", type=int, default=5)
     a = p.parse_args(argv)
+
+    if a.cmd == "ingerir-stj":
+        from .connectors.http import obter
+        from .connectors.stj import ingerir_stj
+        from .storage import diretorio_dados
+        from .storage.jurisprudencia import RepositorioJurisprudencia, abrir_jurisprudencia, caminho_csv_julgados
+
+        repo = abrir_jurisprudencia() or RepositorioJurisprudencia(diretorio_dados() / "jurisprudencia.sqlite")
+        rel = ingerir_stj(repo, obter, incluir_precedentes=not a.sem_precedentes)
+        (diretorio_dados() / "jurisprudencia_relatorio.json").write_text(
+            json.dumps(rel, ensure_ascii=False, indent=2), "utf-8")
+        for nome, r in rel["recursos"].items():
+            print(f"{nome}: {r['status']} {r.get('gravados', r.get('erro', ''))}")
+        print(f"CSV: {repo.exportar_csv(caminho_csv_julgados())} julgados; {repo.contagem()}")
+        return 0 if any(r["status"] == "ok" for r in rel["recursos"].values()) else 2
+    if a.cmd == "buscar-jurisprudencia":
+        res = knowledge.buscar_jurisprudencia(a.consulta, limite=a.n)
+        if res.get("erro"):
+            print(res["erro"])
+            return 1
+        for r in res["resultados"]:
+            print(f"== {r['tribunal']} {r['tipo']} {r['processo']} ({r['orgao']}, {r['data']}) {r['url_oficial']}")
+            print(r["ementa"][:500])
+        return 0
 
     if a.cmd == "sondar":
         from .connectors.http import obter

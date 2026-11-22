@@ -7,3 +7,4 @@ __pycache__/
 data/raw/
 data/corpus.sqlite
 data/corpus.sqlite-journal
+data/jurisprudencia.sqlite
