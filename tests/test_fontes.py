@@ -98,5 +98,17 @@ def test_sondagem_openapi_guarda_so_os_caminhos():
                       "/x": {"post": {"operationId": "op"}, "parameters": []}}}
     r = sondar_openapi("u", lambda u: Resposta(u, 200, "application/json", json.dumps(spec).encode()))
     assert r["ok"] and r["num_caminhos"] == 2
-    assert r["caminhos"][0] == {"caminho": "/legislacao/lista", "metodos": ["get"], "resumo": "Lista normas"}
+    assert r["caminhos"][0] == {"caminho": "/legislacao/lista", "metodos": ["get"], "parametros": [],
+                                "produz": [], "resumo": "Lista normas"}
     assert sondar_openapi("u", lambda u: Resposta(u, 200, "text/html", b"<html>"))["ok"] is False
+
+
+def test_openapi_guarda_parametros_e_tipo_de_resposta():
+    from ordem.sondagem import sondar_openapi
+
+    spec = {"paths": {"/legislacao/urn": {"get": {"summary": "Por URN",
+            "parameters": [{"name": "urn", "in": "query", "required": True}],
+            "responses": {"200": {"content": {"application/json": {}, "application/xml": {}}}}}}}}
+    c = sondar_openapi("u", lambda u: Resposta(u, 200, "application/json", json.dumps(spec).encode()))["caminhos"][0]
+    assert c["parametros"] == [{"nome": "urn", "em": "query", "obrigatorio": True}]
+    assert c["produz"] == ["application/json", "application/xml"]
