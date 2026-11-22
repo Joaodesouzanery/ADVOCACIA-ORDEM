@@ -1,5 +1,5 @@
 {
-  "executado_em": "2026-11-22T20:39:10+00:00",
+  "executado_em": "2026-11-22T20:43:34+00:00",
   "fontes": {
     "senado": [
       {
@@ -27,7 +27,7 @@
         "erro": null
       },
       {
-        "url": "https://legis.senado.leg.br/dadosabertos/legislacao/tiposNorma",
+        "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:1968-07-25;5478",
         "ok": true,
         "status": 200,
         "erro": null

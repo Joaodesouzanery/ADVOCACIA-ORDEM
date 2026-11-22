@@ -1,7 +1,7 @@
 {
   "fonte": "senado",
   "nome": "Senado – Dados Abertos (legislação)",
-  "executado_em": "2026-11-22T20:39:10+00:00",
+  "executado_em": "2026-11-22T20:43:34+00:00",
   "resultados": [
     {
       "url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
@@ -4006,26 +4006,156 @@
     },
     {
       "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:2002-01-10;10406",
-      "url_final": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:2002-01-10;10406",
-      "status": 200,
       "ok": true,
-      "desafio_antirrobo": false,
-      "content_type": "application/json",
+      "status": 200,
       "bytes": 204686,
-      "magic_hex": "7b224465",
-      "amostra": "{\"DetalheDocumento\":{\"noNamespaceSchemaLocation\":\"https://legis.senado.leg.br/dadosabertos/dados/DetalheDocumentov3.xsd\",\"Metadados\":{\"Versao\":\"22/11/2026 17:06:57\",\"VersaoServico\":\"3\",\"DataVersaoServico\":\"2017-02-01\",\"DescricaoDataSet\":\"Obtém detalhes de uma Norma Jurídica por meio da sua URN.\"},\"documentos\":{\"documento\":[{\"id\":\"552282\",\"identificacao\":{\"tipo\":\"LEI-n\",\"descricao\":\"Lei Numerada\",\"numero\":\"10406\",\"norma\":\"LEI-10406-2002-01-10\",\"normaNome\":\"Lei nº 10.406 de 10/01/2002\",\"dataassinatura\":\"10/01/2002\",\"apelido\":\"LEI-10406-2002-01-10 , Código Civil (2002) (CC)\",\"urlDocumento\":\"https://normas.leg.br/?urn=urn:lex:br:federal:lei:2002-01-10;10406\"},\"publicacoes\":{\"publicacao\":[{\"id\":\"14351563\",\"tipo\":\"PUB\",\"fonte\":\"Diário Oficial da União  de 11/01/2002\",\"siglaFonte\":\"DOU-2002-01-11\",\"data\":\"11/01/2002\",\"pagina\":\"1\",\"coluna\":\"1\",\"urlPubOficial\":\"https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=1&data=11/01/2002\",\"dispositivo\":\"Publicação Original   [Diário Oficial da União  de 11/01/2002] (p. 1, col. 1)\",\"idBinario\":\"15676634\",\"mime\":\"application/vnd.openxmlformats-officedocument.wordprocessingml.document\",\"temTexto\":\"S\",\"dataAtualizacao\":\"2024-07-23T18:41:40Z\"},{\"id\":\"34609989\",\"tipo\":\"ATMVACD\",\"dispositivo\":\"Compilação Monovigente na CD  \",\"idBinario\":\"34620807\",\"mime\":\"application/msword\",\"temTexto\":\"S\",\"dataAtualizacao\":\"2024-12-26T16:09:48Z\"}]},\"vides\":{\"vide\":[{\"codnormaposterior\":\"553032\",\"datAssinatura\":\"24/10/2002\",\"nomeNormaPosterior\":\"Medida Provisória nº 75 de 24/10/2002\",\"pagina\":\"1\",\"coluna\":\"3\",\"urlPubOficial\":\"https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=1&pagina=1&data=25/10/2002\",\"edicao\":\"13841466\",\"tipoEdicao\":\"750\",\"datapub\":\"25/10/2002\",\"nomePub\":\"Publicação Original   [Diário Oficial da União  de 25/10/2002] (p. 1, col. 3)\",\"comentario\":\"Declaração de Alteração Provisória\",\"itens\":{\"item\":[{\"dispositivo\":\"Art. 374 \",\"comentario\":\"Revogação de Parte do Texto\"}]}},{\"codnormaposterior\":\"553090\",\"datAssinatura\":\"09/01/2003\",\"nomeNormaPoste",
+      "estrutura": {
+        "DetalheDocumento": {
+          "noNamespaceSchemaLocation": "str[69]:'https://legis.senado.leg.br/dadosabertos/dados/Det'",
+          "Metadados": {
+            "Versao": "str[19]:'22/11/2026 17:06:57'",
+            "VersaoServico": "str[1]:'3'",
+            "DataVersaoServico": "str[10]:'2017-02-01'",
+            "DescricaoDataSet": "str[57]:'Obtém detalhes de uma Norma Jurídica por meio da s'"
+          },
+          "documentos": {
+            "documento": {
+              "__lista__": 1,
+              "__item0__": {
+                "id": "str[6]:'552282'",
+                "identificacao": {
+                  "tipo": "str[5]:'LEI-n'",
+                  "descricao": "str[12]:'Lei Numerada'",
+                  "numero": "str[5]:'10406'",
+                  "norma": "str[20]:'LEI-10406-2002-01-10'",
+                  "normaNome": "str[27]:'Lei nº 10.406 de 10/01/2002'",
+                  "dataassinatura": "str[10]:'10/01/2002'",
+                  "apelido": "str[47]:'LEI-10406-2002-01-10 , Código Civil (2002) (CC)'",
+                  "urlDocumento": "str[66]:'https://normas.leg.br/?urn=urn:lex:br:federal:lei:'"
+                },
+                "publicacoes": {
+                  "publicacao": {
+                    "__lista__": 2,
+                    "__item0__": "..."
+                  }
+                },
+                "vides": {
+                  "vide": {
+                    "__lista__": 74,
+                    "__item0__": "..."
+                  }
+                },
+                "edivs": {
+                  "ediv": {
+                    "__lista__": 2,
+                    "__item0__": "..."
+                  }
+                },
+                "disps": {
+                  "disp": {
+                    "__lista__": 385,
+                    "__item0__": "..."
+                  }
+                },
+                "ementa": "str[24]:'Institui o Código Civil.'",
+                "observacao": "str[493]:'AUTOR: EXECUTIVO - PL. 634 DE 1975. \\n\\nAS ALTERAÇÕE'",
+                "catalogo": {
+                  "frase": {
+                    "__lista__": 1,
+                    "__item0__": "..."
+                  }
+                },
+                "indexacao": {
+                  "frase": {
+                    "__lista__": 1,
+                    "__item0__": "..."
+                  }
+                },
+                "classes": {
+                  "classe": "str[24]:'Jurídico / Direito Civil'"
+                },
+                "dataAtualizacao": "str[20]:'2024-07-01T10:10:48Z'"
+              }
+            }
+          }
+        }
+      },
       "origem": "candidato"
     },
     {
-      "url": "https://legis.senado.leg.br/dadosabertos/legislacao/tiposNorma",
-      "url_final": "https://legis.senado.leg.br/dadosabertos/dados/ListaTiposDocumento.json",
-      "status": 200,
+      "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:1968-07-25;5478",
       "ok": true,
-      "desafio_antirrobo": false,
-      "content_type": "application/json",
-      "bytes": 26457,
-      "magic_hex": "7b224c69",
-      "amostra": "{\"ListaTiposDocumento\":{\"noNamespaceSchemaLocation\":\"https://legis.senado.leg.br/dadosabertos/dados/ListaTiposDocumentov3.xsd\",\"Metadados\":{\"Versao\":\"20/11/2026 14:19:53\",\"VersaoServico\":\"3\",\"DataVersaoServico\":\"2017-02-01\",\"DescricaoDataSet\":\"Retorna a lista de Tipos de Norma.\"},\"TiposDocumento\":{\"TipoDocumento\":[{\"Codigo\":\"18\",\"Sigla\":\"ACD\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoDoPresidenteDaCamaraDosDeputados\",\"Descricao\":\"Ato do Presidente da Câmara dos Deputados\",\"Instanciavel\":\"1\",\"CodigoPai\":\"412\"},{\"Codigo\":\"36606984\",\"Sigla\":\"ACG\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoConjuntoDaSecretariaGeralDaMesaDoSenadoFederalEDaSecretariaGeralDaMesaDaCamaraDosDeputados\",\"Descricao\":\"Ato Conjunto da Secretaria-Geral da Mesa do Senado Federal e da Secretaria-Geral da Câmara dos Deputados\",\"Instanciavel\":\"1\",\"CodigoPai\":\"412\"},{\"Codigo\":\"34213542\",\"Sigla\":\"ACL\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoConjuntoDoPresidenteDoSenadoFederalEDoPresidenteDaCamaraDosDeputados\",\"Descricao\":\"Ato Conjunto do Presidente do Senado Federal e do Presidente da Câmara dos Deputados\",\"Instanciavel\":\"1\",\"CodigoPai\":\"412\"},{\"Codigo\":\"23\",\"Sigla\":\"ACP\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoComplementar\",\"Descricao\":\"Ato Complementar\",\"Instanciavel\":\"1\",\"CodigoPai\":\"412\"},{\"Codigo\":\"277\",\"Sigla\":\"ACR\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoDoComandoSupremoDaRevolucao\",\"Descricao\":\"Ato do Comando Supremo da Revolução\",\"Instanciavel\":\"1\",\"CodigoPai\":\"412\"},{\"Codigo\":\"32032587\",\"Sigla\":\"ACS\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoConjuntoDasMesasDaCamaraDosDeputadosEDoSenadoFederal\",\"Descricao\":\"Ato Conjunto das Mesas da Câmara dos Deputados e do Senado Federal\",\"Instanciavel\":\"1\",\"CodigoPai\":\"412\"},{\"Codigo\":\"267\",\"Sigla\":\"ACV\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoConvocatorio\",\"Descricao\":\"Ato Convocatório\",\"Instanciavel\":\"0\",\"CodigoPai\":\"412\"},{\"Codigo\":\"106\",\"Sigla\":\"ACV-n\",\"IRI\":\"http://www.lexml.gov.br/sigen#AtoConvocatorioNumerado\",\"Descricao\":\"Ato Convocatório Numerado\",\"Instanciavel\":\"1\",\"CodigoPai\":\"267\"},{\"Codigo\":\"430\",\"",
+      "status": 200,
+      "bytes": 4618,
+      "estrutura": {
+        "DetalheDocumento": {
+          "noNamespaceSchemaLocation": "str[69]:'https://legis.senado.leg.br/dadosabertos/dados/Det'",
+          "Metadados": {
+            "Versao": "str[19]:'22/11/2026 17:43:40'",
+            "VersaoServico": "str[1]:'3'",
+            "DataVersaoServico": "str[10]:'2017-02-01'",
+            "DescricaoDataSet": "str[57]:'Obtém detalhes de uma Norma Jurídica por meio da s'"
+          },
+          "documentos": {
+            "documento": {
+              "__lista__": 1,
+              "__item0__": {
+                "id": "str[6]:'547347'",
+                "identificacao": {
+                  "tipo": "str[5]:'LEI-n'",
+                  "descricao": "str[12]:'Lei Numerada'",
+                  "numero": "str[4]:'5478'",
+                  "norma": "str[19]:'LEI-5478-1968-07-25'",
+                  "normaNome": "str[26]:'Lei nº 5.478 de 25/07/1968'",
+                  "dataassinatura": "str[10]:'25/07/1968'",
+                  "apelido": "str[53]:'LEI-5478-1968-07-25 , Lei da Ação de Alimentos (19'",
+                  "urlDocumento": "str[65]:'https://normas.leg.br/?urn=urn:lex:br:federal:lei:'"
+                },
+                "publicacoes": {
+                  "publicacao": {
+                    "__lista__": 4,
+                    "__item0__": "..."
+                  }
+                },
+                "vides": {
+                  "vide": {
+                    "__lista__": 2,
+                    "__item0__": "..."
+                  }
+                },
+                "edivs": {
+                  "ediv": {
+                    "__lista__": 1,
+                    "__item0__": "..."
+                  }
+                },
+                "disps": {
+                  "disp": {
+                    "__lista__": 3,
+                    "__item0__": "..."
+                  }
+                },
+                "ementa": "str[56]:'Dispõe sobre ação de alimentos e dá outras providê'",
+                "observacao": "str[113]:'AS ALTERAÇÕES DECORRENTES DA LEI Nº 13.105/2015 EN'",
+                "catalogo": {
+                  "frase": {
+                    "__lista__": 1,
+                    "__item0__": "..."
+                  }
+                },
+                "indexacao": {
+                  "frase": {
+                    "__lista__": 3,
+                    "__item0__": "..."
+                  }
+                },
+                "classes": null,
+                "dataAtualizacao": "str[20]:'2023-06-26T17:15:18Z'"
+              }
+            }
+          }
+        }
+      },
       "origem": "candidato"
     }
   ]
