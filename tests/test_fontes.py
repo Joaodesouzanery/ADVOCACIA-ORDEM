@@ -58,3 +58,33 @@ def test_sondagem_detecta_pagina_de_desafio(tmp_path):
     resumo = sondar(lambda u: Resposta(u, 200, "text/html", html), tmp_path, ids=["lexml"])
     assert resumo["fontes"]["lexml"][0]["ok"] is False
     assert json.loads((tmp_path / "lexml.json").read_text())["resultados"][0]["desafio_antirrobo"] is True
+
+
+def test_sondagem_de_pacote_ckan_descobre_recursos_e_pede_so_o_cabecalho(tmp_path):
+    from ordem.sondagem import sondar_pacote_ckan
+
+    pedidos = []
+    pacote = {"success": True, "result": {"resources": [
+        {"name": "zip", "format": "ZIP", "url": "https://x/a.zip", "size": 900},
+        {"name": "dic", "format": "CSV", "url": "https://x/d.csv", "size": 10},
+        {"name": "json", "format": "JSON", "url": "https://x/b.json", "size": 50},
+        {"name": "sem url", "format": "JSON"}]}}
+
+    def obter(url, cabecalhos=None):
+        pedidos.append((url, cabecalhos))
+        if "package_show" in url:
+            return Resposta(url, 200, "application/json", json.dumps(pacote).encode())
+        return Resposta(url, 206, "application/zip", b"PK\x03\x04resto")
+
+    r = sondar_pacote_ckan("https://stj", "p", obter, max_recursos=2)
+    assert r["num_recursos"] == 3  # recurso sem url fica de fora
+    assert [c["formato"] for c in r["cabecalhos"]] == ["csv", "json"]  # menores e legíveis primeiro
+    assert all(c == {"Range": "bytes=0-4095"} for _, c in pedidos[1:])
+    assert r["cabecalhos"][0]["magic_hex"] == "504b0304" and r["cabecalhos"][0]["ok"]
+
+
+def test_fontes_json_tem_pacotes_de_familia():
+    stj = next(f for f in carregar_fontes() if f["id"] == "stj")
+    pacotes = {s["ckan_pacote"] for s in stj["sondar"] if s.get("ckan_pacote")}
+    assert pacotes == {"precedentes-qualificados", "espelhos-de-acordaos-terceira-turma",
+                       "espelhos-de-acordaos-quarta-turma", "espelhos-de-acordaos-segunda-secao"}

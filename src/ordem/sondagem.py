@@ -23,9 +23,9 @@ def carregar_fontes() -> list[dict]:
     return json.loads(txt)["fontes"]
 
 
-def sondar_url(url: str, obter: Callable) -> dict:
+def sondar_url(url: str, obter: Callable, cabecalhos: dict | None = None) -> dict:
     try:
-        r = obter(url)
+        r = obter(url, cabecalhos=cabecalhos) if cabecalhos else obter(url)
     except Exception as e:  # noqa: BLE001 - registrar e seguir
         return {"url": url, "ok": False, "erro": f"{type(e).__name__}: {e}"}
     texto = r.texto()
@@ -38,8 +38,42 @@ def sondar_url(url: str, obter: Callable) -> dict:
         "desafio_antirrobo": desafio,  # página de verificação: NÃO contornar
         "content_type": r.content_type,
         "bytes": len(r.conteudo),
+        "magic_hex": r.conteudo[:4].hex(),  # ex.: 504b0304 = ZIP
         "amostra": texto[:AMOSTRA_BYTES],
     }
+
+
+_ORDEM_FORMATO = {"csv": 0, "json": 1, "zip": 2}
+
+
+def sondar_pacote_ckan(base: str, pacote: str, obter: Callable, max_recursos: int = 4,
+                       bytes_: int = 4096) -> dict:
+    """package_show -> lista compacta de recursos + cabeçalho (Range) de alguns arquivos.
+
+    Descobre URLs reais em vez de adivinhá-las; nunca baixa o arquivo inteiro.
+    """
+    url = f"{base.rstrip('/')}/api/3/action/package_show?id={pacote}"
+    try:
+        r = obter(url)
+        dados = json.loads(r.texto())
+        recursos = dados["result"]["resources"]
+    except Exception as e:  # noqa: BLE001
+        return {"url": url, "ok": False, "erro": f"{type(e).__name__}: {e}"}
+    compactos = [
+        {"nome": x.get("name"), "formato": (x.get("format") or "").lower(), "url": x.get("url"),
+         "tamanho": x.get("size"), "modificado": x.get("last_modified") or x.get("created")}
+        for x in recursos
+        if x.get("url")
+    ]
+    escolhidos = sorted(compactos,
+                        key=lambda c: (_ORDEM_FORMATO.get(c["formato"], 9), c["tamanho"] or 0))[:max_recursos]
+    cabecalhos = [
+        {**{k: c[k] for k in ("nome", "formato", "url", "tamanho")},
+         **sondar_url(c["url"], obter, {"Range": f"bytes=0-{bytes_ - 1}"})}
+        for c in escolhidos
+    ]
+    return {"url": url, "ok": True, "status": r.status, "num_recursos": len(compactos),
+            "recursos": compactos, "cabecalhos": cabecalhos}
 
 
 def sondar(obter: Callable, destino: Path, ids: list[str] | None = None) -> dict:
@@ -49,7 +83,13 @@ def sondar(obter: Callable, destino: Path, ids: list[str] | None = None) -> dict
     for f in carregar_fontes():
         if ids and f["id"] not in ids:
             continue
-        resultados = [{**sondar_url(s["url"], obter), "origem": s["origem"]} for s in f["sondar"]]
+        resultados = []
+        for s in f["sondar"]:
+            if s.get("ckan_pacote"):
+                res = sondar_pacote_ckan(s["url"], s["ckan_pacote"], obter, s.get("max_recursos", 4))
+            else:
+                res = sondar_url(s["url"], obter)
+            resultados.append({**res, "origem": s["origem"]})
         (destino / f"{f['id']}.json").write_text(
             json.dumps({"fonte": f["id"], "nome": f["nome"], "executado_em": agora, "resultados": resultados},
                        ensure_ascii=False, indent=2), "utf-8")

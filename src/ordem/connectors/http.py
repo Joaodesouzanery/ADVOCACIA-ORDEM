@@ -23,17 +23,17 @@ class Resposta:
         return self.conteudo.decode(encoding or "utf-8", errors="replace")
 
 
-def obter(url: str, *, tentativas: int = 3, timeout: float = 60, cabecalhos: dict | None = None,
+def obter(url: str, cabecalhos: dict | None = None, *, tentativas: int = 3, timeout: float = 60,
           cliente=None, dormir=time.sleep) -> Resposta:  # pragma: no cover - requer rede
     import httpx  # extra "ingest"
 
     h = {"User-Agent": USER_AGENT, "Accept": "application/json, application/xml, text/html;q=0.8, */*;q=0.5"}
-    h.update(cabecalhos or {})
+    cabecalhos_req = cabecalhos  # por requisição (ex.: Range)
     ultimo: Exception | None = None
     with (cliente or httpx.Client(timeout=timeout, follow_redirects=True, headers=h)) as c:
         for i in range(tentativas):
             try:
-                r = c.get(url)
+                r = c.get(url, headers=cabecalhos_req) if cabecalhos_req else c.get(url)
                 if r.status_code in (429, 503) and i < tentativas - 1:
                     dormir(min(float(r.headers.get("Retry-After", 2 ** (i + 1))), 30))
                     continue

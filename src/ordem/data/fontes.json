@@ -16,7 +16,19 @@
           "origem": "candidato"
         },
         {
-          "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-initializer.js",
+          "url": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
+          "origem": "candidato"
+        },
+        {
+          "url": "https://legis.senado.leg.br/dadosabertos/api-docs",
+          "origem": "candidato"
+        },
+        {
+          "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-config",
+          "origem": "candidato"
+        },
+        {
+          "url": "https://legis.senado.leg.br/dadosabertos/docs",
           "origem": "candidato"
         }
       ]
@@ -77,11 +89,27 @@
           "origem": "usuario"
         },
         {
-          "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=precedentes-qualificados",
+          "url": "https://dadosabertos.web.stj.jus.br",
+          "ckan_pacote": "precedentes-qualificados",
+          "max_recursos": 4,
           "origem": "candidato"
         },
         {
-          "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=espelhos-de-acordaos-terceira-turma",
+          "url": "https://dadosabertos.web.stj.jus.br",
+          "ckan_pacote": "espelhos-de-acordaos-terceira-turma",
+          "max_recursos": 4,
+          "origem": "candidato"
+        },
+        {
+          "url": "https://dadosabertos.web.stj.jus.br",
+          "ckan_pacote": "espelhos-de-acordaos-quarta-turma",
+          "max_recursos": 4,
+          "origem": "candidato"
+        },
+        {
+          "url": "https://dadosabertos.web.stj.jus.br",
+          "ckan_pacote": "espelhos-de-acordaos-segunda-secao",
+          "max_recursos": 4,
           "origem": "candidato"
         }
       ]
