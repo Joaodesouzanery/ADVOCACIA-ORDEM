@@ -73,6 +73,31 @@ def intervalos_da_ref(ref: str) -> list[tuple[int, int]] | None:
     return saida
 
 
+def _senado_normas() -> dict:
+    from .storage import diretorio_dados
+
+    arq = diretorio_dados() / "senado_normas.json"
+    return json.loads(arq.read_text("utf-8")).get("normas", {}) if arq.exists() else {}
+
+
+def alteracoes_senado(norma_nome: str, ref: str) -> dict:
+    """Alterações oficiais (API do Senado) dos artigos citados: texto da lei pode ter mudado."""
+    from .ingest import norma_por_nome
+
+    norma = norma_por_nome(norma_nome)
+    dados = _senado_normas().get(norma["id"]) if norma else None
+    if not dados or dados.get("status") != "ok":
+        return {}
+    intervalos = intervalos_da_ref(ref)
+    por_artigo = dados["alteracoes_por_artigo"]
+    if intervalos is None:
+        achados = {k: v for k, v in por_artigo.items()}
+    else:
+        achados = {k: v for k, v in por_artigo.items() if any(a <= int(k) <= b for a, b in intervalos)}
+    return {"norma_oficial": {"nome": dados["norma_nome"], "url": dados["url_documento"]},
+            "alteracoes_senado": achados}  # {} = consultado, sem alterações registradas
+
+
 def textos_oficiais(norma_nome: str, ref: str) -> dict:
     from .ingest import norma_por_nome
 
@@ -171,7 +196,8 @@ def artigos_para_pedido(tipo_pedido: str) -> dict:
         "pedido": chave,
         "descricao": d["descricao"],
         "dispositivos": [
-            {**disp, **textos_oficiais(disp["norma"], disp["ref"]), "verificado": False}
+            {**disp, **textos_oficiais(disp["norma"], disp["ref"]), **alteracoes_senado(disp["norma"], disp["ref"]),
+             "verificado": False}
             for disp in d["dispositivos"]
         ],
         "sumulas": d["sumulas"],

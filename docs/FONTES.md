@@ -34,3 +34,6 @@ Resultados reais em `data/sondagem/` (workflow `sondagem`). Uma fonte só passa 
 ### Sondagem 2 (22/11/2026)
 - **STJ CKAN verificado**: espelhos (`espelhos-de-acordaos-*`: ZIP histórico + JSON mensal; campos id, numeroProcesso, numeroRegistro, siglaClasse, nomeOrgaoJulgador, ministroRelator, dataPublicacao, ementa, dataDecisao…) e `precedentes-qualificados` (Temas.csv/Processos.csv, ligados por sequencialPrecedente; arquivos duplicados). Licença CC-BY. Súmulas: sem conjunto no CKAN.
 - **Senado**: spec OpenAPI em `legis.senado.leg.br/dadosabertos/v3/api-docs` (200, JSON). Caminhos listados na sondagem 3.
+
+### Senado – /legislacao/urn (22/11/2026)
+Verificado: JSON com `DetalheDocumento` (identificação, `urlDocumento` em normas.leg.br, publicações, `vides` = normas posteriores, `disps` = dispositivos alterados). **Sem texto de artigos.** Parâmetros úteis: `/legislacao/lista?tipo&numero&ano`, `/legislacao/{codigo}`, `/legislacao/{tipo}/{numdata}/{anoseq}`; formatos json/xml/csv.

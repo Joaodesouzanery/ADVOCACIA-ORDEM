@@ -37,7 +37,23 @@ def main(argv: list[str] | None = None) -> int:
     bj = sub.add_parser("buscar-jurisprudencia", help="busca nos julgados ingeridos")
     bj.add_argument("consulta")
     bj.add_argument("-n", type=int, default=5)
+    sub.add_parser("ingerir-senado", help="Senado: identificação e alterações das normas (requer rede)")
     a = p.parse_args(argv)
+
+    if a.cmd == "ingerir-senado":
+        from .connectors.http import obter
+        from .connectors.senado import ingerir_senado
+        from .connectors.stj import agora
+        from .ingest import carregar_normas
+        from .storage import diretorio_dados
+
+        res = ingerir_senado([n for n in carregar_normas() if n.get("urn")], obter, agora())
+        destino = diretorio_dados() / "senado_normas.json"
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        destino.write_text(json.dumps(res, ensure_ascii=False, indent=1), "utf-8")
+        for nid, r in res["normas"].items():
+            print(f"{nid}: {r['status']} {len(r.get('alteracoes_por_artigo', {})) or r.get('erro', '')}")
+        return 0 if any(r["status"] == "ok" for r in res["normas"].values()) else 2
 
     if a.cmd == "ingerir-stj":
         from .connectors.http import obter

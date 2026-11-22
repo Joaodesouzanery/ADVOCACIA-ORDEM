@@ -1,0 +1,34 @@
+name: senado
+on:
+  push:
+    paths:
+      - "src/ordem/connectors/senado.py"
+      - ".github/workflows/senado.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "11 6 * * 1"  # segundas
+permissions:
+  contents: write
+concurrency:
+  group: senado
+  cancel-in-progress: false
+jobs:
+  ingerir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[ingest]"
+      - name: Ingerir identificação e alterações (API do Senado)
+        run: ordem ingerir-senado
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/senado_normas.json
+          git diff --cached --quiet && echo "sem mudanças" && exit 0
+          git commit -m "Ingestão Senado ($(date -u +%F))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
