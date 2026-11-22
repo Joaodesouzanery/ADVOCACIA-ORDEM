@@ -81,14 +81,14 @@ def estrutura_json(v, profundidade: int = 7):
     return v
 
 
-def sondar_json_estrutura(url: str, obter: Callable, cabecalhos: dict | None = None) -> dict:
+def sondar_json_estrutura(url: str, obter: Callable, cabecalhos: dict | None = None, profundidade: int = 7) -> dict:
     try:
         r = obter(url, cabecalhos=cabecalhos) if cabecalhos else obter(url)
         dados = json.loads(r.texto())
     except Exception as e:  # noqa: BLE001
         return {"url": url, "ok": False, "erro": f"{type(e).__name__}: {e}"}
     return {"url": url, "ok": 200 <= r.status < 300, "status": r.status, "bytes": len(r.conteudo),
-            "estrutura": estrutura_json(dados)}
+            "estrutura": estrutura_json(dados, profundidade)}
 
 
 _ORDEM_FORMATO = {"csv": 0, "json": 1, "zip": 2}
@@ -134,7 +134,7 @@ def sondar(obter: Callable, destino: Path, ids: list[str] | None = None) -> dict
         resultados = []
         for s in f["sondar"]:
             if s.get("json_estrutura"):
-                res = sondar_json_estrutura(s["url"], obter, s.get("cabecalhos"))
+                res = sondar_json_estrutura(s["url"], obter, s.get("cabecalhos"), s.get("profundidade", 7))
             elif s.get("openapi"):
                 res = sondar_openapi(s["url"], obter)
             elif s.get("ckan_pacote"):

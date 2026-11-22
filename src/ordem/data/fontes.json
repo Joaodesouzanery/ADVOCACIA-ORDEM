@@ -26,7 +26,8 @@
             "Accept": "application/json"
           },
           "json_estrutura": true,
-          "origem": "candidato"
+          "origem": "candidato",
+          "profundidade": 12
         },
         {
           "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:1968-07-25;5478",
@@ -34,7 +35,8 @@
             "Accept": "application/json"
           },
           "json_estrutura": true,
-          "origem": "candidato"
+          "origem": "candidato",
+          "profundidade": 12
         }
       ],
       "_status": "22/11/2026: /legislacao/urn?urn=urn:lex:br:federal:lei:2002-01-10;10406 devolve JSON (204 KB) com DetalheDocumento (id, normaNome, urlDocumento normas.leg.br, publicacoes). Falta saber se traz o texto dos artigos: sondagem 5 mapeia a estrutura."
