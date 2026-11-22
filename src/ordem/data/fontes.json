@@ -19,6 +19,20 @@
           "url": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
           "openapi": true,
           "origem": "candidato"
+        },
+        {
+          "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:2002-01-10;10406",
+          "cabecalhos": {
+            "Accept": "application/json"
+          },
+          "origem": "candidato"
+        },
+        {
+          "url": "https://legis.senado.leg.br/dadosabertos/legislacao/tiposNorma",
+          "cabecalhos": {
+            "Accept": "application/json"
+          },
+          "origem": "candidato"
         }
       ],
       "_status": "22/11/2026: spec OpenAPI em /dadosabertos/v3/api-docs (200, JSON, ~215 KB). Sondagem 3 lista os caminhos."

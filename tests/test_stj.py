@@ -30,6 +30,8 @@ PROCESSOS = ("sequencialPrecedente,tipoPrecedente,numeroPrecedente,Processo,nume
 def test_filtro_de_temas():
     assert temas_do_texto("GUARDA COMPARTILHADA e Pensão Alimentícia") == ["guarda", "alimentos"]
     assert temas_do_texto("Direito tributário") == []
+    assert temas_do_texto("a adoção da data da intimação; filiação partidária") == []  # falsos positivos reais
+    assert temas_do_texto("Adoção de criança e filiação socioafetiva") == ["poder_familiar"]
 
 
 def test_espelho_filtra_familia_e_ignora_mes_vazio():

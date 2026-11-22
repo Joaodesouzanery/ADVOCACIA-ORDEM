@@ -23,7 +23,7 @@ def carregar_fontes() -> list[dict]:
     return json.loads(txt)["fontes"]
 
 
-def sondar_url(url: str, obter: Callable, cabecalhos: dict | None = None) -> dict:
+def sondar_url(url: str, obter: Callable, cabecalhos: dict | None = None) -> dict:  # noqa: C901
     try:
         r = obter(url, cabecalhos=cabecalhos) if cabecalhos else obter(url)
     except Exception as e:  # noqa: BLE001 - registrar e seguir
@@ -50,6 +50,12 @@ def sondar_openapi(url: str, obter: Callable) -> dict:
         spec = json.loads(r.texto())
         caminhos = [
             {"caminho": c, "metodos": sorted(m for m in ops if m in ("get", "post", "put", "delete")),
+             "parametros": [{"nome": x.get("name"), "em": x.get("in"), "obrigatorio": x.get("required", False)}
+                            for o in ops.values() if isinstance(o, dict)
+                            for x in o.get("parameters", []) if isinstance(x, dict)],
+             "produz": sorted({t for o in ops.values() if isinstance(o, dict)
+                               for resp in (o.get("responses", {}).get("200") or {},)
+                               for t in (resp.get("content") or {})}),
              "resumo": next((o.get("summary") or o.get("operationId") or "" for o in ops.values()
                              if isinstance(o, dict)), "")[:120]}
             for c, ops in spec.get("paths", {}).items()
@@ -109,7 +115,7 @@ def sondar(obter: Callable, destino: Path, ids: list[str] | None = None) -> dict
             elif s.get("ckan_pacote"):
                 res = sondar_pacote_ckan(s["url"], s["ckan_pacote"], obter, s.get("max_recursos", 4))
             else:
-                res = sondar_url(s["url"], obter)
+                res = sondar_url(s["url"], obter, s.get("cabecalhos"))
             resultados.append({**res, "origem": s["origem"]})
         (destino / f"{f['id']}.json").write_text(
             json.dumps({"fonte": f["id"], "nome": f["nome"], "executado_em": agora, "resultados": resultados},

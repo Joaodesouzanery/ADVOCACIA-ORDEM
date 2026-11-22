@@ -33,14 +33,18 @@ PACOTES_ESPELHOS_FAMILIA = [
 PACOTE_PRECEDENTES = "precedentes-qualificados"
 
 # tema -> termos (comparados sem acento e em minúsculas). Escolha editorial, revisável.
+# 1ª ingestão (22/11/2026) mostrou que 'adocao' sozinho casa com 'adoção da data/medida...': evitar termos soltos.
 TEMAS_FAMILIA: dict[str, list[str]] = {
     "guarda": ["guarda compartilhada", "guarda unilateral", "guarda de menor", "guarda do filho",
                "guarda dos filhos", "regime de guarda", "alienacao parental"],
     "convivencia": ["convivencia familiar", "direito de visita", "regime de visitas", "visitacao"],
     "alimentos": ["alimentos", "pensao alimenticia", "obrigacao alimentar", "execucao de alimentos",
                   "binomio necessidade"],
-    "divorcio": ["divorcio", "dissolucao do casamento", "partilha de bens", "uniao estavel"],
-    "poder_familiar": ["poder familiar", "destituicao do poder", "adocao", "filiacao", "paternidade"],
+    "divorcio": ["divorcio", "dissolucao do casamento", "dissolucao da uniao estavel", "uniao estavel"],
+    "poder_familiar": ["poder familiar", "destituicao do poder", "adocao de crianca", "adocao de menor",
+                       "adocao de adolescente", "adocao unilateral", "adocao intuitu personae",
+                       "filiacao socioafetiva", "paternidade socioafetiva", "investigacao de paternidade",
+                       "reconhecimento de paternidade", "negatoria de paternidade", "multiparentalidade"],
 }
 
 
