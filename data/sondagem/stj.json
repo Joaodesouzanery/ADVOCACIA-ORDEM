@@ -1,0 +1,1565 @@
+{
+  "fonte": "stj",
+  "nome": "STJ – Dados Abertos (CKAN)",
+  "executado_em": "2026-11-22T20:47:54+00:00",
+  "resultados": [
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/",
+      "url_final": "https://dadosabertos.web.stj.jus.br/",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 41108,
+      "magic_hex": "3c21444f",
+      "amostra": "<!DOCTYPE html>\n<!--[if IE 9]> <html lang=\"pt_BR\" class=\"ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html lang=\"pt_BR\"  > <!--<![endif]-->\n  <head>\n    <meta charset=\"utf-8\" />\n      <meta name=\"generator\" content=\"ckan 2.10.11\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <!-- Google Tag Manager -->\n    <script type=\"text/javascript\" src=\"/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\" data-dtconfig=\"rid=RID_2418|rpid=-2090475384|domain=stj.jus.br|reportUrl=/rb_bf38074tch|app=ea7c4b59f27d43eb|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=14pbrr80|mel=100000|expw=1|dpvc=1|lastModification=1795108040274|postfix=14pbrr80|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-NJW3NDC');</script>\n    <!-- End Google Tag Manager -->\n    \n    <title>Bem vindo - Portal de Dados Abertos do STJ</title>\n\n    \n    <link rel=\"shortcut icon\" href=\"/base/images/ckan.ico\" />\n    \n  \n      \n      \n      \n    \n  \n\n    \n    \n      \n      \n    \n\n    \n    <link href=\"/webassets/base/b7ac027b_main.css\" rel=\"stylesheet\"/>\n<link href=\"/webassets/ckanext-activity/6ac15be0_activity.css\" rel=\"stylesheet\"/><style>\n        /* =====================================================\r\nThe \"account masthead\" bar across the top of the site\r\n===================================================== */\r\n\r\n@font-face {\r\n    font-family: \"ubuntu\";\r\n    src: url(\"../../../base/fonts/Ubuntu-Regular.ttf\");\r\n   }\r\n   \r\n   .account-masthead {\r\n   /*min-height: 40px;*/\r\n   }\r\n   /* The \"bubble\" containing the number of new notifications. */\r\n   .account-masthead .account .notifications a span {\r\n   /*background-color: black;*/\r\n  ",
+      "origem": "usuario"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_list",
+      "url_final": "https://dadosabertos.web.stj.jus.br/api/3/action/package_list",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "application/json;charset=utf-8",
+      "bytes": 880,
+      "magic_hex": "7b226865",
+      "amostra": "{\"help\": \"https://dadosabertos.web.stj.jus.br/api/3/action/help_show?name=package_list\", \"success\": true, \"result\": [\"acervo-em-tramitacao\", \"api-publica-datajud\", \"atas-de-distribuicao\", \"diarias-e-passagens\", \"diarias-e-passagens-enfam\", \"espelhos-de-acordaos-corte-especial\", \"espelhos-de-acordaos-primeira-secao\", \"espelhos-de-acordaos-primeira-turma\", \"espelhos-de-acordaos-quarta-turma\", \"espelhos-de-acordaos-quinta-turma\", \"espelhos-de-acordaos-segunda-secao\", \"espelhos-de-acordaos-segunda-turma\", \"espelhos-de-acordaos-sexta-turma\", \"espelhos-de-acordaos-terceira-secao\", \"espelhos-de-acordaos-terceira-turma\", \"folha-de-pagamento-de-pessoal\", \"integras-de-decisoes-terminativas-e-acordaos-2008-2020\", \"integras-de-decisoes-terminativas-e-acordaos-do-diario-da-justica\", \"pautas-futuras\", \"penalidades-fornecedores\", \"plano-estrategico-stj\", \"precedentes-qualificados\"]}",
+      "origem": "candidato"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/group/jurisprudencia",
+      "url_final": "https://dadosabertos.web.stj.jus.br/group/jurisprudencia",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 54608,
+      "magic_hex": "3c21444f",
+      "amostra": "<!DOCTYPE html>\n<!--[if IE 9]> <html lang=\"pt_BR\" class=\"ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html lang=\"pt_BR\"  > <!--<![endif]-->\n  <head>\n    <meta charset=\"utf-8\" />\n      <meta name=\"generator\" content=\"ckan 2.10.11\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <!-- Google Tag Manager -->\n    <script type=\"text/javascript\" src=\"/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\" data-dtconfig=\"rid=RID_251789362|rpid=-969730046|domain=stj.jus.br|reportUrl=/rb_bf38074tch|app=ea7c4b59f27d43eb|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=14pbrr80|mel=100000|expw=1|dpvc=1|lastModification=1795108040274|postfix=14pbrr80|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-NJW3NDC');</script>\n    <!-- End Google Tag Manager -->\n    \n    <title>Jurisprudência - Grupos - Portal de Dados Abertos do STJ</title>\n\n    \n    \n  <link rel=\"shortcut icon\" href=\"/base/images/ckan.ico\" />\n    \n  <link rel=\"alternate\" type=\"application/atom+xml\" title=\"Portal de Dados Abertos do STJ - Conjuntos de dados no grupo: Jurisprudência\" href=\"/feeds/group/jurisprudencia.atom\" />\n\n  \n      \n      \n      \n    \n  \n\n    \n    \n      \n      \n    \n\n    \n    <link href=\"/webassets/base/b7ac027b_main.css\" rel=\"stylesheet\"/>\n<link href=\"/webassets/ckanext-activity/6ac15be0_activity.css\" rel=\"stylesheet\"/><style>\n        /* =====================================================\r\nThe \"account masthead\" bar across the top of the site\r\n===================================================== */\r\n\r\n@font-face {\r\n    font-family: \"ubuntu\";\r\n    src: url(\"../../../base/fonts/Ubuntu-Regular.ttf\");\r\n   }\r\n   \r\n   .account",
+      "origem": "usuario"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/group/dje",
+      "url_final": "https://dadosabertos.web.stj.jus.br/group/dje",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 40369,
+      "magic_hex": "3c21444f",
+      "amostra": "<!DOCTYPE html>\n<!--[if IE 9]> <html lang=\"pt_BR\" class=\"ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html lang=\"pt_BR\"  > <!--<![endif]-->\n  <head>\n    <meta charset=\"utf-8\" />\n      <meta name=\"generator\" content=\"ckan 2.10.11\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <!-- Google Tag Manager -->\n    <script type=\"text/javascript\" src=\"/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\" data-dtconfig=\"rid=RID_-1614645759|rpid=954262532|domain=stj.jus.br|reportUrl=/rb_bf38074tch|app=ea7c4b59f27d43eb|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=14pbrr80|mel=100000|expw=1|dpvc=1|lastModification=1795108040274|postfix=14pbrr80|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-NJW3NDC');</script>\n    <!-- End Google Tag Manager -->\n    \n    <title>Diário da Justiça Eletrônico - Grupos - Portal de Dados Abertos do STJ</title>\n\n    \n    \n  <link rel=\"shortcut icon\" href=\"/base/images/ckan.ico\" />\n    \n  <link rel=\"alternate\" type=\"application/atom+xml\" title=\"Portal de Dados Abertos do STJ - Conjuntos de dados no grupo: Diário da Justiça Eletrônico\" href=\"/feeds/group/dje.atom\" />\n\n  \n      \n      \n      \n    \n  \n\n    \n    \n      \n      \n    \n\n    \n    <link href=\"/webassets/base/b7ac027b_main.css\" rel=\"stylesheet\"/>\n<link href=\"/webassets/ckanext-activity/6ac15be0_activity.css\" rel=\"stylesheet\"/><style>\n        /* =====================================================\r\nThe \"account masthead\" bar across the top of the site\r\n===================================================== */\r\n\r\n@font-face {\r\n    font-family: \"ubuntu\";\r\n    src: url(\"../../../base/fonts/Ubuntu-Regular.ttf\");\r\n   }",
+      "origem": "usuario"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/group/precedentes",
+      "url_final": "https://dadosabertos.web.stj.jus.br/group/precedentes",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 37735,
+      "magic_hex": "3c21444f",
+      "amostra": "<!DOCTYPE html>\n<!--[if IE 9]> <html lang=\"pt_BR\" class=\"ie9\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html lang=\"pt_BR\"  > <!--<![endif]-->\n  <head>\n    <meta charset=\"utf-8\" />\n      <meta name=\"generator\" content=\"ckan 2.10.11\" />\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <!-- Google Tag Manager -->\n    <script type=\"text/javascript\" src=\"/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\" data-dtconfig=\"rid=RID_-90167418|rpid=1454501508|domain=stj.jus.br|reportUrl=/rb_bf38074tch|app=ea7c4b59f27d43eb|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=14pbrr80|mel=100000|expw=1|dpvc=1|lastModification=1795108040274|postfix=14pbrr80|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-NJW3NDC');</script>\n    <!-- End Google Tag Manager -->\n    \n    <title>Precedentes - Grupos - Portal de Dados Abertos do STJ</title>\n\n    \n    \n  <link rel=\"shortcut icon\" href=\"/base/images/ckan.ico\" />\n    \n  <link rel=\"alternate\" type=\"application/atom+xml\" title=\"Portal de Dados Abertos do STJ - Conjuntos de dados no grupo: Precedentes\" href=\"/feeds/group/precedentes.atom\" />\n\n  \n      \n      \n      \n    \n  \n\n    \n    \n      \n      \n    \n\n    \n    <link href=\"/webassets/base/b7ac027b_main.css\" rel=\"stylesheet\"/>\n<link href=\"/webassets/ckanext-activity/6ac15be0_activity.css\" rel=\"stylesheet\"/><style>\n        /* =====================================================\r\nThe \"account masthead\" bar across the top of the site\r\n===================================================== */\r\n\r\n@font-face {\r\n    font-family: \"ubuntu\";\r\n    src: url(\"../../../base/fonts/Ubuntu-Regular.ttf\");\r\n   }\r\n   \r\n   .account-masthead",
+      "origem": "usuario"
+    },
+    {
+      "url": "https://scon.stj.jus.br/SCON/sumstj/",
+      "url_final": "https://scon.stj.jus.br/SCON/sumstj/",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html;charset=ISO-8859-1",
+      "bytes": 42386,
+      "magic_hex": "0d0a0d0a",
+      "amostra": "\r\n\r\n\r\n\r\n\r\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"pt-br\">\n\n<head>\n\t<!-- Google Tag Manager -->\n\t<script>\n\t\t(function (w, d, s, l, i) {\n\t\t\tw[l] = w[l] || []; w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});\n\t\t\tvar f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;\n\t\t\tj.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);\n\t\t})\n\t\t\t(window, document, 'script', 'dataLayer', 'GTM-NJW3NDC');\n\t</script>\n\t<!-- End Google Tag Manager -->\n\t<!--  -->\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=EDGE\" />\n\t<meta http-equiv=\"Content-Type\" content=\"text/html;charset=ISO-8859-1\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" id=\"myViewport\" />\n\t<meta name=\"bitly-verification\" content=\"f6cce2c6ce92\" />\n\t<meta name=\"DESCRIPTION\"\n\t\tcontent=\"O Superior Tribunal de Justi�a � o �rg�o do Poder Judici�rio do Brasil que assegura efetivamente a uniformidade � interpreta��o da legisla��o federal.\" />\n\t<meta name=\"ABSTRACT\" content=\"Presta��o jurisdicional efetiva.\" />\n\t<meta name=\"KEYWORDS\"\n\t\tcontent=\"stj,superior tribunal de justi�a,justi�a brasil,sumulas stj,stj jurisprud�ncia,stj consulta processual,regimento interno stj,ministros stj,turma stj,concursostj,acompanhamento stj,sess�o stj,jusbrasil\" />\n\t<meta name=\"ROBOT\" content=\"Index,Follow\" />\n\t<meta name=\"RATING\" content=\"general\" />\n\t<meta name=\"LANGUAGE\" content=\"pt-br\" />\n\t<meta name=\"DISTRIBUTION\" content=\"global\" />\n\n\t<meta property=\"og:image\" content=\"/recursos/interfacevisual/internet2022/img/logo-stj-redes.jpg\" />\n\t<!-- Meta tags Obrigat�rias -->\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\t\n\n\t<script type=\"text/javascript\" src=\"/SCON/ruxitagentjs_ICA7NVfqrux_10349261020121938.js\" data-dtconfig=\"app=19ae9409188bdc68|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=14pbrr80|mel=100000|expw=1|dpvc=1|lastModification=1795108040274|postfix=14pbrr80|tp=500,50,0|srbbv=3|agentUri=/SCON/ruxita",
+      "origem": "usuario"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=precedentes-qualificados",
+      "ok": true,
+      "status": 200,
+      "num_recursos": 6,
+      "recursos": [
+        {
+          "nome": "dicionario-temas.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/d5e50514-6dba-4f1e-8557-94f135eae03b/download/dicionario-temas.csv",
+          "tamanho": 4171,
+          "modificado": "2022-07-11T22:40:56.921473"
+        },
+        {
+          "nome": "Temas.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+          "tamanho": 2624562,
+          "modificado": "2026-11-22T17:08:14.886523"
+        },
+        {
+          "nome": "dicionario-processos.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/162e58f0-01c1-4d91-94a4-664b4de81e79/download/dicionario-processos.csv",
+          "tamanho": 4149,
+          "modificado": "2022-07-11T22:41:12.818528"
+        },
+        {
+          "nome": "Processos.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/7ed21202-0049-4fcb-aa7c-48d810d3c499/download/processos.csv",
+          "tamanho": 1143378,
+          "modificado": "2026-11-22T17:08:13.460436"
+        },
+        {
+          "nome": "Temas.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/764de222-f27b-4f1f-a1c6-53be1e91729c/download/temas.csv",
+          "tamanho": 2661062,
+          "modificado": "2026-11-13T21:44:40.831052"
+        },
+        {
+          "nome": "Processos.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/aea4af55-2b7e-4ab9-ba6d-0f02ebc7d075/download/processos.csv",
+          "tamanho": 1138888,
+          "modificado": "2026-11-13T21:45:18.789259"
+        }
+      ],
+      "cabecalhos": [
+        {
+          "nome": "dicionario-processos.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/162e58f0-01c1-4d91-94a4-664b4de81e79/download/dicionario-processos.csv",
+          "tamanho": 4149,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/162e58f0-01c1-4d91-94a4-664b4de81e79/download/dicionario-processos.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 4096,
+          "magic_hex": "efbbbf43",
+          "amostra": "﻿Campo;Nome extenso;Descrição\r\nsequencialPrecedente;Sequencial do precedente;Número sequencial atribuído pelo banco de dados quando inserido novo precedente. É utilizado para relacionar os processos com os temas disponibilizados no outro arquivo. \r\ntipoPrecedente;Tipo de precedente qualificado;Classificação dada ao precedente qualificado, conforme sua natureza jurídica: Controvérsia, Tema Repetitivo, Incidente de Assunção de Competência - IAC, Suspensão em Incidente de resolução de Demandas Repetitivas - SIRDR ou Pedido de Uniformização de Interpretação de Lei - PUIL.\r\nnumeroPrecedente;Número do precedente qualificado;Número sequencial crescente dado ao precedente qualificado do STJ quando da sua criação conforme sua natureza jurídica: Controvérsia, Tema Repetitivo, Incidente de Assunção de Competência - IAC, Suspensão em Incidente de resolução de Demandas Repetitivas - SIRDR ou Pedido de Uniformização de Interpretação de Lei - PUIL.\r\nProcesso;Processo;Classe e o número do processo/recurso no STJ.\r\nnumeroRegistro;Número de registro;Número de registro do processo/recurso no STJ.\r\nministroRelator;Ministro Relator;Nome do ministro relator sorteado para analisar e julgar monocraticamente o processo no STJ ou preparar voto para julgamento pelo órgão colegiado.\r\nleadingCase;Processo leading case;Processo que lidera o grupo de processos que compõem uma Controvérsia ou Tema repetitivo.\r\ndataAfetacao;Data da afetação;Data em que o órgão colegiado decidiu pela afetação dos processos ao rito dos recursos repetitivos.\r\ndataPublicacaoAfetacao;Data da publicação do acórdão de afetação;Data em que foi publicado o acórdão do Proafr no qual o órgão colegiado decidiu pela afetação dos processos ao rito dos recursos repetitivos.\r\nobservacaoAfetacao;Observação sobre a Afetação;Observações pertinentes à delimitação da questão submetida a julgamento ou da discussão que foi efetivamente afetada, para esclarecer eventuais limites da matéria discutida e decidida no precedente qualificado.\r\nNOME_MINISTRO_AFETACAO;Nome do ministro que prop"
+        },
+        {
+          "nome": "dicionario-temas.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/d5e50514-6dba-4f1e-8557-94f135eae03b/download/dicionario-temas.csv",
+          "tamanho": 4171,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/d5e50514-6dba-4f1e-8557-94f135eae03b/download/dicionario-temas.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 4096,
+          "magic_hex": "efbbbf43",
+          "amostra": "﻿Campo;Nome extenso;Descrição\r\nsequencialPrecedente;Número sequencial do precedente qualificado;Número sequencial atribuído pelo banco de dados quando inserido novo precedente. É utilizado para relacionar os temas com os processos disponibilizados no outro arquivo. \r\ntipoPrecedente;Tipo de precedente qualificado;Classificação dada ao precedente qualificado, conforme sua natureza jurídica: Controvérsia, Tema Repetitivo, Incidente de Assunção de Competência - IAC, Suspensão em Incidente de resolução de Demandas Repetitivas - SIRDR ou Pedido de Uniformização de Interpretação de Lei - PUIL.\r\nnumeroPrecedente;Número do precedente qualificado;Número sequencial crescente dado ao precedente qualificado do STJ quando da sua criação conforme sua natureza jurídica: Controvérsia, Tema Repetitivo, Incidente de Assunção de Competência - IAC, Suspensão em Incidente de resolução de Demandas Repetitivas - SIRDR ou Pedido de Uniformização de Interpretação de Lei - PUIL.\r\ndataPrimeiraAfetacao;Data da primeira afetação;Data de quando ocorreu a decisão da primeira afetação, quando há mais de uma data de afetação.\r\ndataJulgamento;Data de julgamento;Data em que ocorreu o julgamento do tema.\r\nsituacao;Situação;Situação atual do precedente qualificado.\r\ninformacoesComplementares;Informações complementares;Informações complementares relativas ao precedente qualificado ou ao julgamento dos processos que compõem o grupo que são relevantes para a comunidade jurídica (tais como determinação e abrangência da suspensão dos processos de mesmo objeto, existência de Súmula sobre o mesmo assunto ou correlato, exceções e conceitos concernetes às teses).\r\nquestaoSubmetidaAJulgamento;Questão submetida a julgamento;Questão jurídica constante dos processos/recursos que está sendo submetida a julgamento no orgão colegiado competente.\r\nteseFirmada;Tese firmada;Tese jurídica firmada pelo órgão colegiado competente ao final do julgamento do tema/recurso.\r\nanotacoesNUGEPNAC;Anotações NUGEPNAC;Anotações relevantes sobre o precedente qualificado ou sobre o jul"
+        },
+        {
+          "nome": "Processos.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/aea4af55-2b7e-4ab9-ba6d-0f02ebc7d075/download/processos.csv",
+          "tamanho": 1138888,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/aea4af55-2b7e-4ab9-ba6d-0f02ebc7d075/download/processos.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 4096,
+          "magic_hex": "73657175",
+          "amostra": "sequencialPrecedente,tipoPrecedente,numeroPrecedente,Processo,numeroRegistro,ministroRelator,leadingCase,dataAfetacao,dataPublicacaoAfetacao,observacaoAfetacao,NOME_MINISTRO_AFETACAO,dataVistaMPF,dataJulgamento,dataPbulicacaoAcordao,processoSTF,dataRemessaSTF,situacaoProcessoSTF,tribunalOrigem,siglaTribunalOrigem,siglaRegiaoOrigem,origemUF,tipoJusticaOrigem,quantidadeProcessosSuspensoNaOrigem,dataPublicacaoEmbargosDeDeclaração,Desafetação,Embargos de Divergência\r\n4350,,1270,REsp 2101592,202303633000,ROGERIO SCHIETTI,S,2024-07-03,2024-07-03,,ROGERIO SCHIETTI,,2026-10-08,2026-10-23,,,,Tribunal de Justiça de São Paulo - Fórum João Mendes,TJSPRGL   ,SE,SP,Justiça Estadual,0,,,\r\n4350,,1270,REsp 2115433,202304549219,ROGERIO SCHIETTI,N,2024-07-03,2024-07-03,,ROGERIO SCHIETTI,,2026-10-08,2026-10-23,,,,Tribunal de Justiça de São Paulo - Fórum João Mendes,TJSPRGL   ,SE,SP,Justiça Estadual,0,,,\r\n4781,,1475,REsp 2267903,202600859606,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,S,2026-10-15,2026-10-15,,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,,,,,,,Tribunal Regional Federal da 1ª Região,TRF1      ,CO,DF,Justiça Federal,0,,,\r\n4781,,1475,REsp 2267903,202600859606,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,S,2026-10-15,2026-10-15,,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,,,,,,,Tribunal Regional Federal da 1ª Região,TRF1      ,CO,DF,Justiça Federal,0,,,\r\n4781,,1475,REsp 2267903,202600859606,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,S,2026-10-15,2026-10-15,,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,,,,,,,Tribunal Regional Federal da 1ª Região,TRF1      ,CO,DF,Justiça Federal,0,,,\r\n4782,,1476,REsp 2230125,202503232230,MARIA THEREZA DE ASSIS MOURA,S,2026-10-15,2026-10-15,,MARIA THEREZA DE ASSIS MOURA,,2026-10-15,2026-10-15,,,,Tribunal de Justiça do Rio Grande do Norte,TJRN      ,NE,RN,Justiça Estadual,0,,,\r\n4783,,1477,REsp 2234803,202503658520,AFRÂNIO VILELA,S,2026-10-16,2026-10-16,,AFRÂNIO VILELA,,,,,,,Tribunal de Justiça do Estado de Santa Catarina,TJSC      ,SU,SC,Justiça Estadual,0,,,\r\n4783,,1477,REsp 22348"
+        },
+        {
+          "nome": "Processos.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/7ed21202-0049-4fcb-aa7c-48d810d3c499/download/processos.csv",
+          "tamanho": 1143378,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/7ed21202-0049-4fcb-aa7c-48d810d3c499/download/processos.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 4096,
+          "magic_hex": "73657175",
+          "amostra": "sequencialPrecedente,tipoPrecedente,numeroPrecedente,Processo,numeroRegistro,ministroRelator,leadingCase,dataAfetacao,dataPublicacaoAfetacao,observacaoAfetacao,NOME_MINISTRO_AFETACAO,dataVistaMPF,dataJulgamento,dataPbulicacaoAcordao,processoSTF,dataRemessaSTF,situacaoProcessoSTF,tribunalOrigem,siglaTribunalOrigem,siglaRegiaoOrigem,origemUF,tipoJusticaOrigem,quantidadeProcessosSuspensoNaOrigem,dataPublicacaoEmbargosDeDeclaração,Desafetação,Embargos de Divergência\r\n4350,,1270,REsp 2101592,202303633000,ROGERIO SCHIETTI,S,2024-07-03,2024-07-03,,ROGERIO SCHIETTI,,2026-10-08,2026-10-23,,,,Tribunal de Justiça de São Paulo - Fórum João Mendes,TJSPRGL   ,SE,SP,Justiça Estadual,0,,,\r\n4350,,1270,REsp 2115433,202304549219,ROGERIO SCHIETTI,N,2024-07-03,2024-07-03,,ROGERIO SCHIETTI,,2026-10-08,2026-10-23,,,,Tribunal de Justiça de São Paulo - Fórum João Mendes,TJSPRGL   ,SE,SP,Justiça Estadual,0,,,\r\n4781,,1475,REsp 2267903,202600859606,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,S,2026-10-15,2026-10-15,,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,,,,,,,Tribunal Regional Federal da 1ª Região,TRF1      ,CO,DF,Justiça Federal,0,,,\r\n4781,,1475,REsp 2267903,202600859606,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,S,2026-10-15,2026-10-15,,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,,,,,,,Tribunal Regional Federal da 1ª Região,TRF1      ,CO,DF,Justiça Federal,0,,,\r\n4781,,1475,REsp 2267903,202600859606,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,S,2026-10-15,2026-10-15,,PRESIDENTE DA COMISSÃO GESTORA DE PRECEDENTES,,,,,,,Tribunal Regional Federal da 1ª Região,TRF1      ,CO,DF,Justiça Federal,0,,,\r\n4782,,1476,REsp 2230125,202503232230,MARIA THEREZA DE ASSIS MOURA,S,2026-10-15,2026-10-15,,MARIA THEREZA DE ASSIS MOURA,,2026-10-15,2026-10-15,,,,Tribunal de Justiça do Rio Grande do Norte,TJRN      ,NE,RN,Justiça Estadual,0,,,\r\n4783,,1477,REsp 2234803,202503658520,AFRÂNIO VILELA,S,2026-10-16,2026-10-16,,AFRÂNIO VILELA,,,,,,,Tribunal de Justiça do Estado de Santa Catarina,TJSC      ,SU,SC,Justiça Estadual,0,,,\r\n4783,,1477,REsp 22348"
+        }
+      ],
+      "origem": "candidato"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=espelhos-de-acordaos-terceira-turma",
+      "ok": true,
+      "status": 200,
+      "num_recursos": 56,
+      "recursos": [
+        {
+          "nome": "20220508.zip",
+          "formato": "zip",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/6b5b3a2a-db34-411e-a422-125d32b110af/download/20220508.zip",
+          "tamanho": 19664693,
+          "modificado": "2026-06-09T21:05:48.591157"
+        },
+        {
+          "nome": "dicionario-espelhodoacordao.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e7e82cf9-9561-465b-b5c6-422c6f227f9f/download/dicionario-espelhodoacordao.csv",
+          "tamanho": 2865,
+          "modificado": "2022-05-11T14:59:57.106631"
+        },
+        {
+          "nome": "20220531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/b61e0c9a-ba07-4322-99b6-d54e7a914d8d/download/20220531.json",
+          "tamanho": 1771353,
+          "modificado": "2022-07-07T19:18:22.850523"
+        },
+        {
+          "nome": "20220630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/ecd0c45f-4e3c-43e7-b47c-ceaaf9ab6c5f/download/20220630.json",
+          "tamanho": 1560938,
+          "modificado": "2022-07-08T13:25:00.720346"
+        },
+        {
+          "nome": "20220731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/f8e1960b-8ed2-4a69-a3cc-0d3a4c002069/download/20220731.json",
+          "tamanho": 164073,
+          "modificado": "2022-08-03T19:41:28.777713"
+        },
+        {
+          "nome": "20220831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/6a9e7ec3-84b1-4031-846a-91ed3696ae20/download/20220831.json",
+          "tamanho": 1649441,
+          "modificado": "2022-09-06T01:41:04.351544"
+        },
+        {
+          "nome": "20220930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/0888d9a1-b3a2-4c39-ad67-0e4133970774/download/20220930.json",
+          "tamanho": 1103561,
+          "modificado": "2022-10-03T22:21:57.535344"
+        },
+        {
+          "nome": "20221031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/7b77884d-bae6-4a8d-b39b-b9a1a755db16/download/20221031.json",
+          "tamanho": 1467871,
+          "modificado": "2022-11-07T18:26:47.812816"
+        },
+        {
+          "nome": "20221130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/7dbc9a3b-9497-43df-b69e-b0e44ea32950/download/20221130.json",
+          "tamanho": 1134540,
+          "modificado": "2022-12-01T19:29:24.429662"
+        },
+        {
+          "nome": "20221231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/a370fa6b-10bd-43b7-8873-8fde48d0c073/download/20221231.json",
+          "tamanho": 507656,
+          "modificado": "2023-01-02T23:19:59.747810"
+        },
+        {
+          "nome": "20230131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/2154b380-8892-401e-8ddf-b47901caaf03/download/20230131.json",
+          "tamanho": 513430,
+          "modificado": "2023-02-02T19:24:34.761587"
+        },
+        {
+          "nome": "20230228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/4aa31de1-7bc8-4f25-a2a4-167b8c44521b/download/20230228.json",
+          "tamanho": 439826,
+          "modificado": "2023-03-02T20:11:09.070410"
+        },
+        {
+          "nome": "20230331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/f6721ec5-4c69-4bef-b11f-fee2d23f0bae/download/20230331.json",
+          "tamanho": 1611213,
+          "modificado": "2023-04-03T14:23:04.338779"
+        },
+        {
+          "nome": "20230430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/df4134bc-6463-447c-981e-52d8f1656dbf/download/20230430.json",
+          "tamanho": 864051,
+          "modificado": "2023-05-02T18:52:30.092421"
+        },
+        {
+          "nome": "20230531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/89009856-1133-460e-8651-02a41372c567/download/20230531.json",
+          "tamanho": 1025599,
+          "modificado": "2023-06-01T19:50:06.757185"
+        },
+        {
+          "nome": "20230630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/8b08fe3d-158f-4aca-a773-eac0a3119dfc/download/20230630.json",
+          "tamanho": 1258513,
+          "modificado": "2023-07-04T12:19:22.044461"
+        },
+        {
+          "nome": "20230731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/a21c5d2b-9494-4366-963f-d17adeb11e2a/download/20230731.json",
+          "tamanho": 427956,
+          "modificado": "2023-08-02T01:35:50.633645"
+        },
+        {
+          "nome": "20230831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/f74a5334-6776-4ada-8f97-bcd69d6cc8e1/download/20230831.json",
+          "tamanho": 1334561,
+          "modificado": "2023-09-06T17:09:10.109458"
+        },
+        {
+          "nome": "20230930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/fb594a6e-5d85-45aa-ac24-3f791152d3f7/download/20230930.json",
+          "tamanho": 1425113,
+          "modificado": "2023-10-02T22:36:17.855965"
+        },
+        {
+          "nome": "20231031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/b1e58dd9-e4a1-4246-b251-3e6429b43e44/download/20231031.json",
+          "tamanho": 1569628,
+          "modificado": "2023-11-14T16:38:37.534023"
+        },
+        {
+          "nome": "20231130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/6cd99a37-8744-45d5-9895-1876e3765d90/download/20231130.json",
+          "tamanho": 1496110,
+          "modificado": "2023-12-10T20:18:05.043191"
+        },
+        {
+          "nome": "20231231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/3d3aa5fe-736f-4544-832e-beaf755c7065/download/20231231.json",
+          "tamanho": 539401,
+          "modificado": "2024-02-21T11:38:26.230918"
+        },
+        {
+          "nome": "20240131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/3acd703c-dd43-4b0c-8b60-1fd640584b91/download/20240131.json",
+          "tamanho": 607733,
+          "modificado": "2024-02-21T14:21:54.563232"
+        },
+        {
+          "nome": "20240229.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/43cecd33-3d1c-4260-8ae5-3c80d756fdf9/download/20240229.json",
+          "tamanho": 155080,
+          "modificado": "2024-03-04T22:55:11.350908"
+        },
+        {
+          "nome": "20240331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e080d47e-3ef1-4cc9-ac1a-bc67ea583917/download/20240331.json",
+          "tamanho": 1620761,
+          "modificado": "2024-04-17T18:17:03.627963"
+        },
+        {
+          "nome": "20240430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/911f01eb-8066-45c0-9110-e71451dee528/download/20240430.json",
+          "tamanho": 1679735,
+          "modificado": "2024-06-07T20:23:24.557432"
+        },
+        {
+          "nome": "20240531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/a6b9743f-1bc2-4387-bb3b-69554cb99eac/download/20240531.json",
+          "tamanho": 1564103,
+          "modificado": "2024-06-07T20:23:34.303515"
+        },
+        {
+          "nome": "20240630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/14e9fc1a-205f-4162-aa97-32c448d8010d/download/20240630.json",
+          "tamanho": 1354399,
+          "modificado": "2024-08-02T17:55:22.491359"
+        },
+        {
+          "nome": "20240731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/c8244565-767a-40ca-9c06-e2bca1f63d9a/download/20240731.json",
+          "tamanho": 411761,
+          "modificado": "2024-08-02T17:55:37.952324"
+        },
+        {
+          "nome": "20240831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/4b534163-ff90-409d-a64a-fd4825145e39/download/20240831.json",
+          "tamanho": 1509109,
+          "modificado": "2024-09-05T20:10:22.340757"
+        },
+        {
+          "nome": "20240930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/18ce7173-132a-4075-ac28-7b80ff1e79f6/download/20240930.json",
+          "tamanho": 1341180,
+          "modificado": "2024-10-04T17:45:13.177713"
+        },
+        {
+          "nome": "20241031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/5176b88a-1e9c-4576-b990-00008f3d0ce1/download/20241031.json",
+          "tamanho": 1267521,
+          "modificado": "2024-11-04T21:02:38.449547"
+        },
+        {
+          "nome": "20241130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/250a4f7a-b639-4732-8d37-6ba6ca71e139/download/20241130.json",
+          "tamanho": 891308,
+          "modificado": "2024-12-13T22:35:33.022150"
+        },
+        {
+          "nome": "20241231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e6cdf0b4-e930-4fb4-93c8-2b777c615847/download/20241231.json",
+          "tamanho": 470236,
+          "modificado": "2025-01-06T09:50:10.500104"
+        },
+        {
+          "nome": "20250131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/67e2dc10-7f8c-44ff-b38b-2716448214e5/download/20250131.json",
+          "tamanho": 341091,
+          "modificado": "2025-02-03T18:35:46.019191"
+        },
+        {
+          "nome": "20250228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/78187336-1b91-417f-815b-8c7fdc223291/download/20250228.json",
+          "tamanho": 1361325,
+          "modificado": "2025-03-06T21:37:05.540987"
+        },
+        {
+          "nome": "20250331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/36abaa93-fdb4-4f36-b918-d80617e8aa9a/download/20250331.json",
+          "tamanho": 1317663,
+          "modificado": "2025-04-04T21:02:11.931090"
+        },
+        {
+          "nome": "20250430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/bf970283-b6c4-4941-870a-2947f689e0b5/download/20250430.json",
+          "tamanho": 1662391,
+          "modificado": "2025-05-06T21:29:26.082412"
+        },
+        {
+          "nome": "20250531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/c1f372d2-e35f-4dc0-b8f1-30a3cd98bf9b/download/20250531.json",
+          "tamanho": 2428600,
+          "modificado": "2025-06-06T21:47:54.768810"
+        },
+        {
+          "nome": "20250630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/c543a9df-a868-4b7b-9303-77fc3b31b976/download/20250630.json",
+          "tamanho": 1507533,
+          "modificado": "2025-08-21T23:14:21.897418"
+        },
+        {
+          "nome": "20250731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/b17ef444-c409-46ef-a763-dc81fa296489/download/20250731.json",
+          "tamanho": 1785374,
+          "modificado": "2025-08-22T17:38:48.794340"
+        },
+        {
+          "nome": "20250831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/be89727e-d706-4f7a-8798-d3122d72ee93/download/20250831.json",
+          "tamanho": 1368266,
+          "modificado": "2025-09-03T21:04:13.324540"
+        },
+        {
+          "nome": "20250930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/c9e81c2e-2f5d-47e7-bb54-bcc331bad78d/download/20250930.json",
+          "tamanho": 3091806,
+          "modificado": "2025-10-22T19:10:19.303238"
+        },
+        {
+          "nome": "20251031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/6cc2456a-4b0d-491f-9818-8028fdd587cf/download/20251031.json",
+          "tamanho": 3277363,
+          "modificado": "2025-11-05T19:50:38.346586"
+        },
+        {
+          "nome": "20251130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/68435b3b-ab21-4501-aaa0-a543996299ad/download/20251130.json",
+          "tamanho": 4334198,
+          "modificado": "2025-12-05T18:36:52.457653"
+        },
+        {
+          "nome": "20251231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/9340d145-c937-4fba-8b95-edeba199d25e/download/20251231.json",
+          "tamanho": 6479931,
+          "modificado": "2026-01-06T17:30:53.246484"
+        },
+        {
+          "nome": "20260131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/7c9b5ac0-70a5-4625-977a-89f39c8df9c3/download/20260131.json",
+          "tamanho": 3017514,
+          "modificado": "2026-03-10T20:48:36.176338"
+        },
+        {
+          "nome": "20260228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/ac2684b2-db35-4a9f-87e9-8d078e60fb77/download/20260228.json",
+          "tamanho": 989212,
+          "modificado": "2026-03-10T20:48:53.118205"
+        },
+        {
+          "nome": "20260331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/10aa3294-283f-49ae-90f4-b0579f34d24f/download/20260331.json",
+          "tamanho": 2025191,
+          "modificado": "2026-04-06T18:33:07.852408"
+        },
+        {
+          "nome": "20260430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/c67c4532-0bcc-4b7c-973e-e842d4c48fab/download/20260430.json",
+          "tamanho": 1810333,
+          "modificado": "2026-05-18T21:17:01.808416"
+        },
+        {
+          "nome": "20260531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/a8036870-52e8-4784-9180-7155443b02a5/download/20260531.json",
+          "tamanho": 2399388,
+          "modificado": "2026-06-09T21:12:30.137652"
+        },
+        {
+          "nome": "20260630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e307c28b-8e6b-4af6-832e-6c3415092b76/download/20260630.json",
+          "tamanho": 11783058,
+          "modificado": "2026-07-30T22:51:00.830614"
+        },
+        {
+          "nome": "20260731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/bd19b69d-f6db-4c34-90e1-148ad636968c/download/20260731.json",
+          "tamanho": 4293588,
+          "modificado": "2026-09-08T18:15:44.768627"
+        },
+        {
+          "nome": "20260831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/fef2eb32-c4b6-4c6c-951d-cdc4ed84e01d/download/20260831.json",
+          "tamanho": 2816001,
+          "modificado": "2026-09-08T18:15:53.328001"
+        },
+        {
+          "nome": "20260930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e06184fb-131c-46d4-a546-9d8fd14abfe2/download/20260930.json",
+          "tamanho": 9306224,
+          "modificado": "2026-10-29T22:36:56.027869"
+        },
+        {
+          "nome": "20261031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/90c77d6f-df81-4e23-8fec-0bed6b15f886/download/20261031.json",
+          "tamanho": 16252558,
+          "modificado": "2026-11-13T02:50:01.523570"
+        }
+      ],
+      "cabecalhos": [
+        {
+          "nome": "dicionario-espelhodoacordao.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e7e82cf9-9561-465b-b5c6-422c6f227f9f/download/dicionario-espelhodoacordao.csv",
+          "tamanho": 2865,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/e7e82cf9-9561-465b-b5c6-422c6f227f9f/download/dicionario-espelhodoacordao.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 2865,
+          "magic_hex": "efbbbf43",
+          "amostra": "﻿Campo;Nome extenso;Descrição\r\nid;ID;Código identificador do acórdão na base de Jurisprudência\r\nnumeroProcesso;Número do Processo no STJ;Número do processo autuado no STJ\r\nnumeroRegistro;Número de Registro no STJ;Número de registro do processo autuado no STJ. \r\nsiglaClasse;Classe do processo - Sigla;Sigla da classe processual padronizada conforme autuação no STJ.\r\ndescricaoClasse;Classe do processo - Por extenso;Nome por extenso da classe processual padronizada conforme autuação no STJ.\r\nnomeOrgaoJulgador;Órgão Julgador;Órgão colegiado responsável pelo julgamento do processo.\r\nministroRelator;Ministro Relator;Ministro responsável pela relatoria do processo ou, quando vencido, do Ministro responsável pela relatoria do acórdão.\r\nementa;Ementa;Resumo do conteúdo da decisão, elaborado pelo Ministro Relator ou, quando vencido, pelo Ministro Relator do Acórdão.\r\ntipoDeDecisao;Tipo de decisão;Decisão judicial proferida por magistrado singular (decisão monocrática) ou por colegiado de julgadores (acórdão). \r\ndataDecisao;Data do julgamento;Data da sessão de julgamento em que o processo foi decidido.\r\ndecisao;Acórdão;Resultado final do julgamento, com informações sobre a votação (unânime ou por maioria), bem como ausências de Ministros , sustentações orais e tese firmada em demanda repetitiva quando for o caso.\r\njurisprudenciaCitada;Jurisprudência citada;Lista, organizada por temas, de decisões, Informativos e repositórios jurisprudenciais citados no acórdão como fundamentação adotada pelos Ministros em seus votos.  Há links que possibilitam acesso direto a tais decisões.\r\nnotas;Notas;Índice de assuntos relevantes e de alterações de acórdãos que podem ser aplicados à consulta jurisprudencial.\r\ninformacoesComplementares;Informações Complementares à Ementa;Informações extraídas do inteiro teor sobre teses decididas no acórdão e que não constam da ementa.\r\ntermosAuxiliares;Termos Auxiliares à Pesquisa;Termos alternativos, baseados nas relações de sinonímia definidas no Tesauro Jurídico do STJ, que auxiliam no resgate das info"
+        },
+        {
+          "nome": "20240229.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/43cecd33-3d1c-4260-8ae5-3c80d756fdf9/download/20240229.json",
+          "tamanho": 155080,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/43cecd33-3d1c-4260-8ae5-3c80d756fdf9/download/20240229.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000864474\",\r\n  \"numeroProcesso\" : \"2014719\",\r\n  \"numeroRegistro\" : \"202202214690\",\r\n  \"siglaClasse\" : \"AgInt no REsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"TERCEIRA TURMA\",\r\n  \"ministroRelator\" : \"NANCY ANDRIGHI\",\r\n  \"dataPublicacao\" : \"DJE        DATA:28/02/2024\",\r\n  \"ementa\" : \"PROCESSUAL CIVIL. AGRAVO INTERNO NO RECURSO ESPECIAL. AÇÃO\\nINDENIZATÓRIA. DANOS MATERIAIS E MORAIS. FASE DE LIQUIDAÇÃO DE\\nSENTENÇA. VIOLAÇÃO DO ART. 1.022 DO CPC. OMISSÃO. OCORRÊNCIA.\\nQUESTÃO RELEVANTE. NEGATIVA DE PRESTAÇÃO JURISDICIONAL.\\nCARACTERIZAÇÃO. ANULAÇÃO DO ACÓRDÃO.\\n1. Ação de indenização por danos materiais e morais, em fase de\\nliquidação de sentença.\\n2. Segundo a jurisprudência desta Corte, caracteriza-se a ofensa ao\\nart. 1.022 do CPC nas hipóteses em que o Tribunal de origem, mesmo\\napós a oposição de embargos de declaração, omite-se no exame de\\nquestão pertinente para a resolução da lide.\\n3. Hipótese em que o Tribunal de origem rejeitou os embargos de\\ndeclaração sem apreciar as questões suscitadas pela parte\\nrecorrente, sobretudo quanto à necessidade de redução do valor\\ndevido, em razão da ausência de critérios objetivos para a fixação e\\napuração dos lucros cessantes, diante da confusão de conceitos com\\nganhos hipotéticos e perda de uma chance, e da vedação ao\\nenriquecimento sem causa.\\n4. No particular, deve ser anulado o acórdão que julgou os embargos\\nde declaração, determinando a remessa dos autos ao Tribunal de\\norigem para que se pronuncie sobre as questões arguidas pelo\\nrecorrente (agravado).\\n5. Agravo interno não provido.\",\r\n  \"tipoDeDecisao\" : \"ACÓRDÃO\",\r\n  \"dataDecisao\" : \"20240226\",\r\n  \"decisao\" : \"Vistos e relatados estes autos em que são partes as acima\\nindicadas, acordam os Ministros da TERCEIRA TURMA do Superior\\nTribunal de Justiça, em sessão virtual de 20/02/2024 a 26/02/2024,\\npor unanimidade, negar provimento ao recurso, nos termos do voto da\\nSra. Ministra Relatora.\\nOs Srs. Ministros Humberto Martins, Ricardo Villas Bôas"
+        },
+        {
+          "nome": "20220731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/f8e1960b-8ed2-4a69-a3cc-0d3a4c002069/download/20220731.json",
+          "tamanho": 164073,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/f8e1960b-8ed2-4a69-a3cc-0d3a4c002069/download/20220731.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000819537\",\r\n  \"numeroProcesso\" : \"1898375\",\r\n  \"numeroRegistro\" : \"202101574633\",\r\n  \"siglaClasse\" : \"AgInt no AREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"TERCEIRA TURMA\",\r\n  \"ministroRelator\" : \"RICARDO VILLAS BÔAS CUEVA\",\r\n  \"dataPublicacao\" : \"DJE        DATA:30/06/2022\",\r\n  \"ementa\" : \"AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. AÇÃO ANULATÓRIA.\\nSISTEMA FINANCEIRO DA HABITAÇÃO. EXECUÇÃO EXTRAJUDICIAL.\\nIRREGULARIDADES. INEXISTÊNCIA. CONJUNTO FÁTICO-PROBATÓRIO. REEXAME.\\nSÚMULAS NºS 5 E 7/STJ. DISSÍDIO JURISPRUDENCIAL. NÃO DEMONSTRADO.\\n1. Recurso especial interposto contra acórdão publicado na vigência\\ndo Código de Processo Civil de 2015 (Enunciados Administrativos nºs\\n2 e 3/STJ).\\n2. Na espécie, rever o entendimento do tribunal de origem, que\\nconcluiu pela inexistência de irregularidades no procedimento de\\nexecução extrajudicial adotado, demandaria o exame do acervo\\nfático-probatório dos autos, procedimento inviável em recurso\\nespecial em virtude dos óbices das Súmulas nºs 5 e 7/STJ.\\n3. A divergência jurisprudencial com fundamento na alínea \\\"c\\\" do\\npermissivo constitucional, nos termos dos arts. 1.029, § 1º, do\\nCódigo de Processo Civil de 2015 e 255, § 1º, do Regimento Interno\\ndo Superior Tribunal de Justiça, requisita comprovação e\\ndemonstração, esta, em qualquer caso, com a transcrição dos trechos\\ndos acórdãos que configurem o dissídio, a evidenciar a similitude\\nfática entre os casos apontados e a divergência de interpretações.\\n4. A  necessidade do reexame da matéria fática impede a admissão do\\nrecurso especial tanto pela alínea \\\"a\\\" quanto pela alínea \\\"c\\\" do\\npermissivo constitucional. Precedente.\\n5 . Agravo interno não provido.\",\r\n  \"tipoDeDecisao\" : \"ACÓRDÃO\",\r\n  \"dataDecisao\" : \"20220627\",\r\n  \"decisao\" : \"Vistos e relatados estes autos em que são partes as acima\\nindicadas, acordam os Ministros da TERCEIRA TURMA do Superior\\nTribunal de Justiça, em sessão virtual de 21/06/2022 a 27/06/2022,\\npor unanimid"
+        },
+        {
+          "nome": "20250131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/67e2dc10-7f8c-44ff-b38b-2716448214e5/download/20250131.json",
+          "tamanho": 341091,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/74a99dea-a197-4d73-a169-d8c8f8f0b175/resource/67e2dc10-7f8c-44ff-b38b-2716448214e5/download/20250131.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000897322\",\r\n  \"numeroProcesso\" : \"2583484\",\r\n  \"numeroRegistro\" : \"202400682179\",\r\n  \"siglaClasse\" : \"RCD no AgInt no AREsp\",\r\n  \"descricaoClasse\" : \"PEDIDO DE RECONSIDERAÇÃO NO AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"TERCEIRA TURMA\",\r\n  \"ministroRelator\" : \"RICARDO VILLAS BÔAS CUEVA\",\r\n  \"dataPublicacao\" : null,\r\n  \"ementa\" : \"PEDIDO DE RECONSIDERAÇÃO NO AGRAVO INTERNO NO AGRAVO EM RECURSO\\nESPECIAL. PROCESSUAL CIVIL. DECISÃO COLEGIADA. NÃO  CABIMENTO.1. A\\njurisprudência do Superior Tribunal da Justiça é no sentido de ser\\nincabível o pedido de reconsideração apresentado contra a decisão\\ncolegiada, em virtude da ausência de previsão legal e regimental.\\nPrecedentes.2. Pedido de reconsideração não conhecido.\",\r\n  \"tipoDeDecisao\" : \"ACÓRDÃO\",\r\n  \"dataDecisao\" : \"20241209\",\r\n  \"decisao\" : \"Vistos e relatados estes autos em que são partes as acima\\nindicadas, acordam os Ministros da TERCEIRA TURMA, por unanimidade,\\nnão conhecer do recurso, nos termos do voto do Sr. Ministro Relator.\\nOs Srs. Ministros Nancy Andrighi, Humberto Martins e Moura Ribeiro\\nvotaram com o Sr. Ministro Relator.\\nPresidiu o julgamento o Sr. Ministro Humberto Martins.\",\r\n  \"jurisprudenciaCitada\" : null,\r\n  \"notas\" : null,\r\n  \"informacoesComplementares\" : null,\r\n  \"termosAuxiliares\" : null,\r\n  \"teseJuridica\" : null,\r\n  \"tema\" : null,\r\n  \"referenciasLegislativas\" : [ ],\r\n  \"acordaosSimilares\" : [ ]\r\n}, {\r\n  \"id\" : \"000897317\",\r\n  \"numeroProcesso\" : \"2159779\",\r\n  \"numeroRegistro\" : \"202402753200\",\r\n  \"siglaClasse\" : \"AgInt no REsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"TERCEIRA TURMA\",\r\n  \"ministroRelator\" : \"HUMBERTO MARTINS\",\r\n  \"dataPublicacao\" : null,\r\n  \"ementa\" : \"CIVIL E PROCESSUAL CIVIL. AGRAVO INTERNO NO RECURSO ESPECIAL.\\nOBRIGAÇÃO DE FAZER. PLANO DE SAÚDE. DOENÇA COBERTA PELO CONTRATO.\\nCUSTEIO DE ÓRTESE CRANIANA. OBRIGATORIEDADE. INADIMPLEMENTO\\nCONTRATUAL. REEMBOLSO INTEGRAL DEVIDO.\\n1. A cobertura de órtese craniana (capacete ortopé"
+        }
+      ],
+      "origem": "candidato"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=espelhos-de-acordaos-quarta-turma",
+      "ok": true,
+      "status": 200,
+      "num_recursos": 56,
+      "recursos": [
+        {
+          "nome": "20220508.zip",
+          "formato": "zip",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/e3a264d8-00de-4ff8-8313-4d604dea95db/download/20220508.zip",
+          "tamanho": 47368021,
+          "modificado": "2024-06-07T20:21:24.417810"
+        },
+        {
+          "nome": "dicionario-espelhodoacordao.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/f8e2ba27-74c7-4d5e-b807-29db625dcc06/download/dicionario-espelhodoacordao.csv",
+          "tamanho": 2865,
+          "modificado": "2022-05-11T15:09:10.791848"
+        },
+        {
+          "nome": "20220531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/64396611-0f91-4d13-9dea-dd961f8f6bd3/download/20220531.json",
+          "tamanho": 1790772,
+          "modificado": "2022-07-07T19:19:05.205562"
+        },
+        {
+          "nome": "20220630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/a3bf71dc-a19a-4de8-a27f-fddf5944ffc0/download/20220630.json",
+          "tamanho": 1498569,
+          "modificado": "2022-07-08T13:23:57.672602"
+        },
+        {
+          "nome": "20220731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/4dfc4aa4-0494-422c-a8e7-ec33e376dd9e/download/20220731.json",
+          "tamanho": 725564,
+          "modificado": "2022-08-03T19:40:54.735033"
+        },
+        {
+          "nome": "20220831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/68c775f9-593d-48ed-8acd-14ca7826ff36/download/20220831.json",
+          "tamanho": 1656526,
+          "modificado": "2022-09-06T01:39:19.741871"
+        },
+        {
+          "nome": "20220930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/9f2a47e8-746d-42b4-bf2d-505107f1c0ec/download/20220930.json",
+          "tamanho": 1063997,
+          "modificado": "2022-10-03T22:21:29.773419"
+        },
+        {
+          "nome": "20221031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/5e18efed-5941-4bf0-a248-6f33a4d1bad2/download/20221031.json",
+          "tamanho": 1436285,
+          "modificado": "2022-11-07T18:26:22.581780"
+        },
+        {
+          "nome": "20221130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/273b03e4-8f09-4548-947f-0ba9e95709b9/download/20221130.json",
+          "tamanho": 775796,
+          "modificado": "2022-12-01T19:28:52.126966"
+        },
+        {
+          "nome": "20221231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/d983827a-2195-4d89-b7fb-976952a088cd/download/20221231.json",
+          "tamanho": 615664,
+          "modificado": "2023-01-02T23:19:37.437547"
+        },
+        {
+          "nome": "20230131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/39b97490-84ff-45d0-8ae9-f115eb5b5ce2/download/20230131.json",
+          "tamanho": 562044,
+          "modificado": "2023-02-02T19:24:12.556936"
+        },
+        {
+          "nome": "20230228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/d238f4ab-0a38-4217-9f99-23dcf3e7e4c5/download/20230228.json",
+          "tamanho": 390984,
+          "modificado": "2023-03-02T20:10:46.742668"
+        },
+        {
+          "nome": "20230331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/cb012eaa-a1b5-484e-a430-8b0050385255/download/20230331.json",
+          "tamanho": 1537321,
+          "modificado": "2023-04-03T14:22:42.486268"
+        },
+        {
+          "nome": "20230430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/499b609e-d4d9-4f87-b6fe-ea80a1be951b/download/20230430.json",
+          "tamanho": 1257494,
+          "modificado": "2023-05-02T18:52:04.115544"
+        },
+        {
+          "nome": "20230531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/d42312af-74fe-4823-b79b-4741869223ba/download/20230531.json",
+          "tamanho": 1107138,
+          "modificado": "2023-06-01T19:49:46.026749"
+        },
+        {
+          "nome": "20230630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/96cb1bf0-7286-4f78-b8a1-992b3c4dac37/download/20230630.json",
+          "tamanho": 1517214,
+          "modificado": "2023-07-04T12:18:46.013822"
+        },
+        {
+          "nome": "20230731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/a794fdae-dd27-4277-8405-72d8842e4b6c/download/20230731.json",
+          "tamanho": 577155,
+          "modificado": "2023-08-02T01:35:24.039394"
+        },
+        {
+          "nome": "20230831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/c1719e0a-3994-4804-9d6e-48c75c29fc79/download/20230831.json",
+          "tamanho": 563215,
+          "modificado": "2023-09-06T17:08:45.734442"
+        },
+        {
+          "nome": "20230930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/ef314b1a-e298-44d2-b847-3fc1b030c1d1/download/20230930.json",
+          "tamanho": 1483520,
+          "modificado": "2023-10-02T22:35:50.010549"
+        },
+        {
+          "nome": "20231031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/54e01582-4a43-455a-9fce-845985d5f137/download/20231031.json",
+          "tamanho": 1331316,
+          "modificado": "2023-11-14T16:38:14.933182"
+        },
+        {
+          "nome": "20231130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/84ac9933-44fa-4cad-807f-f9cf2538c019/download/20231130.json",
+          "tamanho": 1110840,
+          "modificado": "2023-12-10T20:17:37.110021"
+        },
+        {
+          "nome": "20231231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/a09f60bd-ec2f-4816-b436-001edc1f3f9c/download/20231231.json",
+          "tamanho": 638283,
+          "modificado": "2024-02-21T11:37:55.329996"
+        },
+        {
+          "nome": "20240131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/0d2eae10-ddd3-4815-aec1-f8a8bd6a163e/download/20240131.json",
+          "tamanho": 629809,
+          "modificado": "2024-02-21T14:20:59.070544"
+        },
+        {
+          "nome": "20240229.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/38a2fc1d-b954-44e5-b20c-adbc51a4b245/download/20240229.json",
+          "tamanho": 146525,
+          "modificado": "2024-03-04T22:54:33.823393"
+        },
+        {
+          "nome": "20240331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/d009370e-8c4f-4e19-b665-c79c151df336/download/20240331.json",
+          "tamanho": 871117,
+          "modificado": "2024-04-17T18:16:35.552117"
+        },
+        {
+          "nome": "20240430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/34c9bed3-7a1d-4098-9b09-0b3fedb017d9/download/20240430.json",
+          "tamanho": 1349649,
+          "modificado": "2024-06-07T20:21:46.638945"
+        },
+        {
+          "nome": "20240531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/e162566a-f831-4aa2-b2fa-2890762b863a/download/20240531.json",
+          "tamanho": 1299369,
+          "modificado": "2024-06-07T20:21:59.187289"
+        },
+        {
+          "nome": "20240630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/47255979-3537-4860-90c6-82cb096b34a8/download/20240630.json",
+          "tamanho": 1062400,
+          "modificado": "2024-08-02T17:54:43.522566"
+        },
+        {
+          "nome": "20240731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/bde12153-eee0-49df-ac97-95c2946dc872/download/20240731.json",
+          "tamanho": 514925,
+          "modificado": "2024-08-02T17:55:00.616282"
+        },
+        {
+          "nome": "20240831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/7abc953d-f369-47c7-9fb4-3d50cc1c0a29/download/20240831.json",
+          "tamanho": 745019,
+          "modificado": "2024-09-05T20:09:54.366138"
+        },
+        {
+          "nome": "20240930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/c9f7b3c0-5b91-42bb-ad9f-5b5755406d66/download/20240930.json",
+          "tamanho": 1221749,
+          "modificado": "2024-10-04T17:44:51.319133"
+        },
+        {
+          "nome": "20241031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/ab2919ab-6229-4ceb-a0a8-274cbed031c9/download/20241031.json",
+          "tamanho": 929787,
+          "modificado": "2024-11-04T21:02:12.605757"
+        },
+        {
+          "nome": "20241130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/fedb530b-7e7f-4a25-b967-3a860cd5068c/download/20241130.json",
+          "tamanho": 605411,
+          "modificado": "2024-12-13T22:35:08.908330"
+        },
+        {
+          "nome": "20241231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/5bc81daf-4271-43b7-95cb-b9a2c5661880/download/20241231.json",
+          "tamanho": 579491,
+          "modificado": "2025-01-06T09:49:29.205900"
+        },
+        {
+          "nome": "20250131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/8b4109db-99cd-4475-9a44-7aa13422f2d9/download/20250131.json",
+          "tamanho": 406836,
+          "modificado": "2025-02-03T18:35:19.029722"
+        },
+        {
+          "nome": "20250228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/4586adcd-002f-4d93-81c3-c263a566caff/download/20250228.json",
+          "tamanho": 325341,
+          "modificado": "2025-03-06T21:36:38.334807"
+        },
+        {
+          "nome": "20250331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/8dee921f-c969-4ded-8ec7-06042f4b6058/download/20250331.json",
+          "tamanho": 906648,
+          "modificado": "2025-04-04T21:01:45.348975"
+        },
+        {
+          "nome": "20250430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/ea50154c-82e6-4f7c-a62d-456e486e2725/download/20250430.json",
+          "tamanho": 1751134,
+          "modificado": "2025-05-06T21:29:01.178292"
+        },
+        {
+          "nome": "20250531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/09b90926-d244-41ef-ac52-710c58d87874/download/20250531.json",
+          "tamanho": 1548678,
+          "modificado": "2025-06-06T21:47:33.902395"
+        },
+        {
+          "nome": "20250630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/585dbc5b-e42a-4a1c-8800-a38590e1efbb/download/20250630.json",
+          "tamanho": 826403,
+          "modificado": "2025-08-21T23:13:54.487870"
+        },
+        {
+          "nome": "20250731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/c3ca61a5-0d14-4026-82e0-700c6a886fbd/download/20250731.json",
+          "tamanho": 817483,
+          "modificado": "2025-08-22T17:38:24.227504"
+        },
+        {
+          "nome": "20250831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/2acd7b96-0b47-40bd-8d60-dae2224f70d3/download/20250831.json",
+          "tamanho": 275943,
+          "modificado": "2025-09-03T21:03:38.009636"
+        },
+        {
+          "nome": "20250930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/ea60f920-7d32-4b42-92e1-e27f40cf48d7/download/20250930.json",
+          "tamanho": 1299515,
+          "modificado": "2025-10-22T19:08:08.696525"
+        },
+        {
+          "nome": "20251031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/717f1c66-8ec3-41d3-a493-bdba4cc90724/download/20251031.json",
+          "tamanho": 1449188,
+          "modificado": "2025-11-05T19:50:12.168763"
+        },
+        {
+          "nome": "20251130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/a6bf7ad2-fef6-4ac5-93a9-397524be6c44/download/20251130.json",
+          "tamanho": 1052286,
+          "modificado": "2025-12-05T18:25:36.973101"
+        },
+        {
+          "nome": "20251231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/3bc31c26-3055-40cb-bd08-1f6fbb359fac/download/20251231.json",
+          "tamanho": 4234935,
+          "modificado": "2026-01-06T17:30:23.456338"
+        },
+        {
+          "nome": "20260131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/5e4ec160-4550-4db2-a495-b0b70ea3b5b0/download/20260131.json",
+          "tamanho": 2148005,
+          "modificado": "2026-03-10T20:47:59.618101"
+        },
+        {
+          "nome": "20260228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/d2d11b33-2a65-4c8a-ab2d-8b15397e1a7b/download/20260228.json",
+          "tamanho": 2782920,
+          "modificado": "2026-03-10T20:48:11.297085"
+        },
+        {
+          "nome": "20260331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/b6b5a9e4-f371-46bf-b3ce-e5e92006b08d/download/20260331.json",
+          "tamanho": 8341965,
+          "modificado": "2026-04-06T18:32:39.602699"
+        },
+        {
+          "nome": "20260430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/42c79bb3-6d88-4b6d-89ff-47481fa950b7/download/20260430.json",
+          "tamanho": 4820467,
+          "modificado": "2026-05-18T21:16:29.452692"
+        },
+        {
+          "nome": "20260531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/7e06b3f3-b147-4cf0-83f0-2def49fdba80/download/20260531.json",
+          "tamanho": 4637737,
+          "modificado": "2026-06-09T21:11:40.474426"
+        },
+        {
+          "nome": "20260630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/b7501efc-a9b5-4c69-a84f-c2b7c6340789/download/20260630.json",
+          "tamanho": 13328355,
+          "modificado": "2026-07-30T22:43:29.733477"
+        },
+        {
+          "nome": "20260731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/bb0d8ec6-1ef7-4824-ac68-bd1af045b490/download/20260731.json",
+          "tamanho": 4002155,
+          "modificado": "2026-09-08T14:19:49.856517"
+        },
+        {
+          "nome": "20260831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/a88156c3-ff2d-4775-9d46-12585465f4e3/download/20260831.json",
+          "tamanho": 4493197,
+          "modificado": "2026-09-08T14:20:03.009745"
+        },
+        {
+          "nome": "20260930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/de1881ee-8527-4b35-b1c6-99ad2b2fef57/download/20260930.json",
+          "tamanho": 9760990,
+          "modificado": "2026-10-29T22:36:11.309907"
+        },
+        {
+          "nome": "20261031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/790a02c8-c54d-4940-af17-f4c5a462b95a/download/20261031.json",
+          "tamanho": 14312686,
+          "modificado": "2026-11-13T02:49:32.878197"
+        }
+      ],
+      "cabecalhos": [
+        {
+          "nome": "dicionario-espelhodoacordao.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/f8e2ba27-74c7-4d5e-b807-29db625dcc06/download/dicionario-espelhodoacordao.csv",
+          "tamanho": 2865,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/f8e2ba27-74c7-4d5e-b807-29db625dcc06/download/dicionario-espelhodoacordao.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 2865,
+          "magic_hex": "efbbbf43",
+          "amostra": "﻿Campo;Nome extenso;Descrição\r\nid;ID;Código identificador do acórdão na base de Jurisprudência\r\nnumeroProcesso;Número do Processo no STJ;Número do processo autuado no STJ\r\nnumeroRegistro;Número de Registro no STJ;Número de registro do processo autuado no STJ. \r\nsiglaClasse;Classe do processo - Sigla;Sigla da classe processual padronizada conforme autuação no STJ.\r\ndescricaoClasse;Classe do processo - Por extenso;Nome por extenso da classe processual padronizada conforme autuação no STJ.\r\nnomeOrgaoJulgador;Órgão Julgador;Órgão colegiado responsável pelo julgamento do processo.\r\nministroRelator;Ministro Relator;Ministro responsável pela relatoria do processo ou, quando vencido, do Ministro responsável pela relatoria do acórdão.\r\nementa;Ementa;Resumo do conteúdo da decisão, elaborado pelo Ministro Relator ou, quando vencido, pelo Ministro Relator do Acórdão.\r\ntipoDeDecisao;Tipo de decisão;Decisão judicial proferida por magistrado singular (decisão monocrática) ou por colegiado de julgadores (acórdão). \r\ndataDecisao;Data do julgamento;Data da sessão de julgamento em que o processo foi decidido.\r\ndecisao;Acórdão;Resultado final do julgamento, com informações sobre a votação (unânime ou por maioria), bem como ausências de Ministros , sustentações orais e tese firmada em demanda repetitiva quando for o caso.\r\njurisprudenciaCitada;Jurisprudência citada;Lista, organizada por temas, de decisões, Informativos e repositórios jurisprudenciais citados no acórdão como fundamentação adotada pelos Ministros em seus votos.  Há links que possibilitam acesso direto a tais decisões.\r\nnotas;Notas;Índice de assuntos relevantes e de alterações de acórdãos que podem ser aplicados à consulta jurisprudencial.\r\ninformacoesComplementares;Informações Complementares à Ementa;Informações extraídas do inteiro teor sobre teses decididas no acórdão e que não constam da ementa.\r\ntermosAuxiliares;Termos Auxiliares à Pesquisa;Termos alternativos, baseados nas relações de sinonímia definidas no Tesauro Jurídico do STJ, que auxiliam no resgate das info"
+        },
+        {
+          "nome": "20240229.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/38a2fc1d-b954-44e5-b20c-adbc51a4b245/download/20240229.json",
+          "tamanho": 146525,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/38a2fc1d-b954-44e5-b20c-adbc51a4b245/download/20240229.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000864497\",\r\n  \"numeroProcesso\" : \"1777822\",\r\n  \"numeroRegistro\" : \"202002733678\",\r\n  \"siglaClasse\" : \"AgInt no AREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"QUARTA TURMA\",\r\n  \"ministroRelator\" : \"JOÃO OTÁVIO DE NORONHA\",\r\n  \"dataPublicacao\" : \"DJE        DATA:28/02/2024\",\r\n  \"ementa\" : \"EXPEDIENTE AVULSO. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL.\\nEXECUÇÃO PROVISÓRIA DE TÍTULO JUDICIAL. RESSALVA À IMPENHORABILIDADE\\nDE VERBA SALARIAL. MITIGAÇÃO. REEXAME DE MATÉRIA FÁTICO-PROBATÓRIA.\\nSÚMULA N. 7 DO STJ. INCIDÊNCIA. AGRAVO INTERNO DESPROVIDO.\\n1. Aplica-se a Súmula n. 7 do STJ na hipótese em que o acolhimento\\nda tese defendida no recurso especial implicar, necessariamente, o\\nreexame de matéria fático-probatória dos autos.\\n2.  Agravo interno desprovido.\",\r\n  \"tipoDeDecisao\" : \"ACÓRDÃO\",\r\n  \"dataDecisao\" : \"20240226\",\r\n  \"decisao\" : \"Vistos e relatados estes autos em que são partes as acima\\nindicadas, acordam os Ministros da QUARTA TURMA do Superior Tribunal\\nde Justiça, em sessão virtual de 20/02/2024 a 26/02/2024, por\\nunanimidade, negar provimento ao recurso, nos termos do voto do Sr.\\nMinistro Relator.\\nOs Srs. Ministros Raul Araújo, Maria Isabel Gallotti, Antonio Carlos\\nFerreira e Marco Buzzi  votaram com o Sr. Ministro Relator.\\nPresidiu o julgamento o Sr. Ministro Raul Araújo.\",\r\n  \"jurisprudenciaCitada\" : null,\r\n  \"notas\" : null,\r\n  \"informacoesComplementares\" : null,\r\n  \"termosAuxiliares\" : null,\r\n  \"teseJuridica\" : null,\r\n  \"tema\" : null,\r\n  \"referenciasLegislativas\" : [ ],\r\n  \"acordaosSimilares\" : [ ]\r\n}, {\r\n  \"id\" : \"000864498\",\r\n  \"numeroProcesso\" : \"2405101\",\r\n  \"numeroRegistro\" : \"202302265283\",\r\n  \"siglaClasse\" : \"AgInt no AREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"QUARTA TURMA\",\r\n  \"ministroRelator\" : \"JOÃO OTÁVIO DE NORONHA\",\r\n  \"dataPublicacao\" : \"DJE        DATA:28/02/2024\",\r\n  \"ementa\" : \"AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. RESPONSABILIDADE\\n"
+        },
+        {
+          "nome": "20250831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/2acd7b96-0b47-40bd-8d60-dae2224f70d3/download/20250831.json",
+          "tamanho": 275943,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/2acd7b96-0b47-40bd-8d60-dae2224f70d3/download/20250831.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000921174\",\r\n  \"numeroProcesso\" : \"2583241\",\r\n  \"numeroRegistro\" : \"202400646564\",\r\n  \"siglaClasse\" : \"AREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"QUARTA TURMA\",\r\n  \"ministroRelator\" : \"MARIA ISABEL GALLOTTI\",\r\n  \"dataPublicacao\" : \"DJEN       DATA:28/08/2025\",\r\n  \"ementa\" : \"DIREITO PROCESSUAL CIVIL. AGRAVO EM RECURSO ESPECIAL.\\nIMPENHORABILIDADE DE IMÓVEL. NÃO PREENCHIMENTO DOS REQUISITOS.\\nREEXAME DE PROVAS. INCIDÊNCIA DA SÚMULA 7/STJ. RECURSO NÃO PROVIDO.\\n1. Embora não se exija que o imóvel a ser designado como bem de\\nfamília seja o único bem no conjunto patrimonial do devedor, é\\nnecessário que esse imóvel sirva de residência para a família ou que\\nseus frutos sirvam para a subsistência desta, devendo a\\nimpenhorabilidade recair apenas sobre um único imóvel.\\n2. A decisão recorrida se manifestou robustamente sobre a questão,\\ntendo registrado que o recorrente não logrou êxito em demonstrar o\\npreenchimento dos requisitos necessários ao reconhecimento do imóvel\\ncomo bem de família, além de ter verificado a existência de\\nindícios de que o agravante agiu de maneira imprópria para ocultar\\npatrimônio da empresa INDIANA AGRI, da qual era um dos sócios.\\n3. Rever as conclusões adotadas pelo Tribunal estadual quanto à\\nausência de comprovação dos requisitos para o reconhecimento da\\nimpenhorabilidade do bem de família demandaria, necessariamente, o\\nreexame do conjunto fático-probatório dos autos, o que é vedado em\\nsede de recurso especial por força da Súmula nº 7 do STJ.\\n4. Agravo conhecido para negar provimento ao recurso especial.\",\r\n  \"tipoDeDecisao\" : \"ACÓRDÃO\",\r\n  \"dataDecisao\" : \"20250825\",\r\n  \"decisao\" : \"Vistos e relatados estes autos em que são partes as acima\\nindicadas, acordam os Ministros da QUARTA TURMA do Superior Tribunal\\nde Justiça, em Sessão Virtual de 19/08/2025 a 25/08/2025, por\\nunanimidade, negar provimento ao recurso, nos termos do voto da Sra.\\nMinistra Relatora.\\nOs Srs. Ministros João Otávio de Noronha, Raul Araújo, Antonio\\"
+        },
+        {
+          "nome": "20250228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/4586adcd-002f-4d93-81c3-c263a566caff/download/20250228.json",
+          "tamanho": 325341,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/bab65848-f287-4146-8273-e58faee39ad2/resource/4586adcd-002f-4d93-81c3-c263a566caff/download/20250228.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000900673\",\r\n  \"numeroProcesso\" : \"2702402\",\r\n  \"numeroRegistro\" : \"202402785776\",\r\n  \"siglaClasse\" : \"AgInt no AREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"QUARTA TURMA\",\r\n  \"ministroRelator\" : \"ANTONIO CARLOS FERREIRA\",\r\n  \"dataPublicacao\" : \"DJEN       DATA:28/02/2025\",\r\n  \"ementa\" : \"CIVIL E PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO\\nESPECIAL. REEXAME DO CONJUNTO FÁTICO-PROBATÓRIO DOS AUTOS. SÚMULA N.\\n7/STJ. DIVERGÊNCIA JURISPRUDENCIAL. NÃO DEMONSTRAÇÃO. DECISÃO\\nMANTIDA.\\nI. Caso em exame\\n1. Agravo interno interposto contra decisão da Presidência desta\\nCorte Superior que conheceu do agravo para não conhecer do recurso\\nespecial.\\nII. Questão em discussão\\n2.  Consiste em saber se a análise dos fundamentos do especial\\nesbarra no impedimento da Súmula n. 7/STJ e se a parte agravante\\ncomprovou a divergência jurisprudencial necessária para o\\nconhecimento do recurso especial, nos termos dos arts. 255, §§ 1º e\\n2º, do RISTJ e 1.029, § 1º, do CPC/2015.\\nIII. Razões de decidir\\n3. O recurso especial não comporta exame de questões que impliquem\\nrevolvimento do contexto fático-probatório dos autos (Súmula n. 7 do\\nSTJ).\\n4. Somente em hipóteses excepcionais, quando irrisório ou\\nexorbitante o valor da indenização por danos morais arbitrado na\\norigem, a jurisprudência desta Corte permite o afastamento da Súmula\\nn. 7/STJ para possibilitar a revisão. No caso, o valor estabelecido\\npela Corte de origem não se mostra desproporcional, a justificar\\nsua reavaliação em recurso especial.\\n5. O conhecimento do recurso pela alínea \\\"c\\\" do permissivo\\nconstitucional exige a demonstração da divergência, mediante o\\ncotejo analítico do acórdão recorrido e dos arestos paradigmas, de\\nmodo a se verificarem as circunstâncias que assemelhem ou\\nidentifiquem os casos confrontados (arts. 255, § 1º, do RISTJ e\\n1.029, § 1º, do CPC/2015), ônus do qual a parte recorrente não se\\ndesincumbiu.\\nIV. Dispositivo e tese\\n6. Agravo interno desprovido."
+        }
+      ],
+      "origem": "candidato"
+    },
+    {
+      "url": "https://dadosabertos.web.stj.jus.br/api/3/action/package_show?id=espelhos-de-acordaos-segunda-secao",
+      "ok": true,
+      "status": 200,
+      "num_recursos": 56,
+      "recursos": [
+        {
+          "nome": "20220507.zip",
+          "formato": "zip",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/58ce65dd-1323-494d-9ed5-c50f93079dcf/download/20220508.zip",
+          "tamanho": 5437525,
+          "modificado": "2024-06-07T20:59:28.034344"
+        },
+        {
+          "nome": "dicionario-espelhodoacordao.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/fabfa334-db70-4a82-9364-5731208ec6f8/download/dicionario-espelhodoacordao.csv",
+          "tamanho": 2865,
+          "modificado": "2022-05-11T15:49:16.276588"
+        },
+        {
+          "nome": "20220531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/a5a2a475-27cb-4105-a47b-6368917ae2ff/download/20220531.json",
+          "tamanho": 224021,
+          "modificado": "2022-07-08T13:14:34.937221"
+        },
+        {
+          "nome": "20220630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/db9361e7-3d40-4bf5-8edb-c1602e911981/download/20220630.json",
+          "tamanho": 183825,
+          "modificado": "2022-07-08T13:28:41.353281"
+        },
+        {
+          "nome": "20220731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/ccb0692a-a2a4-43ce-b276-763161cffa76/download/20220731.json",
+          "tamanho": 30185,
+          "modificado": "2022-08-03T19:43:38.448260"
+        },
+        {
+          "nome": "20220831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/2077a31f-b119-450b-8ebd-cd554e11131a/download/20220831.json",
+          "tamanho": 175694,
+          "modificado": "2022-09-06T01:48:17.426434"
+        },
+        {
+          "nome": "20220930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/0b4f3403-9826-4461-80cf-48eec6c92c93/download/20220930.json",
+          "tamanho": 154089,
+          "modificado": "2022-10-03T22:24:59.282584"
+        },
+        {
+          "nome": "20221031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/2c90b908-5a8d-416b-9c23-4594ed93766f/download/20221031.json",
+          "tamanho": 150506,
+          "modificado": "2022-11-07T18:30:16.330979"
+        },
+        {
+          "nome": "20221130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/97f102e9-ff2a-45c7-b1b0-7658fed3d9a8/download/20221130.json",
+          "tamanho": 104444,
+          "modificado": "2022-12-01T19:31:21.372622"
+        },
+        {
+          "nome": "20221231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/dc4c0e40-ccf0-449e-aa3c-494b0cab65a3/download/20221231.json",
+          "tamanho": 113120,
+          "modificado": "2023-01-02T23:21:35.740704"
+        },
+        {
+          "nome": "20230131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/da1868a7-33f7-4df3-ab86-8d000e9db24a/download/20230131.json",
+          "tamanho": 66291,
+          "modificado": "2023-02-02T19:26:09.938447"
+        },
+        {
+          "nome": "20230228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/3dd582fd-5728-4584-ae7a-0efcdcf6f711/download/20230228.json",
+          "tamanho": 48708,
+          "modificado": "2023-03-02T20:12:46.164675"
+        },
+        {
+          "nome": "20230331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/913a1e03-af81-4fa9-9831-40a93d72ddd9/download/20230331.json",
+          "tamanho": 177031,
+          "modificado": "2023-04-03T14:24:46.308706"
+        },
+        {
+          "nome": "20230430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/4a548988-49aa-4617-be47-073eee133c66/download/20230430.json",
+          "tamanho": 59001,
+          "modificado": "2023-05-02T18:57:58.541251"
+        },
+        {
+          "nome": "20230531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/9a907f9c-7aad-41b7-b340-33e05ceff65d/download/20230531.json",
+          "tamanho": 112800,
+          "modificado": "2023-06-01T19:51:32.503175"
+        },
+        {
+          "nome": "20230630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/8450fbab-3449-4d87-a910-f31265a5751d/download/20230630.json",
+          "tamanho": 144587,
+          "modificado": "2023-07-04T12:26:37.099657"
+        },
+        {
+          "nome": "20230731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/009eb2b4-0a75-44fd-afd9-603a9eb098e8/download/20230731.json",
+          "tamanho": 93535,
+          "modificado": "2023-08-02T01:37:43.264288"
+        },
+        {
+          "nome": "20230831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/bb151bc6-54fc-4cb0-83a5-219c8654f0eb/download/20230831.json",
+          "tamanho": 129821,
+          "modificado": "2023-09-06T17:11:06.718915"
+        },
+        {
+          "nome": "20230930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/3fb4d342-08be-440e-bb17-2ba1f44564d5/download/20230930.json",
+          "tamanho": 146216,
+          "modificado": "2023-10-02T22:38:00.674246"
+        },
+        {
+          "nome": "20231031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/b56850c9-8523-4e45-8cdd-892d4087e52d/download/20231031.json",
+          "tamanho": 135362,
+          "modificado": "2023-11-14T16:41:14.355185"
+        },
+        {
+          "nome": "20231130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/3646d8f4-3eb6-48a2-ac3a-ec5d93dea1e2/download/20231130.json",
+          "tamanho": 76586,
+          "modificado": "2023-12-10T20:19:49.369024"
+        },
+        {
+          "nome": "20231231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/22a01267-27c3-4fe6-bfc9-5f818aac7c8f/download/20231231.json",
+          "tamanho": 49039,
+          "modificado": "2024-02-21T11:40:26.059099"
+        },
+        {
+          "nome": "20240131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/7846c76c-661f-4977-8eca-624e37704996/download/20240131.json",
+          "tamanho": 32821,
+          "modificado": "2024-02-21T14:24:04.083967"
+        },
+        {
+          "nome": "20240229.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/5176e318-5de1-4d28-8931-3ee31fd9d7d7/download/20240229.json",
+          "tamanho": 599,
+          "modificado": "2024-03-07T17:13:14.442080"
+        },
+        {
+          "nome": "20240331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/772ba82e-f9c5-402a-9cab-8403f18522d0/download/20240331.json",
+          "tamanho": 129410,
+          "modificado": "2024-04-17T18:19:47.012474"
+        },
+        {
+          "nome": "20240430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/54c81bbf-8561-4de9-825f-20a898a6c095/download/20240430.json",
+          "tamanho": 74581,
+          "modificado": "2024-06-07T20:59:50.905951"
+        },
+        {
+          "nome": "20240531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/4dfbab18-dc87-4d1a-bc2f-0c102d887523/download/20240531.json",
+          "tamanho": 193671,
+          "modificado": "2024-06-07T20:59:58.894441"
+        },
+        {
+          "nome": "20240630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/a9424aab-a62b-46e6-a98c-7cd6593047e5/download/20240630.json",
+          "tamanho": 203948,
+          "modificado": "2024-08-02T17:58:09.645146"
+        },
+        {
+          "nome": "20240731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/cbc3f79d-3aae-4b9b-9894-7bbc8b662337/download/20240731.json",
+          "tamanho": 9242,
+          "modificado": "2024-08-02T17:58:16.545125"
+        },
+        {
+          "nome": "20240831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/db14fd63-6c0c-4805-8d8b-f3aedd96ba60/download/20240831.json",
+          "tamanho": 81236,
+          "modificado": "2024-09-05T20:12:01.532164"
+        },
+        {
+          "nome": "20240930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/fed4201d-315d-4432-9518-a33eb236445e/download/20240930.json",
+          "tamanho": 154284,
+          "modificado": "2024-10-04T17:49:26.688318"
+        },
+        {
+          "nome": "20241031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/fa630708-b2cb-473f-bb27-3f563848d92a/download/20241031.json",
+          "tamanho": 124355,
+          "modificado": "2024-11-04T21:04:48.521334"
+        },
+        {
+          "nome": "20241130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/eb6f0125-b9bb-4eb7-a0bd-a79c069e6abc/download/20241130.json",
+          "tamanho": 104021,
+          "modificado": "2024-12-13T22:37:03.301293"
+        },
+        {
+          "nome": "20241231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/359b7168-b499-4514-a732-e8bad84996fc/download/20241231.json",
+          "tamanho": 78842,
+          "modificado": "2025-01-06T09:54:00.999885"
+        },
+        {
+          "nome": "20250131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/79e01e4f-5a87-471a-b16f-e2279aecad7b/download/20250131.json",
+          "tamanho": 33892,
+          "modificado": "2025-02-03T18:37:57.859278"
+        },
+        {
+          "nome": "20250228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/ea56457c-d3e7-4278-897a-fddac977f95d/download/20250228.json",
+          "tamanho": 103384,
+          "modificado": "2025-03-06T21:38:53.970708"
+        },
+        {
+          "nome": "20250331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/7c6c3214-b35b-4721-b2e6-8c4a64ab66be/download/20250331.json",
+          "tamanho": 87909,
+          "modificado": "2025-04-04T21:04:06.539400"
+        },
+        {
+          "nome": "20250430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/aec86968-eaaa-43e1-8f4a-bc60ffa48308/download/20250430.json",
+          "tamanho": 156780,
+          "modificado": "2025-05-06T21:30:57.079412"
+        },
+        {
+          "nome": "20250531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/28329766-8ca6-4f4a-9edc-df4738b9a965/download/20250531.json",
+          "tamanho": 192415,
+          "modificado": "2025-06-06T21:49:31.375340"
+        },
+        {
+          "nome": "20250630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/e73edfd1-cf90-4411-a899-50e2e45792ce/download/20250630.json",
+          "tamanho": 78737,
+          "modificado": "2025-08-21T23:17:00.830216"
+        },
+        {
+          "nome": "20250731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/a73f04ae-f8ef-48bd-9553-5c8ceb095b45/download/20250731.json",
+          "tamanho": 97914,
+          "modificado": "2025-08-22T17:40:32.037821"
+        },
+        {
+          "nome": "20250831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/10d8c496-bd66-4790-a653-7a09c1860f74/download/20250831.json",
+          "tamanho": 41515,
+          "modificado": "2025-09-03T21:06:29.313193"
+        },
+        {
+          "nome": "20250930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/c4ee5904-5c39-4380-9307-5b99720b618d/download/20250930.json",
+          "tamanho": 293085,
+          "modificado": "2025-10-22T19:13:54.243548"
+        },
+        {
+          "nome": "20251031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/f40e2a6e-a6ee-4602-a3d2-d7c94025ed22/download/20251031.json",
+          "tamanho": 193746,
+          "modificado": "2025-11-05T19:52:50.393899"
+        },
+        {
+          "nome": "20251130.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/e256b34d-f139-492b-ac5b-554980a35121/download/20251130.json",
+          "tamanho": 363795,
+          "modificado": "2025-12-05T18:38:55.951602"
+        },
+        {
+          "nome": "20251231.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/f328c602-093a-42b3-be3c-47e73cc1991e/download/20251231.json",
+          "tamanho": 237909,
+          "modificado": "2026-01-06T17:32:51.073388"
+        },
+        {
+          "nome": "20260131.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/ad2a44c8-434a-4b64-9840-d8c628c6793f/download/20260131.json",
+          "tamanho": 131700,
+          "modificado": "2026-03-10T20:51:06.565606"
+        },
+        {
+          "nome": "20260228.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/0c102f4b-4a59-4be2-9ca1-47f0c9d4bb06/download/20260228.json",
+          "tamanho": 73958,
+          "modificado": "2026-03-10T20:51:15.460285"
+        },
+        {
+          "nome": "20260331.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/605c6084-be75-48df-aed3-1b0e501b8cb2/download/20260331.json",
+          "tamanho": 519637,
+          "modificado": "2026-04-06T18:35:28.765295"
+        },
+        {
+          "nome": "20260430.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/41a3773e-9e03-4eeb-8f7b-31b2ffb2cf25/download/20260430.json",
+          "tamanho": 185408,
+          "modificado": "2026-05-18T21:21:43.015846"
+        },
+        {
+          "nome": "20260531.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/be6a0f97-1bc1-40b1-ab82-cd10f4ab8e35/download/20260531.json",
+          "tamanho": 457769,
+          "modificado": "2026-06-09T21:14:33.629782"
+        },
+        {
+          "nome": "20260630.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/dd129efe-7933-4f94-aa9b-2f7c3a9f23df/download/20260630.json",
+          "tamanho": 388666,
+          "modificado": "2026-07-30T22:57:25.935847"
+        },
+        {
+          "nome": "20260731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/0e2acc39-1ff7-4b3f-b4ae-950e0c4d94a3/download/20260731.json",
+          "tamanho": 18249,
+          "modificado": "2026-09-08T18:22:17.704157"
+        },
+        {
+          "nome": "20260831.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/7a5a4d4e-aec0-4d08-9a74-b1e9eb47e54e/download/20260831.json",
+          "tamanho": 612995,
+          "modificado": "2026-09-08T18:22:25.873688"
+        },
+        {
+          "nome": "20260930.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/767395a9-0c5b-42c6-be17-dbc4edd3fadb/download/20260930.json",
+          "tamanho": 458595,
+          "modificado": "2026-10-29T22:41:17.912307"
+        },
+        {
+          "nome": "20261031.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/fe40c04d-691e-4676-bb04-986a369e9979/download/20261031.json",
+          "tamanho": 1471805,
+          "modificado": "2026-11-13T02:55:56.387011"
+        }
+      ],
+      "cabecalhos": [
+        {
+          "nome": "dicionario-espelhodoacordao.csv",
+          "formato": "csv",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/fabfa334-db70-4a82-9364-5731208ec6f8/download/dicionario-espelhodoacordao.csv",
+          "tamanho": 2865,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/fabfa334-db70-4a82-9364-5731208ec6f8/download/dicionario-espelhodoacordao.csv",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "text/csv",
+          "bytes": 2865,
+          "magic_hex": "efbbbf43",
+          "amostra": "﻿Campo;Nome extenso;Descrição\r\nid;ID;Código identificador do acórdão na base de Jurisprudência\r\nnumeroProcesso;Número do Processo no STJ;Número do processo autuado no STJ\r\nnumeroRegistro;Número de Registro no STJ;Número de registro do processo autuado no STJ. \r\nsiglaClasse;Classe do processo - Sigla;Sigla da classe processual padronizada conforme autuação no STJ.\r\ndescricaoClasse;Classe do processo - Por extenso;Nome por extenso da classe processual padronizada conforme autuação no STJ.\r\nnomeOrgaoJulgador;Órgão Julgador;Órgão colegiado responsável pelo julgamento do processo.\r\nministroRelator;Ministro Relator;Ministro responsável pela relatoria do processo ou, quando vencido, do Ministro responsável pela relatoria do acórdão.\r\nementa;Ementa;Resumo do conteúdo da decisão, elaborado pelo Ministro Relator ou, quando vencido, pelo Ministro Relator do Acórdão.\r\ntipoDeDecisao;Tipo de decisão;Decisão judicial proferida por magistrado singular (decisão monocrática) ou por colegiado de julgadores (acórdão). \r\ndataDecisao;Data do julgamento;Data da sessão de julgamento em que o processo foi decidido.\r\ndecisao;Acórdão;Resultado final do julgamento, com informações sobre a votação (unânime ou por maioria), bem como ausências de Ministros , sustentações orais e tese firmada em demanda repetitiva quando for o caso.\r\njurisprudenciaCitada;Jurisprudência citada;Lista, organizada por temas, de decisões, Informativos e repositórios jurisprudenciais citados no acórdão como fundamentação adotada pelos Ministros em seus votos.  Há links que possibilitam acesso direto a tais decisões.\r\nnotas;Notas;Índice de assuntos relevantes e de alterações de acórdãos que podem ser aplicados à consulta jurisprudencial.\r\ninformacoesComplementares;Informações Complementares à Ementa;Informações extraídas do inteiro teor sobre teses decididas no acórdão e que não constam da ementa.\r\ntermosAuxiliares;Termos Auxiliares à Pesquisa;Termos alternativos, baseados nas relações de sinonímia definidas no Tesauro Jurídico do STJ, que auxiliam no resgate das info"
+        },
+        {
+          "nome": "20240229.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/5176e318-5de1-4d28-8931-3ee31fd9d7d7/download/20240229.json",
+          "tamanho": 599,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/5176e318-5de1-4d28-8931-3ee31fd9d7d7/download/20240229.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 599,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"Obs\": \"Sem lançamentos para o mês de fevereiro/2024\",\t\r\n  \"id\" : \"\",\r\n  \"numeroProcesso\" : \"\",\r\n  \"numeroRegistro\" : \"\",\r\n  \"siglaClasse\" : \"\",\r\n  \"descricaoClasse\" : \"\",\r\n  \"nomeOrgaoJulgador\" : \"SEGUNDA SEÇÃO\",\r\n  \"ministroRelator\" : \"\",\r\n  \"dataPublicacao\" : \"\",\r\n  \"ementa\" : \"\",\r\n  \"tipoDeDecisao\" : \"\",\r\n  \"dataDecisao\" : \"\",\r\n  \"decisao\" : \"\",\r\n  \"jurisprudenciaCitada\" : \"\",\r\n  \"notas\" : null,\r\n  \"informacoesComplementares\" : null,\r\n  \"termosAuxiliares\" : null,\r\n  \"teseJuridica\" : null,\r\n  \"tema\" : null,\r\n  \"referenciasLegislativas\" : [ ],\r\n  \"acordaosSimilares\" : [ ]\r\n}\r\n} ]"
+        },
+        {
+          "nome": "20240731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/cbc3f79d-3aae-4b9b-9894-7bbc8b662337/download/20240731.json",
+          "tamanho": 9242,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/cbc3f79d-3aae-4b9b-9894-7bbc8b662337/download/20240731.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"000877384\",\r\n  \"numeroProcesso\" : \"2088337\",\r\n  \"numeroRegistro\" : \"202200722781\",\r\n  \"siglaClasse\" : \"AgInt no AgInt nos EAREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO AGRAVO INTERNO NOS EMBARGOS DE DIVERGÊNCIA EM AGRAVO EM RECURSO ESPECIAL\",\r\n  \"nomeOrgaoJulgador\" : \"SEGUNDA SEÇÃO\",\r\n  \"ministroRelator\" : \"RAUL ARAÚJO\",\r\n  \"dataPublicacao\" : \"DJE        DATA:27/06/2024\",\r\n  \"ementa\" : \"AGRAVO INTERNO NO AGRAVO INTERNO EM EMBARGOS DE DIVERGÊNCIA EM\\nAGRAVO EM RECURSO ESPECIAL. PROCESSUAL CIVIL. AGRAVO INTERPOSTO\\nCONTRA ACÓRDÃO DA QUARTA TURMA. RECURSO INCABÍVEL. ERRO GROSSEIRO.\\nAGRAVO NÃO CONHECIDO.\\n1. A jurisprudência do Superior Tribunal de Justiça \\\"é pacífica\\nquanto à inadmissibilidade de agravo interno contra acórdão, por\\nconstituir erro grosseiro. Precedentes da Corte Especial e das três\\nSeções deste Tribunal Superior\\\" (AgInt no AgRg nos EDcl na Rcl\\n15.978/RS).\\n2. Agravo interno não conhecido.\",\r\n  \"tipoDeDecisao\" : \"ACÓRDÃO\",\r\n  \"dataDecisao\" : \"20240618\",\r\n  \"decisao\" : \"Vistos e relatados estes autos em que são partes as acima\\nindicadas, acordam os Ministros da SEGUNDA SEÇÃO do Superior\\nTribunal de Justiça, em sessão virtual de 12/06/2024 a 18/06/2024,\\npor unanimidade, negar provimento ao recurso, nos termos do voto do\\nSr. Ministro Relator.\\nOs Srs. Ministros Nancy Andrighi, João Otávio de Noronha, Humberto\\nMartins, Maria Isabel Gallotti, Antonio Carlos Ferreira, Marco\\nBuzzi, Marco Aurélio Bellizze e Moura Ribeiro  votaram com o Sr.\\nMinistro Relator.\\nPresidiu o julgamento o Sr. Ministro Ricardo Villas Bôas Cueva.\",\r\n  \"jurisprudenciaCitada\" : null,\r\n  \"notas\" : null,\r\n  \"informacoesComplementares\" : null,\r\n  \"termosAuxiliares\" : null,\r\n  \"teseJuridica\" : null,\r\n  \"tema\" : null,\r\n  \"referenciasLegislativas\" : [ ],\r\n  \"acordaosSimilares\" : [ ]\r\n}, {\r\n  \"id\" : \"000877304\",\r\n  \"numeroProcesso\" : \"195747\",\r\n  \"numeroRegistro\" : \"202300888760\",\r\n  \"siglaClasse\" : \"AgInt no CC\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NO CONFLITO DE COMPETÊNCIA\",\r\n  \"nomeOrgaoJulgador\" : \"SEG"
+        },
+        {
+          "nome": "20260731.json",
+          "formato": "json",
+          "url": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/0e2acc39-1ff7-4b3f-b4ae-950e0c4d94a3/download/20260731.json",
+          "tamanho": 18249,
+          "url_final": "https://dadosabertos.web.stj.jus.br/dataset/7107650a-f26c-4900-bffd-4492af6361cf/resource/0e2acc39-1ff7-4b3f-b4ae-950e0c4d94a3/download/20260731.json",
+          "status": 206,
+          "ok": true,
+          "desafio_antirrobo": false,
+          "content_type": "application/json",
+          "bytes": 4096,
+          "magic_hex": "5b207b0d",
+          "amostra": "[ {\r\n  \"id\" : \"1449292\",\r\n  \"numeroDocumento\" : null,\r\n  \"numeroProcesso\" : \"2406974\",\r\n  \"numeroRegistro\" : \"202302290777\",\r\n  \"siglaClasse\" : \"AgInt nos EAREsp\",\r\n  \"descricaoClasse\" : \"AGRAVO INTERNO NOS EMBARGOS DE DIVERGÊNCIA EM AGRAVO EM RECURSO ESPECIAL\",\r\n  \"classePadronizada\" : null,\r\n  \"nomeOrgaoJulgador\" : \"SEGUNDA SEÇÃO\",\r\n  \"ministroRelator\" : \"LUÍS CARLOS GAMBOGI (DESEMBARGADOR CONVOCADO DO TJMG)\",\r\n  \"dataPublicacao\" : \"DJEN       DATA:29/06/2026\",\r\n  \"ementa\" : \"DIREITO PROCESSUAL CIVIL. AGRAVO INTERNO. EMBARGOS DE DIVERGÊNCIA.\\n COMPROVAÇÃO DO DISSÍDIO JURISPRUDENCIAL. JUNTADA DO INTEIRO TEOR DOS\\n PARADIGMAS. REPOSITÓRIO OFICIAL. ÓRGÃO FRACIONÁRIO SEM ALTERAÇÃO DE\\n COMPOSIÇÃO. INADMISSIBILIDADE. AGRAVO INTERNO NÃO PROVIDO.\\n I. CASO EM EXAME\\n 1. Agravo interno contra decisão da Presidência do Superior Tribunal\\n de Justiça que indeferiu liminarmente embargos de divergência por\\n ausência de requisitos formais de admissibilidade.\\n 2. Fato relevante. Os embargos de divergência foram opostos em face\\n de acórdão de órgão fracionário que reconheceu intempestividade\\n recursal, indicando como paradigma julgamento em agravo interno no\\n agravo em recurso especial.\\n 3. As decisões anteriores. A Presidência indeferiu liminarmente o\\n apelo por inobservância das exigências do CPC e do RISTJ quanto à\\n demonstração do dissídio; embargos de declaração anteriores foram\\n rejeitados.\\n II. QUESTÃO EM DISCUSSÃO\\n 4. A questão em discussão consiste em saber se, para a\\n admissibilidade dos embargos de divergência, é indispensável a\\n juntada do inteiro teor dos acórdãos paradigmas, com indicação de\\n repositório oficial ou autorizado, e se é possível utilizar como\\n paradigma acórdão do mesmo órgão fracionário quando não houve\\n alteração de sua composição entre os julgamentos.\\n III. RAZÕES DE DECIDIR\\n 5. A jurisprudência consolidada do Superior Tribunal de Justiça, com\\n fundamento no art. 1.043, § 4º, do CPC/2015 e no art. 266, § 4º, do\\n RISTJ, exige a juntada da cópia do inteiro teor dos acórdãos\\n p"
+        }
+      ],
+      "origem": "candidato"
+    }
+  ]
+}

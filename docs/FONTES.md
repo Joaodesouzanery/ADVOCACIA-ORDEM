@@ -5,6 +5,7 @@ Status: `não verificado` = URL fornecida pelo usuário, ainda não testada (o s
 | # | Fonte | URL | Uso planejado | Marco | Status |
 |---|-------|-----|---------------|-------|--------|
 | a | Câmara – Dados Abertos (Swagger) | https://dadosabertos.camara.leg.br/swagger/api.html | Tramitação de proposições (complemento) | M3 | não verificado |
+| b0 | Planalto – texto compilado | ver `src/ordem/data/normas.json` | Letra da lei (ingestão M1 ativa) | M1 | não verificado (aguarda 1ª execução do workflow) |
 | b | Senado – Legislação | https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao | Letra da lei por artigo (+ Planalto como texto compilado) | M1 | não verificado |
 | c | STJ – Jurisprudência | https://dadosabertos.web.stj.jus.br/group/jurisprudencia | Acórdãos/ementas | M2 | não verificado |
 | d | STJ – Grupos | https://dadosabertos.web.stj.jus.br/group/ | Descoberta de conjuntos | M2 | não verificado |
@@ -21,3 +22,18 @@ Status: `não verificado` = URL fornecida pelo usuário, ainda não testada (o s
 ## Lacunas a cobrir
 - STF, TST e atos normativos do CNJ (resoluções/instruções): fontes ainda não listadas — mapear no M4.
 - Calendário de feriados/suspensões por tribunal (para o motor de prazos).
+
+## Sondagem
+Resultados reais em `data/sondagem/` (workflow `sondagem`). Uma fonte só passa de `não verificado` para verificada após resposta 200 com formato conferido por pessoa. Candidatos de endpoint em `src/ordem/data/fontes.json` (origem `candidato`) são palpites, não fatos.
+
+### Resultado da 1ª sondagem (11/11/2026, GitHub Actions)
+- **Câmara** `api/v2/...`: 200 JSON. **STJ CKAN** `api/3/action/package_list`: 200 JSON (CKAN 2.10; há `precedentes-qualificados`, `espelhos-de-acordaos-*`, `integras-de-decisoes-*`; súmulas não aparecem como conjunto: conferir no SCON). **Senado**: portal 200; Swagger em `legis.senado.leg.br/dadosabertos/docs/` (spec a localizar). **CNJ, TJDFT, DataJud (página STJ)**: páginas 200 (HTML).
+- **LexML**: 200, mas é página de verificação anti-robô, sem dados → não usar.
+- **TJRS**: timeout de conexão (tentar de novo).
+
+### Sondagem 2 (22/11/2026)
+- **STJ CKAN verificado**: espelhos (`espelhos-de-acordaos-*`: ZIP histórico + JSON mensal; campos id, numeroProcesso, numeroRegistro, siglaClasse, nomeOrgaoJulgador, ministroRelator, dataPublicacao, ementa, dataDecisao…) e `precedentes-qualificados` (Temas.csv/Processos.csv, ligados por sequencialPrecedente; arquivos duplicados). Licença CC-BY. Súmulas: sem conjunto no CKAN.
+- **Senado**: spec OpenAPI em `legis.senado.leg.br/dadosabertos/v3/api-docs` (200, JSON). Caminhos listados na sondagem 3.
+
+### Senado – /legislacao/urn (22/11/2026)
+Verificado: JSON com `DetalheDocumento` (identificação, `urlDocumento` em normas.leg.br, publicações, `vides` = normas posteriores, `disps` = dispositivos alterados). **Sem texto de artigos.** Parâmetros úteis: `/legislacao/lista?tipo&numero&ano`, `/legislacao/{codigo}`, `/legislacao/{tipo}/{numdata}/{anoseq}`; formatos json/xml/csv.

@@ -1,0 +1,47 @@
+name: ingestao
+on:
+  push:
+    paths:
+      - "src/ordem/data/normas.json"
+      - "src/ordem/connectors/planalto.py"
+      - ".github/workflows/ingestao.yml"
+  workflow_dispatch:
+    inputs:
+      normas:
+        description: "ids separados por espaço (vazio = todas): cc cpc cf eca lei5478 ..."
+        required: false
+        default: ""
+  schedule:
+    - cron: "17 6 * * 1"  # segundas, 06:17 UTC
+permissions:
+  contents: write
+concurrency:
+  group: ingestao
+  cancel-in-progress: false
+jobs:
+  ingerir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[ingest,excel]"
+      - name: Ingerir letra da lei (Planalto) e exportar CSV/XLSX
+        env:
+          # Opcionais: se configurados, o corpus também é sincronizado no Supabase.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: ordem ingerir ${{ github.event.inputs.normas }} --xlsx
+      - name: Relatório
+        if: always()
+        run: cat data/ingestao_relatorio.json || true
+      - name: Commit do corpus
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/corpus.csv data/corpus.xlsx data/ingestao_relatorio.json
+          git diff --cached --quiet && echo "sem mudanças" && exit 0
+          git commit -m "Ingestão automática do corpus ($(date -u +%F))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

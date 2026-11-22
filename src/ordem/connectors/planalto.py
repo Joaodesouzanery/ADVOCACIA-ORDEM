@@ -18,7 +18,12 @@ _TAG = re.compile(r"<[^>]+>")
 _ART = re.compile(r"^\s*(Art\.\s*\d[\d\.]*\s*(?:º|°|o)?(?:-[A-Z])?)\s*[\.\-–]?\s", re.MULTILINE)
 
 
+_RISCADO = re.compile(r"(?is)<(strike|s|del)\b[^>]*>.*?</\1\s*>")
+
+
 def html_para_texto(conteudo: str) -> str:
+    # Texto compilado do Planalto mostra redações revogadas riscadas: descartar.
+    conteudo = _RISCADO.sub("", conteudo)
     conteudo = re.sub(r"(?i)<br\s*/?>|</p>|</div>|</li>", "\n", conteudo)
     conteudo = _TAG.sub("", conteudo)
     conteudo = html.unescape(conteudo).replace("\xa0", " ")
@@ -37,6 +42,31 @@ def dividir_artigos(texto: str) -> list[tuple[str, str]]:
     return saida
 
 
+def extrair_artigos(conteudo_html: str) -> list[tuple[str, str]]:
+    """HTML -> artigos únicos (mantém a 1ª ocorrência de cada caminho).
+
+    Ex.: na CF, a numeração do ADCT repete a do corpo permanente; o ADCT fica
+    de fora nesta versão (pendência registrada no ROADMAP).
+    """
+    vistos: set[str] = set()
+    saida = []
+    for caminho, corpo in dividir_artigos(html_para_texto(conteudo_html)):
+        if caminho not in vistos:
+            vistos.add(caminho)
+            saida.append((caminho, corpo))
+    return saida
+
+
+def baixar_html(url: str) -> str:  # pragma: no cover - requer rede
+    import httpx  # extra "ingest"
+
+    resp = httpx.get(url, timeout=90, follow_redirects=True,
+                     headers={"User-Agent": "ordem-dados-abertos/0.1"})
+    resp.raise_for_status()
+    # Textos do Planalto costumam vir em windows-1252
+    return resp.content.decode("cp1252", errors="replace")
+
+
 class PlanaltoConector(Conector):
     nome = "planalto"
 
@@ -44,11 +74,5 @@ class PlanaltoConector(Conector):
         self.norma, self.url = norma, url
 
     def fetch(self) -> Iterator[Dispositivo]:  # pragma: no cover - requer rede
-        import httpx  # extra "ingest"
-
-        resp = httpx.get(self.url, timeout=60, follow_redirects=True)
-        resp.raise_for_status()
-        # Textos do Planalto costumam vir em windows-1252/latin-1
-        texto = html_para_texto(resp.content.decode("latin-1", errors="replace"))
-        for caminho, corpo in dividir_artigos(texto):
+        for caminho, corpo in extrair_artigos(baixar_html(self.url)):
             yield Dispositivo(self.norma, caminho, corpo, self.url, self.nome)

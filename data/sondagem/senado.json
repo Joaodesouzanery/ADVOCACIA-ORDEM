@@ -1,0 +1,4274 @@
+{
+  "fonte": "senado",
+  "nome": "Senado – Dados Abertos (legislação)",
+  "executado_em": "2026-11-22T20:47:54+00:00",
+  "resultados": [
+    {
+      "url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
+      "url_final": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 148835,
+      "magic_hex": "3c21444f",
+      "amostra": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-br\" xml:lang=\"pt-br\">\n<head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n    <meta name=\"author\" content=\"Senado Federal\" />\n    <title>Dados Abertos</title><title>Dados Abertos de Legislação  (Legislativo) - Dados Abertos – Senado Federal</title>\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/dados-abertos/++theme++senado/senado-favicon.ico\" />\n    \n<meta content=\"summary\" name=\"twitter:card\" /><meta content=\"Dados Abertos\" property=\"og:site_name\" /><meta content=\"Dados Abertos\" property=\"og:title\" /><meta content=\"website\" property=\"og:type\" /><meta content=\"\" property=\"og:description\" /><meta content=\"https://www12.senado.leg.br/dados-abertos\" property=\"og:url\" /><meta content=\"https://www12.senado.leg.br/dados-abertos/logo.png\" property=\"og:image\" /><meta content=\"image/png\" property=\"og:image:type\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"citation_title\" content=\"Dados Abertos de  Legislação  (Legislativo) - Dados Abertos – Senado Federal\" /><meta name=\"generator\" content=\"Plone - http://plone.com\" /><link rel=\"canonical\" href=\"https://www12.senado.leg.br/dados-abertos\" /><link rel=\"alternate\" href=\"https://www12.senado.leg.br/dados-abertos/RSS\" title=\"Dados Abertos - RSS 1.0\" type=\"application/rss+xml\" /><link rel=\"alternate\" href=\"https://www12.senado.leg.br/dados-abertos/rss.xml\" title=\"Dados Abertos - RSS 2.0\" type=\"application/rss+xml\" /><link rel=\"alternate\" href=\"https://www12.senado.leg.br/dados-abertos/atom.xml\" title=\"Dados Abertos - Atom\" type=\"application/rss+xml\" /><link rel=\"search\" href=\"https://www12.senado.leg.br/dados-abertos/@@search\" title=\"Buscar neste site\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"https://www12.senado.leg.br/dados-abertos/++plone++productio",
+      "origem": "usuario"
+    },
+    {
+      "url": "https://legis.senado.leg.br/dadosabertos/docs/",
+      "url_final": "https://legis.senado.leg.br/dadosabertos/api-docs/swagger-ui/index.html",
+      "status": 200,
+      "ok": true,
+      "desafio_antirrobo": false,
+      "content_type": "text/html",
+      "bytes": 734,
+      "magic_hex": "3c212d2d",
+      "amostra": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"index.css\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n  </head>\n\n  <body>\n    <div id=\"swagger-ui\"></div>\n    <script src=\"./swagger-ui-bundle.js\" charset=\"UTF-8\"> </script>\n    <script src=\"./swagger-ui-standalone-preset.js\" charset=\"UTF-8\"> </script>\n    <script src=\"./swagger-initializer.js\" charset=\"UTF-8\"> </script>\n  </body>\n</html>\n",
+      "origem": "candidato"
+    },
+    {
+      "url": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
+      "ok": true,
+      "status": 200,
+      "titulo": "Dados Abertos Legislativos do Senado Federal e Congresso Nacional",
+      "versao": "4.1.3.118",
+      "servidores": [
+        "/"
+      ],
+      "num_caminhos": 157,
+      "caminhos": [
+        {
+          "caminho": "/dadosabertos/votacaoComissao/parlamentar/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Votações nas Comissões por Parlamentar"
+        },
+        {
+          "caminho": "/dadosabertos/votacaoComissao/materia/{sigla}/{numero}/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "sigla",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "numero",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "ano",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Votações de Matérias nas Comissões por Identificação da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/votacaoComissao/comissao/{siglaComissao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "siglaComissao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Votações de Matérias nas Comissões do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/votacao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigoSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idProcesso",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoMateria",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "nomeParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaVotoParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Votos Nominais de Parlamentares em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/videos/sessao/{idSessao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idSessao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Unidades Descritivas (vídeos) de Sessões Plenárias"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/videos/reuniao/{idReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idReuniao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Unidades Descritivas (vídeos) de Reuniões de Comissão e/ou outros Colegiados"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/notas/sessao/{idSessao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idSessao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Notas Taquigráficas de Sessões Plenárias"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/notas/reuniao/{idReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idReuniao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Notas Taquigráficas de Reuniões de Comissão e/ou outros Colegiados"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*"
+          ],
+          "resumo": "Obtém informações de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/votacoes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Obtém as Votações Nominais de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/relatorias",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Obtém as matérias de Relatoria de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/profissao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém as Profissões de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/mandatos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém os Mandatos Parlamentares de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/liderancas",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "ativo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Obtém os Cargos de Liderança de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/licencas",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém as Licenças oficiais de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/historicoAcademico",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém o Histórico Acadêmico de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/filiacoes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém as Filiações Partidárias de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/discursos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "casa",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numeroSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tipoSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Discursos de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/comissoes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "ativo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém a relação das Comissões que um Senador é membro"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/cargos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "ativo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém a relação de Cargos ocupados por um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/autorias",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "primeiro",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Lista as matérias de Autoria de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/apartes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "casa",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numeroSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tipoSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Apartes feitos por um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/partidos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista os Partidos Políticos em atividade e/ou extintos"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/tiposUsoPalavra",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista os Tipos de Uso da Palavra (Modalidades de Discursos)"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/legislatura/{legislaturaInicio}/{legislaturaFim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "legislaturaInicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "legislaturaFim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "uf",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "participacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "exercicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém a lista de Senadores de um intervalo de Legislaturas"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/legislatura/{legislatura}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "legislatura",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "uf",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "participacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "exercicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém a lista de Senadores de uma determinada Legislatura"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/atual",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "uf",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "participacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Senadores em Exercício"
+        },
+        {
+          "caminho": "/dadosabertos/senador/afastados",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a lista dos Senadores atualmente afastados (Fora de Exercício)"
+        },
+        {
+          "caminho": "/dadosabertos/processo/{id}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "id",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml"
+          ],
+          "resumo": "Detalhes de um Processo Legislativo por código do Processo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-situacao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Tipos de Situações (estado) possíveis em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-decisao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Tipos de Decisões que podem ocorrer em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-autor",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Tipos de Autores de Documentos e Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-atualizacao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Tipos de Atualização que podem ocorrer em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/siglas",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Tipos e Siglas de Documentos e Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/relatoria",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idProcesso",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoMateria",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaSituacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataReferencia",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoColegiado",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Relatorias de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/prazo/tipos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Tipos de Prazos de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/prazo",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idProcesso",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoMateria",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idTipoPrazo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataReferencia",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoColegiado",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Prazos Regimentais ou Constitucionais definidos no rito de tramitação de um Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/entes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Entes Jurídicos que podem participar como autores ou instâncias de tramitação ou de expedição de Documentos e P"
+        },
+        {
+          "caminho": "/dadosabertos/processo/emenda",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idEmenda",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idDocumento",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idProcesso",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoMateria",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoParlamentarAutor",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoColegiado",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista as Emendas apresentadas em um Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/documento/tipos-conteudo",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Tipos de Conteúdo Informacional que os Documentos Legislativos podem conter"
+        },
+        {
+          "caminho": "/dadosabertos/processo/documento/tipos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Tipos de Documentos que podem ser apresentados em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/documento",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idDocumento",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idProcesso",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoMateria",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoParlamentarAutor",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idEnteAutor",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoColegiado",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaColegiado",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaTipo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml"
+          ],
+          "resumo": "Documentos apresentados no Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/destinos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Destinos possíveis de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/classes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml"
+          ],
+          "resumo": "Lista a Hierarquia de Classificações de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/assuntos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Assuntos Gerais e Específicos de que tratam os Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idProcesso",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoMateria",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tramitouLegislaturaAtual",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoColegiadoTramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaSituacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "situacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "autor",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoParlamentarAutor",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaTipoDocumento",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaTipoConteudo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoClasse",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codAssuntoGeral",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codAssuntoEspecifico",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "termo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "casa",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaEnteIdentificador",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicioApresentacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFimApresentacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicioDeliberacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFimDeliberacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaTipoDeliberacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tipoNorma",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numeroNorma",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "anoNorma",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numdias",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "alteracao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/votacao/orientacaoBancada/{dataSessao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataSessao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Orientação de Bancada para Votação de Matéria das Sessões que ocorreram em uma data"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/votacao/orientacaoBancada/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataInicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataFim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Orientação de Bancada para Votação de Matéria das Sessões que ocorreram em um período"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/votacao/nominal/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "ano",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [],
+          "resumo": "(DEPRECATED) Votações Nominais por ano"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/tiposSessao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista os Tipos de Sessão Plenária"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém o Resultado da Sessão Plenária na data informada"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/veto/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Resultado da Votação Nominal de Veto"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/veto/materia/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Resultado da Votação Nominal do Veto a um Projeto de Lei"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/veto/dispositivo/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Resultado da Votação Nominal de um Dispositivo do Veto (em Vetos Parciais)"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/mes/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "resultadoMes"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/cn/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Resultado da Sessão Plenária do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/votacao/{dataSessao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataSessao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Lista de Votações Nominais nas Sessões por data"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/votacao/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataInicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataFim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Lista de Votações Nominais nas Sessões por período"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/tiposComparecimento",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista os Tipos de Comparecimento em Votações do Plenário"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/legislaturas",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista de todas as Legislaturas e suas Sessões Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/discursos/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataInicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataFim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "siglaCasa",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tipoSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numeroSessao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Discursos por período/sessão"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/legislatura/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Obtém a Legislatura na data informada e suas Sessões Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}/resumo",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Resumo do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}/resultado",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Resultado de Pauta do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}/pauta",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Itens de Pauta do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Detalhes do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/mes/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Agenda do mês nos Plenários do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/dia/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Agenda do dia nos Plenários do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/cn/{inicio}/{fim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "inicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "fim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Agenda do período do Plenário do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/cn/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Agenda do dia do Plenário do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/atual/iCal",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "text/calendar"
+          ],
+          "resumo": "Agenda de Plenário em formato iCal"
+        },
+        {
+          "caminho": "/dadosabertos/orcamento/oficios/{numeroSedol}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numeroSedol",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Recupera informações de determinado Ofício de apoio às Emendas de Orçamento"
+        },
+        {
+          "caminho": "/dadosabertos/orcamento/oficios",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista os Ofícios de apoio às Emendas de Orçamento"
+        },
+        {
+          "caminho": "/dadosabertos/orcamento/lista",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lotes de Emendas ao Orçamento"
+        },
+        {
+          "caminho": "/dadosabertos/materia/{sigla}/{numero}/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "sigla",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "numero",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "ano",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Detalhes da Matéria por Sigla, Número, Ano e Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Detalhes da Matéria por código"
+        },
+        {
+          "caminho": "/dadosabertos/materia/votacoes/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Votações de uma Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "ano",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [],
+          "resumo": "Relação de Vetos presidenciais por ano"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/encerrados",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Vetos com tramitação encerrada"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/aposrcn",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Vetos posteriores à RCN 1/2013 em tramitação"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/antesrcn",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Vetos anteriores à RCN 1/2013 em tramitação"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tramitando",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "hora",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Lista as Matérias que estão tramitando"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposatualizacoes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Tipos de Atualização que podem ocorrer em Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposTurnoApresentacao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Tipos de Turno de Apresentação de Matérias no Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposPrazo",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Tipos de Prazos os quais Matérias Legislativas podem estar sujeitos"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposNatureza",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Tipos de Natureza das Matérias"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposEmenda",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Tipos de Emendas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/textos/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Documentos apresentados na Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/subtipos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Subtipos e Siglas de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/situacoes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Situações possíveis de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/situacaoatual/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Situação e Localização atuais da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/situacaoatual/tramitacao/{data}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "data",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Situação atual e Localização das Matérias que tramitaram na Data informada"
+        },
+        {
+          "caminho": "/dadosabertos/materia/relatorias/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Relatorias da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/pesquisa/lista",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaComissaoReq",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "nomeAutor",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicioApresentacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFimApresentacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoClasse",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoConteudo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tipoNorma",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numeroNorma",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "anoNorma",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "palavraChave",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Pesquisa básica de matérias"
+        },
+        {
+          "caminho": "/dadosabertos/materia/ordia/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Sessões em que a Matéria foi pautada na Ordem do Dia"
+        },
+        {
+          "caminho": "/dadosabertos/materia/movimentacoes/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataref",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Movimentação da Matéria, incluindo tramitação, prazos, despachos, situação etc."
+        },
+        {
+          "caminho": "/dadosabertos/materia/locais",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Lista os Entes Jurídicos possíveis de localização de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/lista/tramitacao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Total de Processos em tramitação no Senado Federal ou no Congresso Nacional por Tipo ou pelo Colegiado em que se encontr"
+        },
+        {
+          "caminho": "/dadosabertos/materia/lista/prazo/{codPrazo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codPrazo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tipo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Matérias Legislativas que tramitam com Prazo determinado"
+        },
+        {
+          "caminho": "/dadosabertos/materia/lista/comissao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "materia",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "comissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "situacao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATD) Lista as Matérias Legislativas localizadas em uma Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/legislaturaatual",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tramitando",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Lista as Matérias que estão em tramitação ou que tramitaram na Legislatura atual"
+        },
+        {
+          "caminho": "/dadosabertos/materia/emendas/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Emendas da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/emenda/{idDomaEmenda}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "idDomaEmenda",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Detalhes da Emenda - por ID do Documento da Emenda"
+        },
+        {
+          "caminho": "/dadosabertos/materia/distribuicao/relatoria/{sigla}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "sigla",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Distribuição de relatoria de matérias em uma comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/distribuicao/autoria/{siglaComissao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "siglaComissao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "codParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Distribuição de autoria de matérias em uma comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/distribuicao/autoria",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "siglaComissao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Distribuição de autoria de matérias (por comissão e/ou parlamentar)"
+        },
+        {
+          "caminho": "/dadosabertos/materia/destinos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Lista os Destinos possíveis de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/decisoes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Lista os Tipos de Decisões em votações de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/classes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Lista as Classificações de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/autoria/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Autoria da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/atualizadas",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "numdias",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "alteracao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "sigla",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codAssuntoGeral",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codAssuntoEspecifico",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "termo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Lista as Matérias que foram incluídas ou sofreram atualização nos últimos dias (default = 5)"
+        },
+        {
+          "caminho": "/dadosabertos/materia/atualizacoes/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "numdias",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "*/*",
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Atualizações mais recentes de uma Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/assuntos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Lista de Assuntos de Matérias Legislativas (Proposições)"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/{tipo}/{numdata}/{anoseq}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tipo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "numdata",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "anoseq",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Detalhes de uma Norma Jurídica pela identificação (sigla / número / ano)"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Detalhes de uma Norma Jurídica pelo código"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/urn",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "urn",
+              "em": "query",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Detalhes de uma Norma Jurídica pela URN"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposdeclaracao/detalhe",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista de Detalhes de Declaração"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposVide",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista de Tipos de Declaração"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposPublicacao",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista de Tipos de Publicação"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposNorma",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista Tipos de Norma"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/termos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tipo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "termo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Pesquisa de Termos do Catálogo"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/lista",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tipo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "numero",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ano",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "data",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "seq",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "reedicao",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "ident",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "complemento",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Pesquisa de Normas Federais"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/classes",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista Classificação de Normas Jurídicas, Projetos e Pronunciamentos"
+        },
+        {
+          "caminho": "/dadosabertos/discurso/texto-integral/{codigoPronunciamento}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigoPronunciamento",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [
+            "text/plain"
+          ],
+          "resumo": "Texto Integral de um Pronunciamento em formato texto plano (txt)"
+        },
+        {
+          "caminho": "/dadosabertos/discurso/texto-binario/{codigoPronunciamento}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigoPronunciamento",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [
+            "*/*"
+          ],
+          "resumo": "Texto Integral de um Pronunciamento em formato binário"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/mesaSF",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a Composição dos integrantes da Mesa Diretora do Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/mesaCN",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a Composição dos integrantes da Mesa Diretora do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/{tipo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tipo",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [],
+          "resumo": "Obtém a Composição das Comissões do Senado Federal por tipo de Colegiado"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/tiposCargo",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a lista de Tipos de Cargo nas Comissões do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/partidos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a lista dos Partidos Políticos em atividade e/ou extintos no Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/liderancaSF",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Obtém a lista das Lideranças em atividade no Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/liderancaCN",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Obtém a lista das Lideranças em atividade no Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/cn/{tipo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tipo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Composição das Comissões do Congresso Nacional por tipo"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/blocos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a lista e a Composição dos Blocos Parlamentares no Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lideranca/tipos-unidade",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista Tipos de Unidades de Lideranças"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lideranca/tipos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista Tipos de Lideranças"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lideranca",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "casa",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "idTipoUnidadeLideranca",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoParlamentar",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "vigente",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "siglaTipoLideranca",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoPartido",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "codigoBloco",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/x-ndjson",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista Lideranças do Senado Federal, Congresso Nacional e Câmara dos Deputados"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/comissao/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "ativas",
+              "em": "query",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Última Composição de uma Comissão do Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/comissao/resumida/mista/{codigo}/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataInicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataFim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Composição resumida de uma Comissão Mista em determinado período"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/comissao/atual/mista/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Composição atual de uma Comissão Mista"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/bloco/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Composição de um Bloco Parlamentar"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/{comissao}/documentos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "comissao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "tipo",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataInicio",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "dataFim",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "(DEPRECATED) Obtém os documentos apresentados em um Colegiado"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Detalhes de um Colegiado do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/reuniao/{sigla}/documento/{tipoDocumento}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "sigla",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "tipoDocumento",
+              "em": "path",
+              "obrigatorio": true
+            }
+          ],
+          "produz": [],
+          "resumo": "Link para um documento da última Reunião de uma Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/reuniao/{codigoReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigoReuniao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Informações detalhadas da Reunião de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/reuniao/notas/{codigoReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "codigoReuniao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Notas Taquigráficas da Reunião de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/{tipo}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "tipo",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml",
+            "text/csv"
+          ],
+          "resumo": "Lista de Colegiados do Senado Federal (por tipo)"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/tiposColegiado",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a Lista de Tipos de Colegiado do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/mistas",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Comissões Mistas atuais do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/colegiados",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Obtém a Lista geral de Colegiados EM ATIVIDADE no Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/cpi/{comissao}/requerimentos",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "comissao",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "pagina",
+              "em": "query",
+              "obrigatorio": false
+            },
+            {
+              "nome": "tamanho",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json"
+          ],
+          "resumo": "Lista Requerimentos de CPI. Exclusivo para CPIs"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/{dataReferencia}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataReferencia",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml"
+          ],
+          "resumo": "Agenda das Reuniões de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "dataInicio",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "dataFim",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml"
+          ],
+          "resumo": "Agenda das Reuniões de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/mes/{mesReferencia}",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [
+            {
+              "nome": "mesReferencia",
+              "em": "path",
+              "obrigatorio": true
+            },
+            {
+              "nome": "v",
+              "em": "query",
+              "obrigatorio": false
+            }
+          ],
+          "produz": [
+            "application/json",
+            "application/xml"
+          ],
+          "resumo": "Agenda das Reuniões de Comissão no mês informado"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/atual/iCal",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [
+            "text/calendar"
+          ],
+          "resumo": "Obtém a Agenda das Comissões do Congresso Nacional dos próximos 30 dias a partir da data atual. (Formato iCal)"
+        },
+        {
+          "caminho": "/dadosabertos/autor/tiposAutor",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "(DEPRECATED) Lista os Tipos de Autor"
+        },
+        {
+          "caminho": "/dadosabertos/autor/lista/atual",
+          "metodos": [
+            "get"
+          ],
+          "parametros": [],
+          "produz": [],
+          "resumo": "Lista Parlamentares Autores de Processos em tramitação no Senado Federal ou no\nCongresso Nacional, com o quantitativo de"
+        }
+      ],
+      "origem": "candidato"
+    },
+    {
+      "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:2002-01-10;10406",
+      "ok": true,
+      "status": 200,
+      "bytes": 204686,
+      "estrutura": {
+        "DetalheDocumento": {
+          "noNamespaceSchemaLocation": "str[69]:'https://legis.senado.leg.br/dadosabertos/dados/Det'",
+          "Metadados": {
+            "Versao": "str[19]:'22/11/2026 17:06:57'",
+            "VersaoServico": "str[1]:'3'",
+            "DataVersaoServico": "str[10]:'2017-02-01'",
+            "DescricaoDataSet": "str[57]:'Obtém detalhes de uma Norma Jurídica por meio da s'"
+          },
+          "documentos": {
+            "documento": {
+              "__lista__": 1,
+              "__item0__": {
+                "id": "str[6]:'552282'",
+                "identificacao": {
+                  "tipo": "str[5]:'LEI-n'",
+                  "descricao": "str[12]:'Lei Numerada'",
+                  "numero": "str[5]:'10406'",
+                  "norma": "str[20]:'LEI-10406-2002-01-10'",
+                  "normaNome": "str[27]:'Lei nº 10.406 de 10/01/2002'",
+                  "dataassinatura": "str[10]:'10/01/2002'",
+                  "apelido": "str[47]:'LEI-10406-2002-01-10 , Código Civil (2002) (CC)'",
+                  "urlDocumento": "str[66]:'https://normas.leg.br/?urn=urn:lex:br:federal:lei:'"
+                },
+                "publicacoes": {
+                  "publicacao": {
+                    "__lista__": 2,
+                    "__item0__": {
+                      "id": "str[8]:'14351563'",
+                      "tipo": "str[3]:'PUB'",
+                      "fonte": "str[38]:'Diário Oficial da União  de 11/01/2002'",
+                      "siglaFonte": "str[14]:'DOU-2002-01-11'",
+                      "data": "str[10]:'11/01/2002'",
+                      "pagina": "str[1]:'1'",
+                      "coluna": "str[1]:'1'",
+                      "urlPubOficial": "str[93]:'https://pesquisa.in.gov.br/imprensa/jsp/visualiza/'",
+                      "dispositivo": "str[77]:'Publicação Original   [Diário Oficial da União  de'",
+                      "idBinario": "str[8]:'15676634'",
+                      "mime": "str[71]:'application/vnd.openxmlformats-officedocument.word'",
+                      "temTexto": "str[1]:'S'",
+                      "dataAtualizacao": "str[20]:'2024-07-23T18:41:40Z'"
+                    }
+                  }
+                },
+                "vides": {
+                  "vide": {
+                    "__lista__": 74,
+                    "__item0__": {
+                      "codnormaposterior": "str[6]:'553032'",
+                      "datAssinatura": "str[10]:'24/10/2002'",
+                      "nomeNormaPosterior": "str[37]:'Medida Provisória nº 75 de 24/10/2002'",
+                      "pagina": "str[1]:'1'",
+                      "coluna": "str[1]:'3'",
+                      "urlPubOficial": "str[93]:'https://pesquisa.in.gov.br/imprensa/jsp/visualiza/'",
+                      "edicao": "str[8]:'13841466'",
+                      "tipoEdicao": "str[3]:'750'",
+                      "datapub": "str[10]:'25/10/2002'",
+                      "nomePub": "str[77]:'Publicação Original   [Diário Oficial da União  de'",
+                      "comentario": "str[34]:'Declaração de Alteração Provisória'",
+                      "itens": {
+                        "item": {
+                          "__lista__": 1,
+                          "__item0__": {
+                            "dispositivo": "str[9]:'Art. 374 '",
+                            "comentario": "str[27]:'Revogação de Parte do Texto'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "edivs": {
+                  "ediv": {
+                    "__lista__": 2,
+                    "__item0__": {
+                      "codnormaAnterior": "str[6]:'542035'",
+                      "datAssinatura": "str[10]:'25/06/1850'",
+                      "nomeNormaAnterior": "str[24]:'Lei nº 556 de 25/06/1850'",
+                      "comentario": "str[34]:'Declaração de Alteração Permanente'",
+                      "itens": {
+                        "item": {
+                          "__lista__": 456,
+                          "__item0__": {
+                            "dispositivo": "str[7]:'Art. 1 '",
+                            "comentario": "str[9]:'Revogação'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "disps": {
+                  "disp": {
+                    "__lista__": 385,
+                    "__item0__": {
+                      "nomeDispositivo": "str[36]:'Art. 3 [Lei nº 10.406 de 10/01/2002]'",
+                      "codItemDocumento": "str[8]:'12287053'",
+                      "refs": {
+                        "ref": {
+                          "__lista__": 1,
+                          "__item0__": {
+                            "dispositivo": "str[27]:'Lei nº 13.146 de 06/07/2015'",
+                            "comentario": "str[46]:'Alteração (Declaração de Alteração Permanente)'",
+                            "codNormaPosterior": "str[6]:'584958'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ementa": "str[24]:'Institui o Código Civil.'",
+                "observacao": "str[493]:'AUTOR: EXECUTIVO - PL. 634 DE 1975. \\n\\nAS ALTERAÇÕE'",
+                "catalogo": {
+                  "frase": {
+                    "__lista__": 1,
+                    "__item0__": "str[15]:' CODIGO CIVIL .'"
+                  }
+                },
+                "indexacao": {
+                  "frase": {
+                    "__lista__": 1,
+                    "__item0__": "str[15]:' CODIGO CIVIL .'"
+                  }
+                },
+                "classes": {
+                  "classe": "str[24]:'Jurídico / Direito Civil'"
+                },
+                "dataAtualizacao": "str[20]:'2024-07-01T10:10:48Z'"
+              }
+            }
+          }
+        }
+      },
+      "origem": "candidato"
+    },
+    {
+      "url": "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:1968-07-25;5478",
+      "ok": true,
+      "status": 200,
+      "bytes": 4618,
+      "estrutura": {
+        "DetalheDocumento": {
+          "noNamespaceSchemaLocation": "str[69]:'https://legis.senado.leg.br/dadosabertos/dados/Det'",
+          "Metadados": {
+            "Versao": "str[19]:'22/11/2026 17:43:40'",
+            "VersaoServico": "str[1]:'3'",
+            "DataVersaoServico": "str[10]:'2017-02-01'",
+            "DescricaoDataSet": "str[57]:'Obtém detalhes de uma Norma Jurídica por meio da s'"
+          },
+          "documentos": {
+            "documento": {
+              "__lista__": 1,
+              "__item0__": {
+                "id": "str[6]:'547347'",
+                "identificacao": {
+                  "tipo": "str[5]:'LEI-n'",
+                  "descricao": "str[12]:'Lei Numerada'",
+                  "numero": "str[4]:'5478'",
+                  "norma": "str[19]:'LEI-5478-1968-07-25'",
+                  "normaNome": "str[26]:'Lei nº 5.478 de 25/07/1968'",
+                  "dataassinatura": "str[10]:'25/07/1968'",
+                  "apelido": "str[53]:'LEI-5478-1968-07-25 , Lei da Ação de Alimentos (19'",
+                  "urlDocumento": "str[65]:'https://normas.leg.br/?urn=urn:lex:br:federal:lei:'"
+                },
+                "publicacoes": {
+                  "publicacao": {
+                    "__lista__": 4,
+                    "__item0__": {
+                      "id": "str[8]:'16304383'",
+                      "tipo": "str[3]:'RET'",
+                      "fonte": "str[38]:'Diário Oficial da União  de 14/08/1968'",
+                      "siglaFonte": "str[14]:'DOU-1968-08-14'",
+                      "data": "str[10]:'14/08/1968'",
+                      "pagina": "str[4]:'7178'",
+                      "coluna": "str[1]:'2'",
+                      "dispositivo": "str[72]:'Retificação   [Diário Oficial da União  de 14/08/1'",
+                      "temTexto": "str[1]:'N'",
+                      "dataAtualizacao": "str[20]:'2017-02-18T19:45:29Z'"
+                    }
+                  }
+                },
+                "vides": {
+                  "vide": {
+                    "__lista__": 2,
+                    "__item0__": {
+                      "codnormaposterior": "str[6]:'547890'",
+                      "datAssinatura": "str[10]:'27/12/1973'",
+                      "nomeNormaPosterior": "str[26]:'Lei nº 6.014 de 27/12/1973'",
+                      "pagina": "str[5]:'13527'",
+                      "coluna": "str[1]:'1'",
+                      "edicao": "str[8]:'13829250'",
+                      "tipoEdicao": "str[3]:'750'",
+                      "datapub": "str[10]:'31/12/1973'",
+                      "nomePub": "str[81]:'Publicação Original   [Diário Oficial da União  de'",
+                      "comentario": "str[34]:'Declaração de Alteração Permanente'",
+                      "itens": null
+                    }
+                  }
+                },
+                "edivs": {
+                  "ediv": {
+                    "__lista__": 1,
+                    "__item0__": {
+                      "codnormaAnterior": "str[6]:'527942'",
+                      "datAssinatura": "str[10]:'07/12/1940'",
+                      "nomeNormaAnterior": "str[34]:'Decreto-Lei nº 2.848 de 07/12/1940'",
+                      "comentario": "str[34]:'Declaração de Alteração Permanente'",
+                      "itens": {
+                        "item": {
+                          "__lista__": 1,
+                          "__item0__": {
+                            "dispositivo": "str[9]:'Art. 244 '",
+                            "comentario": "str[9]:'Alteração'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "disps": {
+                  "disp": {
+                    "__lista__": 3,
+                    "__item0__": {
+                      "nomeDispositivo": "str[36]:'Art. 16 [Lei nº 5.478 de 25/07/1968]'",
+                      "codItemDocumento": "str[8]:'12295545'",
+                      "refs": {
+                        "ref": {
+                          "__lista__": 1,
+                          "__item0__": {
+                            "dispositivo": "str[27]:'Lei nº 13.105 de 16/03/2015'",
+                            "comentario": "str[46]:'Revogação (Declaração de Alteração Permanente)'",
+                            "codNormaPosterior": "str[6]:'584917'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "ementa": "str[56]:'Dispõe sobre ação de alimentos e dá outras providê'",
+                "observacao": "str[113]:'AS ALTERAÇÕES DECORRENTES DA LEI Nº 13.105/2015 EN'",
+                "catalogo": {
+                  "frase": {
+                    "__lista__": 1,
+                    "__item0__": "str[43]:' CODIGO DE PROCESSO CIVIL ,  CODIGO PENAL .'"
+                  }
+                },
+                "indexacao": {
+                  "frase": {
+                    "__lista__": 3,
+                    "__item0__": "str[78]:' ALTERAÇÃO ,  CODIGO DE PROCESSO CIVIL ,  CODIGO P'"
+                  }
+                },
+                "classes": null,
+                "dataAtualizacao": "str[20]:'2023-06-26T17:15:18Z'"
+              }
+            }
+          }
+        }
+      },
+      "origem": "candidato"
+    }
+  ]
+}
