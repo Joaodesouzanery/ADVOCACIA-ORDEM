@@ -1,0 +1,669 @@
+{
+  "executado_em": "2026-11-22T20:35:02+00:00",
+  "recursos": {
+    "espelhos-de-acordaos-terceira-turma/20220508.zip": {
+      "status": "ok",
+      "gravados": 2092
+    },
+    "espelhos-de-acordaos-terceira-turma/20220531.json": {
+      "status": "ok",
+      "gravados": 21
+    },
+    "espelhos-de-acordaos-terceira-turma/20220630.json": {
+      "status": "ok",
+      "gravados": 16
+    },
+    "espelhos-de-acordaos-terceira-turma/20220731.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-terceira-turma/20220831.json": {
+      "status": "ok",
+      "gravados": 14
+    },
+    "espelhos-de-acordaos-terceira-turma/20220930.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-terceira-turma/20221031.json": {
+      "status": "ok",
+      "gravados": 20
+    },
+    "espelhos-de-acordaos-terceira-turma/20221130.json": {
+      "status": "ok",
+      "gravados": 8
+    },
+    "espelhos-de-acordaos-terceira-turma/20221231.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-terceira-turma/20230131.json": {
+      "status": "ok",
+      "gravados": 11
+    },
+    "espelhos-de-acordaos-terceira-turma/20230228.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-terceira-turma/20230331.json": {
+      "status": "ok",
+      "gravados": 14
+    },
+    "espelhos-de-acordaos-terceira-turma/20230430.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-terceira-turma/20230531.json": {
+      "status": "ok",
+      "gravados": 14
+    },
+    "espelhos-de-acordaos-terceira-turma/20230630.json": {
+      "status": "ok",
+      "gravados": 15
+    },
+    "espelhos-de-acordaos-terceira-turma/20230731.json": {
+      "status": "ok",
+      "gravados": 8
+    },
+    "espelhos-de-acordaos-terceira-turma/20230831.json": {
+      "status": "ok",
+      "gravados": 23
+    },
+    "espelhos-de-acordaos-terceira-turma/20230930.json": {
+      "status": "ok",
+      "gravados": 15
+    },
+    "espelhos-de-acordaos-terceira-turma/20231031.json": {
+      "status": "ok",
+      "gravados": 28
+    },
+    "espelhos-de-acordaos-terceira-turma/20231130.json": {
+      "status": "ok",
+      "gravados": 22
+    },
+    "espelhos-de-acordaos-terceira-turma/20231231.json": {
+      "status": "ok",
+      "gravados": 5
+    },
+    "espelhos-de-acordaos-terceira-turma/20240131.json": {
+      "status": "ok",
+      "gravados": 7
+    },
+    "espelhos-de-acordaos-terceira-turma/20240229.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-terceira-turma/20240331.json": {
+      "status": "ok",
+      "gravados": 20
+    },
+    "espelhos-de-acordaos-terceira-turma/20240430.json": {
+      "status": "ok",
+      "gravados": 24
+    },
+    "espelhos-de-acordaos-terceira-turma/20240531.json": {
+      "status": "ok",
+      "gravados": 24
+    },
+    "espelhos-de-acordaos-terceira-turma/20240630.json": {
+      "status": "ok",
+      "gravados": 23
+    },
+    "espelhos-de-acordaos-terceira-turma/20240731.json": {
+      "status": "ok",
+      "gravados": 5
+    },
+    "espelhos-de-acordaos-terceira-turma/20240831.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-terceira-turma/20240930.json": {
+      "status": "ok",
+      "gravados": 20
+    },
+    "espelhos-de-acordaos-terceira-turma/20241031.json": {
+      "status": "ok",
+      "gravados": 22
+    },
+    "espelhos-de-acordaos-terceira-turma/20241130.json": {
+      "status": "ok",
+      "gravados": 17
+    },
+    "espelhos-de-acordaos-terceira-turma/20241231.json": {
+      "status": "ok",
+      "gravados": 9
+    },
+    "espelhos-de-acordaos-terceira-turma/20250131.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-terceira-turma/20250228.json": {
+      "status": "ok",
+      "gravados": 21
+    },
+    "espelhos-de-acordaos-terceira-turma/20250331.json": {
+      "status": "ok",
+      "gravados": 28
+    },
+    "espelhos-de-acordaos-terceira-turma/20250430.json": {
+      "status": "ok",
+      "gravados": 30
+    },
+    "espelhos-de-acordaos-terceira-turma/20250531.json": {
+      "status": "ok",
+      "gravados": 51
+    },
+    "espelhos-de-acordaos-terceira-turma/20250630.json": {
+      "status": "ok",
+      "gravados": 19
+    },
+    "espelhos-de-acordaos-terceira-turma/20250731.json": {
+      "status": "ok",
+      "gravados": 45
+    },
+    "espelhos-de-acordaos-terceira-turma/20250831.json": {
+      "status": "ok",
+      "gravados": 27
+    },
+    "espelhos-de-acordaos-terceira-turma/20250930.json": {
+      "status": "ok",
+      "gravados": 60
+    },
+    "espelhos-de-acordaos-terceira-turma/20251031.json": {
+      "status": "ok",
+      "gravados": 51
+    },
+    "espelhos-de-acordaos-terceira-turma/20251130.json": {
+      "status": "ok",
+      "gravados": 46
+    },
+    "espelhos-de-acordaos-terceira-turma/20251231.json": {
+      "status": "ok",
+      "gravados": 72
+    },
+    "espelhos-de-acordaos-terceira-turma/20260131.json": {
+      "status": "ok",
+      "gravados": 23
+    },
+    "espelhos-de-acordaos-terceira-turma/20260228.json": {
+      "status": "ok",
+      "gravados": 13
+    },
+    "espelhos-de-acordaos-terceira-turma/20260331.json": {
+      "status": "ok",
+      "gravados": 36
+    },
+    "espelhos-de-acordaos-terceira-turma/20260430.json": {
+      "status": "ok",
+      "gravados": 23
+    },
+    "espelhos-de-acordaos-terceira-turma/20260531.json": {
+      "status": "ok",
+      "gravados": 35
+    },
+    "espelhos-de-acordaos-terceira-turma/20260630.json": {
+      "status": "ok",
+      "gravados": 177
+    },
+    "espelhos-de-acordaos-terceira-turma/20260731.json": {
+      "status": "ok",
+      "gravados": 72
+    },
+    "espelhos-de-acordaos-terceira-turma/20260831.json": {
+      "status": "ok",
+      "gravados": 38
+    },
+    "espelhos-de-acordaos-terceira-turma/20260930.json": {
+      "status": "ok",
+      "gravados": 93
+    },
+    "espelhos-de-acordaos-terceira-turma/20261031.json": {
+      "status": "ok",
+      "gravados": 215
+    },
+    "espelhos-de-acordaos-quarta-turma/20220508.zip": {
+      "status": "ok",
+      "gravados": 2769
+    },
+    "espelhos-de-acordaos-quarta-turma/20220531.json": {
+      "status": "ok",
+      "gravados": 14
+    },
+    "espelhos-de-acordaos-quarta-turma/20220630.json": {
+      "status": "ok",
+      "gravados": 11
+    },
+    "espelhos-de-acordaos-quarta-turma/20220731.json": {
+      "status": "ok",
+      "gravados": 7
+    },
+    "espelhos-de-acordaos-quarta-turma/20220831.json": {
+      "status": "ok",
+      "gravados": 16
+    },
+    "espelhos-de-acordaos-quarta-turma/20220930.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-quarta-turma/20221031.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-quarta-turma/20221130.json": {
+      "status": "ok",
+      "gravados": 13
+    },
+    "espelhos-de-acordaos-quarta-turma/20221231.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-quarta-turma/20230131.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-quarta-turma/20230228.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-quarta-turma/20230331.json": {
+      "status": "ok",
+      "gravados": 8
+    },
+    "espelhos-de-acordaos-quarta-turma/20230430.json": {
+      "status": "ok",
+      "gravados": 25
+    },
+    "espelhos-de-acordaos-quarta-turma/20230531.json": {
+      "status": "ok",
+      "gravados": 22
+    },
+    "espelhos-de-acordaos-quarta-turma/20230630.json": {
+      "status": "ok",
+      "gravados": 15
+    },
+    "espelhos-de-acordaos-quarta-turma/20230731.json": {
+      "status": "ok",
+      "gravados": 8
+    },
+    "espelhos-de-acordaos-quarta-turma/20230831.json": {
+      "status": "ok",
+      "gravados": 5
+    },
+    "espelhos-de-acordaos-quarta-turma/20230930.json": {
+      "status": "ok",
+      "gravados": 21
+    },
+    "espelhos-de-acordaos-quarta-turma/20231031.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-quarta-turma/20231130.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-quarta-turma/20231231.json": {
+      "status": "ok",
+      "gravados": 7
+    },
+    "espelhos-de-acordaos-quarta-turma/20240131.json": {
+      "status": "ok",
+      "gravados": 13
+    },
+    "espelhos-de-acordaos-quarta-turma/20240229.json": {
+      "status": "ok",
+      "gravados": 7
+    },
+    "espelhos-de-acordaos-quarta-turma/20240331.json": {
+      "status": "ok",
+      "gravados": 10
+    },
+    "espelhos-de-acordaos-quarta-turma/20240430.json": {
+      "status": "ok",
+      "gravados": 25
+    },
+    "espelhos-de-acordaos-quarta-turma/20240531.json": {
+      "status": "ok",
+      "gravados": 21
+    },
+    "espelhos-de-acordaos-quarta-turma/20240630.json": {
+      "status": "ok",
+      "gravados": 15
+    },
+    "espelhos-de-acordaos-quarta-turma/20240731.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-quarta-turma/20240831.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-quarta-turma/20240930.json": {
+      "status": "ok",
+      "gravados": 24
+    },
+    "espelhos-de-acordaos-quarta-turma/20241031.json": {
+      "status": "ok",
+      "gravados": 18
+    },
+    "espelhos-de-acordaos-quarta-turma/20241130.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-quarta-turma/20241231.json": {
+      "status": "ok",
+      "gravados": 7
+    },
+    "espelhos-de-acordaos-quarta-turma/20250131.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-quarta-turma/20250228.json": {
+      "status": "ok",
+      "gravados": 6
+    },
+    "espelhos-de-acordaos-quarta-turma/20250331.json": {
+      "status": "ok",
+      "gravados": 9
+    },
+    "espelhos-de-acordaos-quarta-turma/20250430.json": {
+      "status": "ok",
+      "gravados": 20
+    },
+    "espelhos-de-acordaos-quarta-turma/20250531.json": {
+      "status": "ok",
+      "gravados": 28
+    },
+    "espelhos-de-acordaos-quarta-turma/20250630.json": {
+      "status": "ok",
+      "gravados": 14
+    },
+    "espelhos-de-acordaos-quarta-turma/20250731.json": {
+      "status": "ok",
+      "gravados": 9
+    },
+    "espelhos-de-acordaos-quarta-turma/20250831.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-quarta-turma/20250930.json": {
+      "status": "ok",
+      "gravados": 15
+    },
+    "espelhos-de-acordaos-quarta-turma/20251031.json": {
+      "status": "ok",
+      "gravados": 19
+    },
+    "espelhos-de-acordaos-quarta-turma/20251130.json": {
+      "status": "ok",
+      "gravados": 13
+    },
+    "espelhos-de-acordaos-quarta-turma/20251231.json": {
+      "status": "ok",
+      "gravados": 72
+    },
+    "espelhos-de-acordaos-quarta-turma/20260131.json": {
+      "status": "ok",
+      "gravados": 22
+    },
+    "espelhos-de-acordaos-quarta-turma/20260228.json": {
+      "status": "ok",
+      "gravados": 41
+    },
+    "espelhos-de-acordaos-quarta-turma/20260331.json": {
+      "status": "ok",
+      "gravados": 128
+    },
+    "espelhos-de-acordaos-quarta-turma/20260430.json": {
+      "status": "ok",
+      "gravados": 64
+    },
+    "espelhos-de-acordaos-quarta-turma/20260531.json": {
+      "status": "ok",
+      "gravados": 57
+    },
+    "espelhos-de-acordaos-quarta-turma/20260630.json": {
+      "status": "ok",
+      "gravados": 134
+    },
+    "espelhos-de-acordaos-quarta-turma/20260731.json": {
+      "status": "ok",
+      "gravados": 50
+    },
+    "espelhos-de-acordaos-quarta-turma/20260831.json": {
+      "status": "ok",
+      "gravados": 65
+    },
+    "espelhos-de-acordaos-quarta-turma/20260930.json": {
+      "status": "ok",
+      "gravados": 102
+    },
+    "espelhos-de-acordaos-quarta-turma/20261031.json": {
+      "status": "ok",
+      "gravados": 164
+    },
+    "espelhos-de-acordaos-segunda-secao/20220507.zip": {
+      "status": "ok",
+      "gravados": 255
+    },
+    "espelhos-de-acordaos-segunda-secao/20220531.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-segunda-secao/20220630.json": {
+      "status": "ok",
+      "gravados": 12
+    },
+    "espelhos-de-acordaos-segunda-secao/20220731.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20220831.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20220930.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20221031.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-segunda-secao/20221130.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20221231.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20230131.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20230228.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20230331.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20230430.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20230531.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20230630.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20230731.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20230831.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20230930.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20231031.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20231130.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20231231.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20240131.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20240229.json": {
+      "status": "erro",
+      "erro": "JSONDecodeError: Expecting ',' delimiter: line 24 column 1 (char 592)"
+    },
+    "espelhos-de-acordaos-segunda-secao/20240331.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20240430.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20240531.json": {
+      "status": "ok",
+      "gravados": 5
+    },
+    "espelhos-de-acordaos-segunda-secao/20240630.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20240731.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20240831.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20240930.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20241031.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20241130.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20241231.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20250131.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20250228.json": {
+      "status": "ok",
+      "gravados": 5
+    },
+    "espelhos-de-acordaos-segunda-secao/20250331.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20250430.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20250531.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20250630.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20250731.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20250831.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20250930.json": {
+      "status": "ok",
+      "gravados": 11
+    },
+    "espelhos-de-acordaos-segunda-secao/20251031.json": {
+      "status": "ok",
+      "gravados": 5
+    },
+    "espelhos-de-acordaos-segunda-secao/20251130.json": {
+      "status": "ok",
+      "gravados": 3
+    },
+    "espelhos-de-acordaos-segunda-secao/20251231.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-segunda-secao/20260131.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20260228.json": {
+      "status": "ok",
+      "gravados": 2
+    },
+    "espelhos-de-acordaos-segunda-secao/20260331.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-segunda-secao/20260430.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20260531.json": {
+      "status": "ok",
+      "gravados": 8
+    },
+    "espelhos-de-acordaos-segunda-secao/20260630.json": {
+      "status": "ok",
+      "gravados": 1
+    },
+    "espelhos-de-acordaos-segunda-secao/20260731.json": {
+      "status": "ok",
+      "gravados": 0
+    },
+    "espelhos-de-acordaos-segunda-secao/20260831.json": {
+      "status": "ok",
+      "gravados": 8
+    },
+    "espelhos-de-acordaos-segunda-secao/20260930.json": {
+      "status": "ok",
+      "gravados": 4
+    },
+    "espelhos-de-acordaos-segunda-secao/20261031.json": {
+      "status": "ok",
+      "gravados": 14
+    },
+    "precedentes-qualificados": {
+      "status": "ok",
+      "gravados": 33
+    }
+  }
+}
