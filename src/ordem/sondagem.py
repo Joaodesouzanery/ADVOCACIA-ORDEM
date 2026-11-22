@@ -43,6 +43,25 @@ def sondar_url(url: str, obter: Callable, cabecalhos: dict | None = None) -> dic
     }
 
 
+def sondar_openapi(url: str, obter: Callable) -> dict:
+    """Baixa a especificação OpenAPI e guarda só (caminho, métodos, resumo): a spec inteira é grande."""
+    try:
+        r = obter(url)
+        spec = json.loads(r.texto())
+        caminhos = [
+            {"caminho": c, "metodos": sorted(m for m in ops if m in ("get", "post", "put", "delete")),
+             "resumo": next((o.get("summary") or o.get("operationId") or "" for o in ops.values()
+                             if isinstance(o, dict)), "")[:120]}
+            for c, ops in spec.get("paths", {}).items()
+        ]
+    except Exception as e:  # noqa: BLE001
+        return {"url": url, "ok": False, "erro": f"{type(e).__name__}: {e}"}
+    return {"url": url, "ok": True, "status": r.status, "titulo": (spec.get("info") or {}).get("title"),
+            "versao": (spec.get("info") or {}).get("version"),
+            "servidores": [x.get("url") for x in spec.get("servers", [])],
+            "num_caminhos": len(caminhos), "caminhos": caminhos}
+
+
 _ORDEM_FORMATO = {"csv": 0, "json": 1, "zip": 2}
 
 
@@ -85,7 +104,9 @@ def sondar(obter: Callable, destino: Path, ids: list[str] | None = None) -> dict
             continue
         resultados = []
         for s in f["sondar"]:
-            if s.get("ckan_pacote"):
+            if s.get("openapi"):
+                res = sondar_openapi(s["url"], obter)
+            elif s.get("ckan_pacote"):
                 res = sondar_pacote_ckan(s["url"], s["ckan_pacote"], obter, s.get("max_recursos", 4))
             else:
                 res = sondar_url(s["url"], obter)

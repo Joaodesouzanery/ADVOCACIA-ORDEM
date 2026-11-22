@@ -17,21 +17,11 @@
         },
         {
           "url": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
-          "origem": "candidato"
-        },
-        {
-          "url": "https://legis.senado.leg.br/dadosabertos/api-docs",
-          "origem": "candidato"
-        },
-        {
-          "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-config",
-          "origem": "candidato"
-        },
-        {
-          "url": "https://legis.senado.leg.br/dadosabertos/docs",
+          "openapi": true,
           "origem": "candidato"
         }
-      ]
+      ],
+      "_status": "22/11/2026: spec OpenAPI em /dadosabertos/v3/api-docs (200, JSON, ~215 KB). Sondagem 3 lista os caminhos."
     },
     {
       "id": "lexml",

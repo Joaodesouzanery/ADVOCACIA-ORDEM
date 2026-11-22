@@ -88,3 +88,15 @@ def test_fontes_json_tem_pacotes_de_familia():
     pacotes = {s["ckan_pacote"] for s in stj["sondar"] if s.get("ckan_pacote")}
     assert pacotes == {"precedentes-qualificados", "espelhos-de-acordaos-terceira-turma",
                        "espelhos-de-acordaos-quarta-turma", "espelhos-de-acordaos-segunda-secao"}
+
+
+def test_sondagem_openapi_guarda_so_os_caminhos():
+    from ordem.sondagem import sondar_openapi
+
+    spec = {"info": {"title": "API Senado", "version": "1"}, "servers": [{"url": "https://x/dadosabertos"}],
+            "paths": {"/legislacao/lista": {"get": {"summary": "Lista normas"}},
+                      "/x": {"post": {"operationId": "op"}, "parameters": []}}}
+    r = sondar_openapi("u", lambda u: Resposta(u, 200, "application/json", json.dumps(spec).encode()))
+    assert r["ok"] and r["num_caminhos"] == 2
+    assert r["caminhos"][0] == {"caminho": "/legislacao/lista", "metodos": ["get"], "resumo": "Lista normas"}
+    assert sondar_openapi("u", lambda u: Resposta(u, 200, "text/html", b"<html>"))["ok"] is False
