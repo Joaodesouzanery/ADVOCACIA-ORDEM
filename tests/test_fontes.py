@@ -112,3 +112,15 @@ def test_openapi_guarda_parametros_e_tipo_de_resposta():
     c = sondar_openapi("u", lambda u: Resposta(u, 200, "application/json", json.dumps(spec).encode()))["caminhos"][0]
     assert c["parametros"] == [{"nome": "urn", "em": "query", "obrigatorio": True}]
     assert c["produz"] == ["application/json", "application/xml"]
+
+
+def test_estrutura_json_resume_forma_sem_copiar_o_texto():
+    from ordem.sondagem import estrutura_json, sondar_json_estrutura
+
+    dado = {"a": {"b": [{"texto": "x" * 500, "n": 1}, {"texto": "y"}]}, "vazio": []}
+    est = estrutura_json(dado)
+    assert est["a"]["b"]["__lista__"] == 2
+    assert est["a"]["b"]["__item0__"]["texto"].startswith("str[500]:")
+    assert len(json.dumps(est)) < 400
+    r = sondar_json_estrutura("u", lambda u: Resposta(u, 200, "application/json", json.dumps(dado).encode()))
+    assert r["ok"] and r["estrutura"]["vazio"] == {"__lista__": 0, "__item0__": None}

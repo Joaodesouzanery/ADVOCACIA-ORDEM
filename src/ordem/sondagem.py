@@ -68,6 +68,29 @@ def sondar_openapi(url: str, obter: Callable) -> dict:
             "num_caminhos": len(caminhos), "caminhos": caminhos}
 
 
+def estrutura_json(v, profundidade: int = 7):
+    """Resumo da forma de um JSON: chaves, tamanhos de listas, prévia curta de textos."""
+    if profundidade == 0:
+        return "..."
+    if isinstance(v, dict):
+        return {k: estrutura_json(x, profundidade - 1) for k, x in v.items()}
+    if isinstance(v, list):
+        return {"__lista__": len(v), "__item0__": estrutura_json(v[0], profundidade - 1) if v else None}
+    if isinstance(v, str):
+        return f"str[{len(v)}]:{v[:50]!r}"
+    return v
+
+
+def sondar_json_estrutura(url: str, obter: Callable, cabecalhos: dict | None = None) -> dict:
+    try:
+        r = obter(url, cabecalhos=cabecalhos) if cabecalhos else obter(url)
+        dados = json.loads(r.texto())
+    except Exception as e:  # noqa: BLE001
+        return {"url": url, "ok": False, "erro": f"{type(e).__name__}: {e}"}
+    return {"url": url, "ok": 200 <= r.status < 300, "status": r.status, "bytes": len(r.conteudo),
+            "estrutura": estrutura_json(dados)}
+
+
 _ORDEM_FORMATO = {"csv": 0, "json": 1, "zip": 2}
 
 
@@ -110,7 +133,9 @@ def sondar(obter: Callable, destino: Path, ids: list[str] | None = None) -> dict
             continue
         resultados = []
         for s in f["sondar"]:
-            if s.get("openapi"):
+            if s.get("json_estrutura"):
+                res = sondar_json_estrutura(s["url"], obter, s.get("cabecalhos"))
+            elif s.get("openapi"):
                 res = sondar_openapi(s["url"], obter)
             elif s.get("ckan_pacote"):
                 res = sondar_pacote_ckan(s["url"], s["ckan_pacote"], obter, s.get("max_recursos", 4))
