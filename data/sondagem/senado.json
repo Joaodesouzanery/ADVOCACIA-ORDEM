@@ -1,7 +1,7 @@
 {
   "fonte": "senado",
   "nome": "Senado – Dados Abertos (legislação)",
-  "executado_em": "2026-11-22T20:28:27+00:00",
+  "executado_em": "2026-11-22T20:33:00+00:00",
   "resultados": [
     {
       "url": "https://www12.senado.leg.br/dados-abertos/conjuntos?portal=Legislativo&grupo=legislacao",
@@ -29,50 +29,1115 @@
     },
     {
       "url": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
-      "url_final": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
-      "status": 200,
       "ok": true,
-      "desafio_antirrobo": false,
-      "content_type": "application/json",
-      "bytes": 215797,
-      "magic_hex": "7b226f70",
-      "amostra": "{\"openapi\":\"3.1.0\",\"info\":{\"title\":\"Dados Abertos Legislativos do Senado Federal e Congresso Nacional\",\"description\":\" <p>A API de Dados Abertos Legislativos do Senado Federal e do Congresso Nacional é uma API\\n de acesso público,\\n sem necessidade de autenticação. Contempla informações sobre Parlamentares, reuniões de\\n Comissão e Sessões Plenárias, Processos Legislativos, Votações, Discursos, Orçamento\\n e diversas outras informações relacionadas ao Processo Legislativo no âmbito do Congresso Nacional Brasileiro.</p>\\n <p> Para outras APIs de Dados Abertos do Senado Federal, acesse\\n <a href=\\\"https://www12.senado.leg.br/dados-abertos\\\">esta página</a>.</p>\\n\\n**Como selecionar formatos de saída**\\n\\nDependendo do formato de saída disponível no campo \\\"Media type\\\" abaixo,\\nefetue a requisição acrescentando o cabeçalho HTTP *Accept* com um dos formatos disponível\\npara o serviço no campo \\\"Media type\\\".\\n\\nPor exemplo: Se existir o formato \\\"application/json\\\" disponível, acrescente o seguinte\\ncabeçalho a sua requisição: *Accept: application/json*\\n\\nAlternativamente, para escolher o formato de saída desejado, acrescente o sufixo do formato\\ndesejado ao endereço.\\nExemplos:\\n * Se disponível o formato *\\\"application/json\\\"*, acrescente o sufixo *\\\".json\\\"* ao endereço.\\nEx: *https://legis.senado.leg.br/dadosabertos/legislacao/tiposPublicacao.json*\\n * Se disponível o formato *\\\"application/xml\\\"*, acrescente o sufixo *\\\".xml\\\"* ao endereço.\\nEx: *https://legis.senado.leg.br/dadosabertos/legislacao/tiposPublicacao.xml*\\n * Se disponível o formato *\\\"text/csv\\\"*, acrescente o sufixo *\\\".csv\\\"* ao endereço.\\nEx: *https://legis.senado.leg.br/dadosabertos/legislacao/397127.csv*\\n\\n**Restrição de requisições**\\n\\nPara garantir acesso justo a todos os usuários, esta API implementa uma limitação de requisições.\\n\\n- Mais de 10 requisições por segundo estão sujeitas a receber o erro HTTP 429 (Too Many Requests).\\n- Evite programar rotinas que enviam muitas requisições em horários arredondados (ex: exatamente às 00:00:0",
-      "origem": "candidato"
-    },
-    {
-      "url": "https://legis.senado.leg.br/dadosabertos/api-docs",
-      "url_final": "https://legis.senado.leg.br/dadosabertos/api-docs",
-      "status": 404,
-      "ok": false,
-      "desafio_antirrobo": false,
-      "content_type": "application/problem+xml",
-      "bytes": 202,
-      "magic_hex": "3c3f786d",
-      "amostra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><problem><detail>No static resource dadosabertos/api-docs.</detail><instance>/dadosabertos/api-docs</instance><status>404</status><title>Not Found</title></problem>",
-      "origem": "candidato"
-    },
-    {
-      "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-config",
-      "url_final": "https://legis.senado.leg.br/dadosabertos/docs/swagger-config",
-      "status": 404,
-      "ok": false,
-      "desafio_antirrobo": false,
-      "content_type": "application/problem+xml",
-      "bytes": 224,
-      "magic_hex": "3c3f786d",
-      "amostra": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><problem><detail>No static resource dadosabertos/docs/swagger-config.</detail><instance>/dadosabertos/docs/swagger-config</instance><status>404</status><title>Not Found</title></problem>",
-      "origem": "candidato"
-    },
-    {
-      "url": "https://legis.senado.leg.br/dadosabertos/docs",
-      "url_final": "https://legis.senado.leg.br/dadosabertos/api-docs/swagger-ui/index.html",
       "status": 200,
-      "ok": true,
-      "desafio_antirrobo": false,
-      "content_type": "text/html",
-      "bytes": 734,
-      "magic_hex": "3c212d2d",
-      "amostra": "<!-- HTML for static distribution bundle build -->\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Swagger UI</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"./swagger-ui.css\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"index.css\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-32x32.png\" sizes=\"32x32\" />\n    <link rel=\"icon\" type=\"image/png\" href=\"./favicon-16x16.png\" sizes=\"16x16\" />\n  </head>\n\n  <body>\n    <div id=\"swagger-ui\"></div>\n    <script src=\"./swagger-ui-bundle.js\" charset=\"UTF-8\"> </script>\n    <script src=\"./swagger-ui-standalone-preset.js\" charset=\"UTF-8\"> </script>\n    <script src=\"./swagger-initializer.js\" charset=\"UTF-8\"> </script>\n  </body>\n</html>\n",
+      "titulo": "Dados Abertos Legislativos do Senado Federal e Congresso Nacional",
+      "versao": "4.1.3.118",
+      "servidores": [
+        "/"
+      ],
+      "num_caminhos": 157,
+      "caminhos": [
+        {
+          "caminho": "/dadosabertos/votacaoComissao/parlamentar/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Votações nas Comissões por Parlamentar"
+        },
+        {
+          "caminho": "/dadosabertos/votacaoComissao/materia/{sigla}/{numero}/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Votações de Matérias nas Comissões por Identificação da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/votacaoComissao/comissao/{siglaComissao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Votações de Matérias nas Comissões do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/votacao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Votos Nominais de Parlamentares em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/videos/sessao/{idSessao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Unidades Descritivas (vídeos) de Sessões Plenárias"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/videos/reuniao/{idReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Unidades Descritivas (vídeos) de Reuniões de Comissão e/ou outros Colegiados"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/notas/sessao/{idSessao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Notas Taquigráficas de Sessões Plenárias"
+        },
+        {
+          "caminho": "/dadosabertos/taquigrafia/notas/reuniao/{idReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Notas Taquigráficas de Reuniões de Comissão e/ou outros Colegiados"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém informações de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/votacoes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Obtém as Votações Nominais de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/relatorias",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Obtém as matérias de Relatoria de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/profissao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém as Profissões de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/mandatos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém os Mandatos Parlamentares de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/liderancas",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Obtém os Cargos de Liderança de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/licencas",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém as Licenças oficiais de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/historicoAcademico",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém o Histórico Acadêmico de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/filiacoes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém as Filiações Partidárias de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/discursos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Discursos de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/comissoes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a relação das Comissões que um Senador é membro"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/cargos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a relação de Cargos ocupados por um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/autorias",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista as matérias de Autoria de um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/{codigo}/apartes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Apartes feitos por um Senador"
+        },
+        {
+          "caminho": "/dadosabertos/senador/partidos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Partidos Políticos em atividade e/ou extintos"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/tiposUsoPalavra",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Tipos de Uso da Palavra (Modalidades de Discursos)"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/legislatura/{legislaturaInicio}/{legislaturaFim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a lista de Senadores de um intervalo de Legislaturas"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/legislatura/{legislatura}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a lista de Senadores de uma determinada Legislatura"
+        },
+        {
+          "caminho": "/dadosabertos/senador/lista/atual",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Senadores em Exercício"
+        },
+        {
+          "caminho": "/dadosabertos/senador/afastados",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a lista dos Senadores atualmente afastados (Fora de Exercício)"
+        },
+        {
+          "caminho": "/dadosabertos/processo/{id}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Detalhes de um Processo Legislativo por código do Processo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-situacao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Tipos de Situações (estado) possíveis em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-decisao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Tipos de Decisões que podem ocorrer em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-autor",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Tipos de Autores de Documentos e Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/tipos-atualizacao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Tipos de Atualização que podem ocorrer em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/siglas",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Tipos e Siglas de Documentos e Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/relatoria",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Relatorias de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/prazo/tipos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Tipos de Prazos de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/prazo",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Prazos Regimentais ou Constitucionais definidos no rito de tramitação de um Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/entes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Entes Jurídicos que podem participar como autores ou instâncias de tramitação ou de expedição de Documentos e P"
+        },
+        {
+          "caminho": "/dadosabertos/processo/emenda",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista as Emendas apresentadas em um Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/documento/tipos-conteudo",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Tipos de Conteúdo Informacional que os Documentos Legislativos podem conter"
+        },
+        {
+          "caminho": "/dadosabertos/processo/documento/tipos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Tipos de Documentos que podem ser apresentados em Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/documento",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Documentos apresentados no Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/processo/destinos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Destinos possíveis de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/classes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista a Hierarquia de Classificações de Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo/assuntos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Assuntos Gerais e Específicos de que tratam os Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/processo",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Processos Legislativos"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/votacao/orientacaoBancada/{dataSessao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Orientação de Bancada para Votação de Matéria das Sessões que ocorreram em uma data"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/votacao/orientacaoBancada/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Orientação de Bancada para Votação de Matéria das Sessões que ocorreram em um período"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/votacao/nominal/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Votações Nominais por ano"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/tiposSessao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Tipos de Sessão Plenária"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém o Resultado da Sessão Plenária na data informada"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/veto/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Resultado da Votação Nominal de Veto"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/veto/materia/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Resultado da Votação Nominal do Veto a um Projeto de Lei"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/veto/dispositivo/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Resultado da Votação Nominal de um Dispositivo do Veto (em Vetos Parciais)"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/mes/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "resultadoMes"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/resultado/cn/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Resultado da Sessão Plenária do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/votacao/{dataSessao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista de Votações Nominais nas Sessões por data"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/votacao/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista de Votações Nominais nas Sessões por período"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/tiposComparecimento",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Tipos de Comparecimento em Votações do Plenário"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/legislaturas",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista de todas as Legislaturas e suas Sessões Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/lista/discursos/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Discursos por período/sessão"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/legislatura/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Legislatura na data informada e suas Sessões Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}/resumo",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Resumo do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}/resultado",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Resultado de Pauta do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}/pauta",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Itens de Pauta do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/encontro/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Detalhes do Encontro Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/mes/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda do mês nos Plenários do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/dia/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda do dia nos Plenários do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/cn/{inicio}/{fim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda do período do Plenário do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/cn/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda do dia do Plenário do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/plenario/agenda/atual/iCal",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda de Plenário em formato iCal"
+        },
+        {
+          "caminho": "/dadosabertos/orcamento/oficios/{numeroSedol}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Recupera informações de determinado Ofício de apoio às Emendas de Orçamento"
+        },
+        {
+          "caminho": "/dadosabertos/orcamento/oficios",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista os Ofícios de apoio às Emendas de Orçamento"
+        },
+        {
+          "caminho": "/dadosabertos/orcamento/lista",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lotes de Emendas ao Orçamento"
+        },
+        {
+          "caminho": "/dadosabertos/materia/{sigla}/{numero}/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Detalhes da Matéria por Sigla, Número, Ano e Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Detalhes da Matéria por código"
+        },
+        {
+          "caminho": "/dadosabertos/materia/votacoes/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Votações de uma Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/{ano}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Relação de Vetos presidenciais por ano"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/encerrados",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Vetos com tramitação encerrada"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/aposrcn",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Vetos posteriores à RCN 1/2013 em tramitação"
+        },
+        {
+          "caminho": "/dadosabertos/materia/vetos/antesrcn",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Vetos anteriores à RCN 1/2013 em tramitação"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tramitando",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista as Matérias que estão tramitando"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposatualizacoes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Tipos de Atualização que podem ocorrer em Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposTurnoApresentacao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Tipos de Turno de Apresentação de Matérias no Processo Legislativo"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposPrazo",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Tipos de Prazos os quais Matérias Legislativas podem estar sujeitos"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposNatureza",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Tipos de Natureza das Matérias"
+        },
+        {
+          "caminho": "/dadosabertos/materia/tiposEmenda",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Tipos de Emendas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/textos/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Documentos apresentados na Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/subtipos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Subtipos e Siglas de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/situacoes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Situações possíveis de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/situacaoatual/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Situação e Localização atuais da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/situacaoatual/tramitacao/{data}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Situação atual e Localização das Matérias que tramitaram na Data informada"
+        },
+        {
+          "caminho": "/dadosabertos/materia/relatorias/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Relatorias da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/pesquisa/lista",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Pesquisa básica de matérias"
+        },
+        {
+          "caminho": "/dadosabertos/materia/ordia/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Sessões em que a Matéria foi pautada na Ordem do Dia"
+        },
+        {
+          "caminho": "/dadosabertos/materia/movimentacoes/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Movimentação da Matéria, incluindo tramitação, prazos, despachos, situação etc."
+        },
+        {
+          "caminho": "/dadosabertos/materia/locais",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista os Entes Jurídicos possíveis de localização de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/lista/tramitacao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Total de Processos em tramitação no Senado Federal ou no Congresso Nacional por Tipo ou pelo Colegiado em que se encontr"
+        },
+        {
+          "caminho": "/dadosabertos/materia/lista/prazo/{codPrazo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Matérias Legislativas que tramitam com Prazo determinado"
+        },
+        {
+          "caminho": "/dadosabertos/materia/lista/comissao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATD) Lista as Matérias Legislativas localizadas em uma Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/legislaturaatual",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista as Matérias que estão em tramitação ou que tramitaram na Legislatura atual"
+        },
+        {
+          "caminho": "/dadosabertos/materia/emendas/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Emendas da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/emenda/{idDomaEmenda}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Detalhes da Emenda - por ID do Documento da Emenda"
+        },
+        {
+          "caminho": "/dadosabertos/materia/distribuicao/relatoria/{sigla}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Distribuição de relatoria de matérias em uma comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/distribuicao/autoria/{siglaComissao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Distribuição de autoria de matérias em uma comissão"
+        },
+        {
+          "caminho": "/dadosabertos/materia/distribuicao/autoria",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Distribuição de autoria de matérias (por comissão e/ou parlamentar)"
+        },
+        {
+          "caminho": "/dadosabertos/materia/destinos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista os Destinos possíveis de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/decisoes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista os Tipos de Decisões em votações de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/classes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista as Classificações de Matérias Legislativas"
+        },
+        {
+          "caminho": "/dadosabertos/materia/autoria/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Autoria da Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/atualizadas",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista as Matérias que foram incluídas ou sofreram atualização nos últimos dias (default = 5)"
+        },
+        {
+          "caminho": "/dadosabertos/materia/atualizacoes/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Atualizações mais recentes de uma Matéria"
+        },
+        {
+          "caminho": "/dadosabertos/materia/assuntos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista de Assuntos de Matérias Legislativas (Proposições)"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/{tipo}/{numdata}/{anoseq}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Detalhes de uma Norma Jurídica pela identificação (sigla / número / ano)"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Detalhes de uma Norma Jurídica pelo código"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/urn",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Detalhes de uma Norma Jurídica pela URN"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposdeclaracao/detalhe",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista de Detalhes de Declaração"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposVide",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista de Tipos de Declaração"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposPublicacao",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista de Tipos de Publicação"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/tiposNorma",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Tipos de Norma"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/termos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Pesquisa de Termos do Catálogo"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/lista",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Pesquisa de Normas Federais"
+        },
+        {
+          "caminho": "/dadosabertos/legislacao/classes",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Classificação de Normas Jurídicas, Projetos e Pronunciamentos"
+        },
+        {
+          "caminho": "/dadosabertos/discurso/texto-integral/{codigoPronunciamento}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Texto Integral de um Pronunciamento em formato texto plano (txt)"
+        },
+        {
+          "caminho": "/dadosabertos/discurso/texto-binario/{codigoPronunciamento}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Texto Integral de um Pronunciamento em formato binário"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/mesaSF",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Composição dos integrantes da Mesa Diretora do Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/mesaCN",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Composição dos integrantes da Mesa Diretora do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/{tipo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Composição das Comissões do Senado Federal por tipo de Colegiado"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/tiposCargo",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a lista de Tipos de Cargo nas Comissões do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/partidos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a lista dos Partidos Políticos em atividade e/ou extintos no Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/liderancaSF",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Obtém a lista das Lideranças em atividade no Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/liderancaCN",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Obtém a lista das Lideranças em atividade no Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/cn/{tipo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Composição das Comissões do Congresso Nacional por tipo"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lista/blocos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a lista e a Composição dos Blocos Parlamentares no Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lideranca/tipos-unidade",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Tipos de Unidades de Lideranças"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lideranca/tipos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Tipos de Lideranças"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/lideranca",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Lideranças do Senado Federal, Congresso Nacional e Câmara dos Deputados"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/comissao/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Última Composição de uma Comissão do Senado Federal"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/comissao/resumida/mista/{codigo}/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Composição resumida de uma Comissão Mista em determinado período"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/comissao/atual/mista/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Composição atual de uma Comissão Mista"
+        },
+        {
+          "caminho": "/dadosabertos/composicao/bloco/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Composição de um Bloco Parlamentar"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/{comissao}/documentos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Obtém os documentos apresentados em um Colegiado"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/{codigo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Detalhes de um Colegiado do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/reuniao/{sigla}/documento/{tipoDocumento}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Link para um documento da última Reunião de uma Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/reuniao/{codigoReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Informações detalhadas da Reunião de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/reuniao/notas/{codigoReuniao}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Notas Taquigráficas da Reunião de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/{tipo}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista de Colegiados do Senado Federal (por tipo)"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/tiposColegiado",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Lista de Tipos de Colegiado do Senado Federal e Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/mistas",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Comissões Mistas atuais do Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/lista/colegiados",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Lista geral de Colegiados EM ATIVIDADE no Congresso Nacional"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/cpi/{comissao}/requerimentos",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Requerimentos de CPI. Exclusivo para CPIs"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/{dataReferencia}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda das Reuniões de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/{dataInicio}/{dataFim}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda das Reuniões de Comissão"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/mes/{mesReferencia}",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Agenda das Reuniões de Comissão no mês informado"
+        },
+        {
+          "caminho": "/dadosabertos/comissao/agenda/atual/iCal",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Obtém a Agenda das Comissões do Congresso Nacional dos próximos 30 dias a partir da data atual. (Formato iCal)"
+        },
+        {
+          "caminho": "/dadosabertos/autor/tiposAutor",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "(DEPRECATED) Lista os Tipos de Autor"
+        },
+        {
+          "caminho": "/dadosabertos/autor/lista/atual",
+          "metodos": [
+            "get"
+          ],
+          "resumo": "Lista Parlamentares Autores de Processos em tramitação no Senado Federal ou no\nCongresso Nacional, com o quantitativo de"
+        }
+      ],
       "origem": "candidato"
     }
   ]

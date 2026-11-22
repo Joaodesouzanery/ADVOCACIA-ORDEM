@@ -1,5 +1,5 @@
 {
-  "executado_em": "2026-11-22T20:28:27+00:00",
+  "executado_em": "2026-11-22T20:33:00+00:00",
   "fontes": {
     "senado": [
       {
@@ -16,24 +16,6 @@
       },
       {
         "url": "https://legis.senado.leg.br/dadosabertos/v3/api-docs",
-        "ok": true,
-        "status": 200,
-        "erro": null
-      },
-      {
-        "url": "https://legis.senado.leg.br/dadosabertos/api-docs",
-        "ok": false,
-        "status": 404,
-        "erro": null
-      },
-      {
-        "url": "https://legis.senado.leg.br/dadosabertos/docs/swagger-config",
-        "ok": false,
-        "status": 404,
-        "erro": null
-      },
-      {
-        "url": "https://legis.senado.leg.br/dadosabertos/docs",
         "ok": true,
         "status": 200,
         "erro": null
